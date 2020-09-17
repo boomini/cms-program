@@ -23,6 +23,10 @@ public class UserService {
     return userMapper.selectUserById(id);
   }
 
+  public User getUserByUid(String uid) {
+    return userMapper.selectUserByUid(uid);
+  }
+
   public List<User> getAllUser() {
     return userMapper.selectAllUser();
   }

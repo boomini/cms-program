@@ -17,4 +17,6 @@ public interface UserMapper {
   void insertUser(User user);
 
   void deleteUser(Long msrl);
+
+  User selectUserByUid(String uid);
 }

@@ -12,6 +12,8 @@ import com.cmslogin.backend.service.ResponseService;
 import com.cmslogin.backend.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +24,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.RequiredArgsConstructor;
@@ -36,39 +40,56 @@ public class UserController {
 
   private final ResponseService responseService; // 결과를 처리함.
 
-  @ApiOperation(value = "회원 조회", notes = "모든 회원을 조회한다")
-  @GetMapping(value = "/user")
+  @ApiImplicitParams({
+      @ApiImplicitParam(name = "x-auth-token", value = "로그인 성공 후 access-token", required = true, dataType = "String", paramType = "header") })
+  @ApiOperation(value = "회원 리스트 조회", notes = "모든 회원을 조회한다")
+  @GetMapping(value = "/users")
   public ListResult<User> findAllUser() {
     return responseService.getListResult(userService.getAllUser());
     // 결과데이터가 여러건인 경우 getListResult를 이용해서 결과를 출력
   }
 
+  @ApiImplicitParams({
+      @ApiImplicitParam(name = "x-auth-token", value = "로그인 성공 후 access-token", required = true, dataType = "String", paramType = "header") })
   @ApiOperation(value = "회원 단건 조회", notes = "userId로 회원을 조회한다")
-  @GetMapping(value = "/user/{msrl}")
-  public SingleResult<User> findUserById(@ApiParam(value = "회원ID", required = true) @PathVariable long msrl) {
-    Optional<User> user = Optional.ofNullable(userService.getUserById(msrl));
+  @GetMapping(value = "/user")
+  public SingleResult<User> findUserByUId() {
+
+    // SecurityContext에서 인증받은 회원의 정보를 얻어온다.
+    Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    String uid = authentication.getName();
+    // 결과데이터가 단일건인경우 getSingleResult를 이용해서 결과를 출력한다.
+    Optional<User> user = Optional.ofNullable(userService.getUserByUid(uid));
     return responseService.getSingleResult(user.orElseThrow(CUserNotFoundException::new));
   }
 
-  @ApiOperation(value = "회원 추가", notes = "새로운 회원을 입력한다.")
-  @PostMapping(value = "/user")
-  public SingleResult<User> save(@ApiParam(value = "회원아이디", required = true) @RequestParam String uid,
-      @ApiParam(value = "회원이름", required = true) @RequestParam String name) {
-    User user = new User(uid, name);
-    userService.addUser(user);
-    return responseService.getSingleResult(user);
-  }
+  // @ApiOperation(value = "회원 추가", notes = "새로운 회원을 입력한다.")
+  // @PostMapping(value = "/user")
+  // public SingleResult<User> save(@ApiParam(value = "회원아이디", required = true)
+  // @RequestParam String uid,
+  // @ApiParam(value = "회원이름", required = true) @RequestParam String name) {
+  // User user = new User(uid, name);
+  // userService.addUser(user);
+  // return responseService.getSingleResult(user);
+  // }
 
+  @ApiImplicitParams({
+      @ApiImplicitParam(name = "x-auth-token", value = "로그인 성공 후 access-token", required = true, dataType = "String", paramType = "header") })
   @ApiOperation(value = "회원 수정", notes = "회원 정보를 수정한다.")
   @PutMapping(value = "/user")
-  public SingleResult<User> modify(@ApiParam(value = "회원번호", required = true) @RequestParam Long msrl,
-      @ApiParam(value = "회원아이디", required = true) @RequestParam String uid,
-      @ApiParam(value = "회원이름", required = true) @RequestParam String name) {
-    User user = new User(msrl, uid, name);
+  public CommonResult modify(@ApiParam(value = "회원이름", required = true) @RequestParam String name,
+      @ApiParam(value = "비밀번호", required = true) @RequestParam String password) {
+    // SecurityContext에서 인증받은 회원의 정보를 얻어온다.
+    Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    String uid = authentication.getName();
+
+    User user = new User(uid, password, name);
     userService.modifyUserById(user);
-    return responseService.getSingleResult(user);
+    return responseService.getSuccessResult();
   }
 
+  @ApiImplicitParams({
+      @ApiImplicitParam(name = "x-auth-token", value = "로그인 성공 후 access-token", required = true, dataType = "String", paramType = "header") })
   @ApiOperation(value = "회원 삭제", notes = "userId로 회원정보를 삭제한다.")
   @DeleteMapping(value = "/user/{msrl}")
   public CommonResult delete(@ApiParam(value = "회원번호", required = true) @PathVariable long msrl) {

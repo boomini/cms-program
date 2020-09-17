@@ -2,6 +2,7 @@ package com.cmslogin.backend.advice;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.cmslogin.backend.advice.exception.CEmailSigninFailedException;
 import com.cmslogin.backend.advice.exception.CUserNotFoundException;
 import com.cmslogin.backend.model.response.CommonResult;
 import com.cmslogin.backend.service.ResponseService;
@@ -30,6 +31,14 @@ public class ExceptionAdvice {
   @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
   protected CommonResult userNotFoundException(HttpServletRequest request, CUserNotFoundException e) {
     return responseService.getFailResult();
+  }
+
+  @ExceptionHandler(CEmailSigninFailedException.class)
+  @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+  protected CommonResult emailSigninFailed(HttpServletRequest request, CEmailSigninFailedException e) {
+    return responseService.getFailResult();
+    // Integer.valueOf(getMessage("EMAIL
+    // ERROR")),getMessage("emailSigninFailed.msg")
   }
 
 }
