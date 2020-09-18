@@ -30,7 +30,6 @@ public class User implements UserDetails {
   private String name;
   // private List<String> AUTHORITY = new ArrayList<>();
   private String AUTHORITY;
-  private boolean ENABLED;
 
   public User(String uid, String name) {
     this.uid = uid;
@@ -90,6 +89,6 @@ public class User implements UserDetails {
   @Override
   public boolean isEnabled() {
     // TODO Auto-generated method stub
-    return ENABLED;
+    return true;
   }
 }
