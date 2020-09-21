@@ -10,7 +10,7 @@
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item v-if="isLogin === false" router :to="{ name: 'login' }">
+        <v-list-item v-if="isLogin === false" router :to="{ name: 'signin' }">
           <v-list-item-action>
             <v-icon>mdi-login</v-icon>
           </v-list-item-action>
@@ -48,7 +48,9 @@
           </v-list-item>
         </v-list>
       </v-menu>
-      <v-btn v-else router :to="{ name: 'login' }" color="primary">Log In</v-btn>
+      <v-btn v-else router :to="{ name: 'signin' }" color="primary"
+        >Log In</v-btn
+      >
     </v-app-bar>
 
     <v-main>
@@ -64,16 +66,16 @@
 import { mapState, mapActions } from "vuex";
 export default {
   props: {
-    source: String
+    source: String,
   },
   data: () => ({
-    drawer: null
+    drawer: null,
   }),
   methods: {
-    ...mapActions(["logout"])
+    ...mapActions(["logout"]),
   },
   computed: {
-    ...mapState(["isLogin"])
-  }
+    ...mapState(["isLogin"]),
+  },
 };
 </script>

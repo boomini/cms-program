@@ -17,7 +17,7 @@ const onlyAuthUser = (to, from, next) => {
     if (store.state.isLogin === false) {
         //아직 로그인이 안 된 유저니까 막아야.
         alert("로그인이 필요한 기능입니다")
-        next("/login")
+        next("/signin")
     } else {
         next()
     }
@@ -29,8 +29,8 @@ const routes = [{
             import ( /* webpackChunkName: "about" */ "../views/Home.vue")
     },
     {
-        path: "/login",
-        name: "login",
+        path: "/signin",
+        name: "signin",
         beforeEnter: rejectAuthUser,
         component: () =>
             import ( /* webpackChunkName: "about" */ "../views/Login.vue")

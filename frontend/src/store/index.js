@@ -8,10 +8,6 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         userInfo: null,
-        allUsers: [
-            { id: 1, name: "hoza", email: "hoza@gmail.com", password: "123456" },
-            { id: 2, name: "lego", email: "lego@gmail.com", password: "123456" }
-        ],
         isLogin: false,
         isLoginError: false
     },
@@ -35,7 +31,7 @@ export default new Vuex.Store({
     },
     actions: {
         //로그인 시도
-        login({ dispatch }, loginObj) {
+        signin({ dispatch }, params) {
             //로그인 -> 토큰 변환
             // console.log(loginObj)
             // let selectedUser = null;
@@ -49,22 +45,24 @@ export default new Vuex.Store({
             //     router.push({ name: "mypage" })
 
             // }
-            console.log(loginObj);
+            console.log(params);
             axios
-                .post("https://reqres.in/api/login", loginObj)
+                .post("http://localhost:3500/v1/signin", params, {
+                    headers: { 'x-accept-type': 'operator' }
+                })
                 //post방식에는 두번째 인자로 파라미터가 오고
                 .then(res => {
                     //성공시 token(실제로는 token과 함께 user_id값을 받아올 것이다.)
                     //토큰을 헤더에 포함시켜서 유저 정보를 요청
                     console.log(res);
-                    let token = res.data.token
+                    let token = res.data.data
                         //토큰을 로컬스토리지에 저장
-                    localStorage.setItem("access_token", token)
+                    localStorage.setItem("x-auth-token", token)
                     dispatch("getMemberInfo")
 
                 })
                 .catch(err => {
-                    alert('이메일과 비밀번호를 확인하세요')
+                    //alert('이메일과 비밀번호를 확인하세요')
                     console.log(err);
                 });
 
@@ -79,27 +77,30 @@ export default new Vuex.Store({
             // 토큰 -> 멤버 정보를 반환
             // 새로 고침 -> 토큰만 가지고 멤버정보를 요청 
             //로컬 스토리지에 저장되어 있는 토큰을 불러온다.
-            let token = localStorage.getItem("access_token")
-            let config = {
-                //config에서 헤더값을 설정해줄 수 있고 , 헤더내에 토큰을 포함시키기 위해 사용한다.
-                headers: {
-                    "access-token": token
-                }
-            }
+            let token = localStorage.getItem("x-auth-token")
+            console.log(token)
+                // let config = {
+                //     //config에서 헤더값을 설정해줄 수 있고 , 헤더내에 토큰을 포함시키기 위해 사용한다.
+                //     headers: {
+                //         "x-auth-token": token
+                //     }
+                // }
             axios
-                .get("https://reqres.in/api/users/2", config)
+                .get("http://localhost:3500/v1/user", {
+                    headers: {
+                        "x-auth-token": token
+                    }
+                })
                 .then(response => {
                     console.log(response)
                     let userInfo = {
-                        id: response.data.data.id,
-                        first_name: response.data.data.first_name,
-                        last_name: response.data.data.last_name,
-                        avatar: response.data.data.avatar
+                        uid: response.data.data.uid,
+                        name: response.data.data.name,
                     }
                     commit('loginSuccess', userInfo)
                 })
                 .catch(error => {
-                    alert('이메일과 비밀번호를 확인하세요')
+                    // alert('이메일과 비밀번호를 확인하세요')
                     console.log(error)
                 })
                 //get방식에는 두번째 인자로 config가 온다.

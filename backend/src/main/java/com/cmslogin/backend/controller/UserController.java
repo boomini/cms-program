@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -63,14 +64,19 @@ public class UserController {
     return responseService.getSingleResult(user.orElseThrow(CUserNotFoundException::new));
   }
 
-  // @ApiOperation(value = "회원 추가", notes = "새로운 회원을 입력한다.")
-  // @PostMapping(value = "/user")
-  // public SingleResult<User> save(@ApiParam(value = "회원아이디", required = true)
-  // @RequestParam String uid,
-  // @ApiParam(value = "회원이름", required = true) @RequestParam String name) {
-  // User user = new User(uid, name);
-  // userService.addUser(user);
-  // return responseService.getSingleResult(user);
+  // @ApiOperation(value = "회원 단건 조회", notes = "userId로 회원을 조회한다")
+  // @GetMapping(value = "/user")
+  // public SingleResult<User> findUserByUId(@RequestHeader("x-auth-token") String
+  // auth) {
+  // System.out.println(auth);
+  // // SecurityContext에서 인증받은 회원의 정보를 얻어온다.
+  // Authentication authentication =
+  // SecurityContextHolder.getContext().getAuthentication();
+  // String uid = authentication.getName();
+  // // 결과데이터가 단일건인경우 getSingleResult를 이용해서 결과를 출력한다.
+  // Optional<User> user = Optional.ofNullable(userService.getUserByUid(uid));
+  // return
+  // responseService.getSingleResult(user.orElseThrow(CUserNotFoundException::new));
   // }
 
   @ApiImplicitParams({
