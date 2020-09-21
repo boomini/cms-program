@@ -1,5 +1,8 @@
-# ex-project
+# cms-login
+  관리자 로그인 프로그램
+## Backend / springboot
 
+## frontend / vuejs
 ## Project setup
 ```
 npm install
