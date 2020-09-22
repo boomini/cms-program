@@ -10,6 +10,7 @@ export default new Vuex.Store({
         userInfo: null,
         isLogin: false,
         isLoginError: false,
+        adminCheck: false,
         userList: []
     },
     mutations: {
@@ -18,6 +19,9 @@ export default new Vuex.Store({
             state.isLogin = true
             state.isLoginError = false
             state.userInfo = payload
+            if (state.userInfo.authority === "ROLE_ADMIN") {
+                state.adminCheck = true
+            }
         },
         // 로그인이 실패했을 때,
         loginError(state) {
@@ -28,6 +32,7 @@ export default new Vuex.Store({
             state.isLogin = false
             state.isLoginError = false
             state.userInfo = null
+            state.adminCheck = false
         },
         setUserList(state, payload) {
             state.userList = payload
@@ -76,6 +81,7 @@ export default new Vuex.Store({
         logout({ commit }) {
             commit("logout")
             router.push({ name: "home" })
+            localStorage.removeItem("x-auth-token")
         },
         getMemberInfo({ commit }) {
             // 토큰 -> 멤버 정보를 반환
@@ -92,6 +98,7 @@ export default new Vuex.Store({
                     let userInfo = {
                         uid: response.data.data.uid,
                         name: response.data.data.name,
+                        authority: response.data.data.authority
                     }
                     commit('loginSuccess', userInfo)
                     router.push({ name: "mypage" })
@@ -135,11 +142,33 @@ export default new Vuex.Store({
                 .then(response => {
                     commit('setUserList', response.data.list)
 
+
                 })
                 .catch(error => {
                     console.log(error)
                 })
-        }
+        },
+        updateUsrInfo({ dispatch }, updateObj) {
+            let token = localStorage.getItem("x-auth-token")
+            console.log(updateObj)
+            axios
+                .put("http://localhost:3500/v1/user", updateObj, {
+                    headers: {
+                        "x-auth-token": token,
+                        contentType: 'application/json'
+                    },
+
+                })
+                .then(res => {
+                    console.log(res)
+                    dispatch("getMemberInfo")
+                    alert("수정이 완료되었습니다.")
+
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        },
     },
     modules: {},
 });

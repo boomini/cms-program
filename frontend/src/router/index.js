@@ -55,6 +55,13 @@ const routes = [{
         component: () =>
             import ( /* webpackChunkName: "mypage" */ "../views/SignUp.vue")
     },
+    {
+        path: "/updateuserinfo",
+        name: "updateuserinfo",
+        beforeEnter: onlyAuthUser,
+        component: () =>
+            import ( /* webpackChunkName: "mypage" */ "../views/UpdateUserInfo.vue")
+    },
 
 ];
 

@@ -27,7 +27,7 @@
           </v-list-item-content>
         </v-list-item>
         <v-list-item
-          v-if="isLogin === true"
+          v-if="adminCheck === true"
           @click="getUserList()"
           router
           :to="{ name: 'userlist' }"
@@ -86,7 +86,7 @@ export default {
     ...mapActions(["logout", "getUserList"])
   },
   computed: {
-    ...mapState(["isLogin"])
+    ...mapState(["isLogin", "adminCheck"])
   }
 };
 </script>

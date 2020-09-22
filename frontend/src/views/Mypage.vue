@@ -5,7 +5,9 @@
         <v-card class="mx-auto" tile>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title>마이페이지</v-list-item-title>
+              <v-list-item-title>
+                <h3>마이페이지</h3>
+              </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 
@@ -23,7 +25,14 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-btn @click="modify" depressed block large color="primary">회원정보수정</v-btn>
+          <v-btn
+            router
+            :to="{ name: 'updateuserinfo' }"
+            depressed
+            block
+            large
+            color="primary"
+          >회원정보수정</v-btn>
         </v-card>
       </v-flex>
     </v-layout>
