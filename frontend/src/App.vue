@@ -18,12 +18,25 @@
             <v-list-item-title>로그인</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item v-else router :to="{ name: 'mypage' }">
+        <v-list-item v-if="isLogin === true" router :to="{ name: 'mypage' }">
           <v-list-item-action>
             <v-icon>mdi-format-list-bulleted-square</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>마이페이지</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+          v-if="isLogin === true"
+          @click="getUserList()"
+          router
+          :to="{ name: 'userlist' }"
+        >
+          <v-list-item-action>
+            <v-icon>mdi-format-list-bulleted-square</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>사용자리스트</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -48,9 +61,7 @@
           </v-list-item>
         </v-list>
       </v-menu>
-      <v-btn v-else router :to="{ name: 'signin' }" color="primary"
-        >Log In</v-btn
-      >
+      <v-btn v-else router :to="{ name: 'signin' }" color="primary">Log In</v-btn>
     </v-app-bar>
 
     <v-main>
@@ -66,16 +77,16 @@
 import { mapState, mapActions } from "vuex";
 export default {
   props: {
-    source: String,
+    source: String
   },
   data: () => ({
-    drawer: null,
+    drawer: null
   }),
   methods: {
-    ...mapActions(["logout"]),
+    ...mapActions(["logout", "getUserList"])
   },
   computed: {
-    ...mapState(["isLogin"]),
-  },
+    ...mapState(["isLogin"])
+  }
 };
 </script>

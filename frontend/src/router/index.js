@@ -42,6 +42,13 @@ const routes = [{
         component: () =>
             import ( /* webpackChunkName: "mypage" */ "../views/Mypage.vue")
     },
+    {
+        path: "/userlist",
+        name: "userlist",
+        beforeEnter: onlyAuthUser,
+        component: () =>
+            import ( /* webpackChunkName: "mypage" */ "../views/UserList.vue")
+    },
 
 ];
 
