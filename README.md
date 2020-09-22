@@ -5,7 +5,7 @@
 ## Backend / springboot
 DB (MyBatis, MariaDB),
 Spring security,
-JWT토큰 활용, swagger설정
+JWT토큰 활용, swagger설정, 패스워드 인코딩
 
 
 ## frontend / vuejs
