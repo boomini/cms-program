@@ -169,6 +169,27 @@ export default new Vuex.Store({
                     console.log(err)
                 })
         },
+        userDelete({ dispatch }, deleteUid) {
+            let token = localStorage.getItem("x-auth-token")
+            console.log(deleteUid)
+            axios
+                .delete("http://localhost:3500/v1/user/" + deleteUid, {
+                    headers: {
+                        "x-auth-token": token,
+                        contentType: 'application/json'
+                    },
+
+                })
+                .then(res => {
+                    console.log(res)
+                    dispatch("getUserList")
+                    alert("회원이 삭제되었씁니다..")
+
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        }
     },
     modules: {},
 });

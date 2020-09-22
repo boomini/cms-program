@@ -40,8 +40,8 @@ public class UserService {
     userMapper.insertUser(user);
   }
 
-  public void deleteUser(Long msrl) {
-    userMapper.deleteUser(msrl);
+  public void deleteUser(String uid) {
+    userMapper.deleteUser(uid);
   }
 
 }

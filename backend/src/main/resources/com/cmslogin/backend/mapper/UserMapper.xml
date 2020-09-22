@@ -38,7 +38,7 @@
 
   <delete id = "deleteUser">
     DELETE FROM USER
-      WHERE MSRL = #{msrl}
+      WHERE UID = #{uid}
   </delete>
 
   <update id="updateUserById">

@@ -103,9 +103,9 @@ public class UserController {
   @ApiImplicitParams({
       @ApiImplicitParam(name = "x-auth-token", value = "로그인 성공 후 access-token", required = true, dataType = "String", paramType = "header") })
   @ApiOperation(value = "회원 삭제", notes = "userId로 회원정보를 삭제한다.")
-  @DeleteMapping(value = "/user/{msrl}")
-  public CommonResult delete(@ApiParam(value = "회원번호", required = true) @PathVariable long msrl) {
-    userService.deleteUser(msrl);
+  @DeleteMapping(value = "/user/{uid}")
+  public CommonResult delete(@ApiParam(value = "회원번호", required = true) @PathVariable String uid) {
+    userService.deleteUser(uid);
     return responseService.getSuccessResult();
   }
 

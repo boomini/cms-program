@@ -67,10 +67,6 @@ public class BackendApplication implements CommandLineRunner {
     service.addUser(new User("bomin3", "boomini"));
   }
 
-  public void deleteUsers() {
-    service.deleteUser(7L);
-  }
-
   public void updateUsers() {
     service.modifyUserById(new User(1L, "DDD", "SSSS"));
   }
