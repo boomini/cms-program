@@ -22,7 +22,7 @@ public class CustomUserDetailService implements UserDetailsService {
 
   @Override
   public UserDetails loadUserByUsername(String userPk) {
-    Optional<User> user = Optional.ofNullable(userService.getUserById(Long.valueOf(userPk)));
+    Optional<User> user = Optional.ofNullable(userService.getUserByUid(userPk));
     return user.orElseThrow(CUserNotFoundException::new);
     // return user.orElseThrow(CUserNotFoundException::new);
 

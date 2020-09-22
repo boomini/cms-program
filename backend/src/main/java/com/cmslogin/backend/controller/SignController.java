@@ -6,13 +6,14 @@ import com.cmslogin.backend.service.ResponseService;
 import com.cmslogin.backend.service.UserService;
 import com.cmslogin.backend.advice.exception.CEmailSigninFailedException;
 import com.cmslogin.backend.config.security.JwtTokenProvider;
-import com.cmslogin.backend.model.Admin;
+import com.cmslogin.backend.config.security.PasswordEncoding;
 import com.cmslogin.backend.model.User;
 import com.cmslogin.backend.model.response.CommonResult;
 import com.cmslogin.backend.model.response.ListResult;
 import com.cmslogin.backend.model.response.SingleResult;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -38,7 +39,9 @@ public class SignController {
   private final JwtTokenProvider JwtTokenProvider;
 
   private final ResponseService responseService;
-  private final PasswordEncoder passwordEncoder;
+
+  PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+  PasswordEncoding passwordEncoding = new PasswordEncoding(passwordEncoder);
 
   // @ApiOperation(value = "로그인", notes = "이메일 회원 로그인을 한다.")
   // @PostMapping(value = "/signin")
@@ -70,17 +73,18 @@ public class SignController {
       throw new CEmailSigninFailedException();
 
     return responseService
-        .getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getMsrl()), user.getAUTHORITY()));
+        .getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getUid()), user.getAUTHORITY()));
   }
 
   @ApiOperation(value = "가입", notes = "회원가입을 한다")
   @PostMapping(value = "/signup")
   public CommonResult signup(@RequestBody User model) {
 
-    User user = new User(model.getUid(), "{noop}" + model.getPassword(), model.getName());
+    User user = new User(model.getUid(), passwordEncoding.encode(model.getPassword()), model.getName());
     userService.addUser(user);
     return responseService.getSuccessResult();
   }
+  // 패스워드 보안
 
   @ApiOperation(value = "회원 리스트 조회", notes = "모든 회원을 조회한다")
   @GetMapping(value = "/userlist")

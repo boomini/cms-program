@@ -50,7 +50,6 @@ export default new Vuex.Store({
             //     router.push({ name: "mypage" })
 
             // }
-            console.log(params);
             axios
                 .post("http://localhost:3500/v1/signin", params, {
                     headers: { 'x-accept-type': 'operator' }
@@ -63,6 +62,7 @@ export default new Vuex.Store({
                         //토큰을 로컬스토리지에 저장
                     localStorage.setItem("x-auth-token", token)
                     dispatch("getMemberInfo")
+                    alert("로그인이 완료되었습니다..")
 
                 })
                 .catch(err => {
@@ -103,20 +103,26 @@ export default new Vuex.Store({
                 //get방식에는 두번째 인자로 config가 온다.
         },
         // //회원가입시
-        // signup({ state }) {
-        //     axios
-        //         .post("http://localhost:3500/v1/signup", {
-        //             uid: loginobj.uid,
-        //             password: loginobj.password,
-        //             name: "bomini"
-        //         })
-        //         .then(res => {
-        //             console.log(res);
-        //         })
-        //         .catch(err => {
-        //             console.log(err);
-        //         });
-        // },
+        signup({ dispatch }, signObj) {
+            axios
+                .post("http://localhost:3500/v1/signup", signObj)
+                .then(res => {
+                    console.log(res);
+                    let userInfo = {
+                        uid: signObj.uid,
+                        password: signObj.password,
+                    }
+                    console.log(userInfo)
+                    dispatch("signin", userInfo)
+                    alert("회원가입이 성공하였습니다.")
+                })
+                .catch(err => {
+                    console.log(err);
+
+
+                });
+            router.push({ name: "signin" })
+        },
         //리스트불러오기
         getUserList({ commit }) {
             let token = localStorage.getItem("x-auth-token")
@@ -128,6 +134,7 @@ export default new Vuex.Store({
                 })
                 .then(response => {
                     commit('setUserList', response.data.list)
+
                 })
                 .catch(error => {
                     console.log(error)

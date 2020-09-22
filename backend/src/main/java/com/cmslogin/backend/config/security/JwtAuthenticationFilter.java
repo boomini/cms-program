@@ -32,7 +32,10 @@ public class JwtAuthenticationFilter extends GenericFilterBean {
     if (token != null && jwtTokenProvider.validateToken(token)) {
       Authentication auth = jwtTokenProvider.getAuthentication(token);
       SecurityContextHolder.getContext().setAuthentication(auth);
+      // 인증정보를 holding setting 해놓는것
     }
+    // 헤더에서 토큰을 가져와서 유효한지 체크하고 사용자 정보를 가져온 후 securitycontextholder에 세팅해놓겠따.
+
     chain.doFilter(request, response);
   }
 

@@ -2,28 +2,29 @@
   <v-container fill-height style="max-width:450px">
     <v-layout align-center row wrap>
       <v-flex xs12>
-        <v-alert class="mb-3" :value="isLoginError" type="error">아이디와 비밀번호를 확인해주세요.</v-alert>
-        <v-alert class="mb-3" :value="isLogin" type="success">로그인이 성공하였습니다.</v-alert>
+        <v-alert class="mb-3" :value="isLoginError" type="error">빈 칸을 채워주세요.</v-alert>
+        <v-alert class="mb-3" :value="isLogin" type="success">회원가입이 성공하였습니다.</v-alert>
         <v-card>
           <v-toolbar flat dense>
-            <v-toolbar-title>로그인</v-toolbar-title>
+            <v-toolbar-title>회원가입</v-toolbar-title>
           </v-toolbar>
           <div class="pa-3">
             <v-text-field v-model="uid" label="이메일을 입력하세요"></v-text-field>
             <v-text-field v-model="password" type="password" label="패스워드를 입력하세요"></v-text-field>
+            <v-text-field v-model="name" label="이름을 입력하세요"></v-text-field>
             <v-btn
               @click="
-                signin({
+                signup({
                   uid,
                   password,
+                  name
                 })
               "
               depressed
               block
               large
               color="primary"
-            >로그인</v-btn>
-            <v-btn router-link :to="{name: 'signup'}">회원가입</v-btn>
+            >회원가입</v-btn>
           </div>
         </v-card>
       </v-flex>
@@ -38,7 +39,8 @@ export default {
   data() {
     return {
       uid: null,
-      password: null
+      password: null,
+      name: null
     };
   },
   computed: {

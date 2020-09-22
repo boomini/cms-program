@@ -3,34 +3,31 @@
 
 <mapper namespace="com.cmslogin.backend.mapper.UserMapper">
   <select id="selectUserById" resultType="user">
-    SELECT MSRL
-          ,UID
+    SELECT UID
           ,PASSWORD
           ,NAME
           ,AUTHORITY
-          ,ENABLES
+          ,ENABLED
         FROM USER
       WHERE MSRL = #{msrl}
   </select>
 
   <select id="selectUserByUid" resultType="user">
-    SELECT MSRL
-          ,UID
+    SELECT UID
           ,PASSWORD
           ,NAME
           ,AUTHORITY
-          ,ENABLES
+          ,ENABLED
         FROM USER
       WHERE UID = #{uid}
   </select>
 
   <select id="selectAllUser" resultType="user">
-    SELECT MSRL
-          ,UID
+    SELECT UID
           ,PASSWORD
           ,NAME
           ,AUTHORITY
-          ,ENABLES
+          ,ENABLED
         FROM USER
   </select>
   

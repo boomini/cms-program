@@ -65,6 +65,8 @@ public class JwtTokenProvider {
   // Request의 Header에서 token 파싱 : "X-AUTH-TOKEN: jwt토큰"
   public String resolveToken(HttpServletRequest req) {
     return req.getHeader("x-auth-token");
+    // Authorization
+    // Authorization: Bearer mF_9.B5f-4.1JqM : rfc6750규격
   }
 
   // jwt토큰의 유효성 + 만료일자 확인
