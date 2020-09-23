@@ -14,7 +14,9 @@
           <v-list-item v-for="(list,id) in userList" :key="id">
             <v-list-item-content>
               <v-list-item-title>아이디 : {{list.uid}}</v-list-item-title>
-              <v-list-item-subtitle>이름 :{{list.username}}</v-list-item-subtitle>
+              <v-list-item-subtitle>이름 :{{list.name}}</v-list-item-subtitle>
+              <v-list-item-subtitle v-if="list.authority==='ROLE_USER'">역할 :사용자</v-list-item-subtitle>
+              <v-list-item-subtitle v-else>역할 :관리자</v-list-item-subtitle>
               <div class="my-2" align="right">
                 <v-btn depressed small color="error" @click="userDelete(list.uid)">회원삭제</v-btn>
               </div>
@@ -34,7 +36,8 @@ export default {
   data() {
     return {
       uid: null,
-      password: null
+      password: null,
+      role: null
     };
   },
   computed: {
@@ -42,6 +45,16 @@ export default {
   },
   methods: {
     ...mapActions(["getUserList", "userDelete"])
+  },
+  created: {
+    checkRole() {
+      if (this.userList.authority == "ROLE_USER") {
+        console.log(this.userList.authority);
+        this.role = "사용자";
+      } else {
+        this.role = "관리자";
+      }
+    }
   }
 };
 </script>
