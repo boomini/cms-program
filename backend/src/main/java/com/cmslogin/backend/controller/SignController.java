@@ -68,12 +68,10 @@ public class SignController {
   public SingleResult<String> signin(@RequestBody User adminModel) {
 
     User user = userService.getUserByUid(adminModel.getUid());
-    System.out.println(user + " " + user.getUid() + " " + user.getAUTHORITY());
     Optional<User> userException = Optional.ofNullable(user);
     responseService.getSingleResult(userException.orElseThrow(CEmailSigninFailedException::new));
     if (!passwordEncoder.matches(adminModel.getPassword(), user.getPassword()))
       throw new CEmailSigninFailedException();
-    System.out.println(user.getUid() + user.getAUTHORITY());
     return responseService
         .getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getUid()), user.getAUTHORITY()));
   }
