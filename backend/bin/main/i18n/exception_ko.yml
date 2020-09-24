@@ -5,3 +5,6 @@ unKnown:
 userNotFound:
   code: "-1000"
   msg: "존재하지 않는 회원입니다."
+communicationError:
+  code: "-1004"
+  msg: "통신 중 오류가 발생하였습니다."

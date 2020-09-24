@@ -22,6 +22,16 @@
       WHERE UID = #{uid}
   </select>
 
+  <select id="selectUserByUidAndProvider" resultType="user">
+    SELECT UID
+          ,PASSWORD
+          ,NAME
+          ,AUTHORITY
+          ,ENABLED
+          ,PROVIDER
+        FROM USER
+      WHERE UID = #{uid} ,PROVIDER = #{provider}
+  </select>
   <select id="selectAllUser" resultType="user">
     SELECT UID
           ,PASSWORD

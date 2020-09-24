@@ -19,4 +19,6 @@ public interface UserMapper {
   void deleteUser(String uid);
 
   User selectUserByUid(String uid);
+
+  User selectUserByUidAndProvider(String uid, String provider);
 }

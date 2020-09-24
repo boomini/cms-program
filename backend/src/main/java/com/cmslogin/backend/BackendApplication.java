@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.client.RestTemplate;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -38,6 +39,11 @@ public class BackendApplication implements CommandLineRunner {
   @Bean
   public PasswordEncoder passwordEncoder() {
     return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+  }
+
+  @Bean
+  public RestTemplate getRestTemplate() {
+    return new RestTemplate();
   }
 
   @Override

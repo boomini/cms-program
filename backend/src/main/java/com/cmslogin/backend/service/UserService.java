@@ -27,6 +27,10 @@ public class UserService {
     return userMapper.selectUserByUid(uid);
   }
 
+  public User getUserByUidAndProvider(String uid, String provider) {
+    return userMapper.selectUserByUidAndProvider(uid, provider);
+  }
+
   public List<User> getAllUser() {
     return userMapper.selectAllUser();
   }

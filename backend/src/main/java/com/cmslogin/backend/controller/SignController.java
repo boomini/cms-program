@@ -2,11 +2,13 @@ package com.cmslogin.backend.controller;
 
 import java.util.Optional;
 
+import com.cmslogin.backend.service.KakaoService;
 import com.cmslogin.backend.service.ResponseService;
 import com.cmslogin.backend.service.UserService;
 import com.cmslogin.backend.advice.exception.CEmailSigninFailedException;
 import com.cmslogin.backend.config.security.JwtTokenProvider;
 import com.cmslogin.backend.config.security.PasswordEncoding;
+import com.cmslogin.backend.model.KakaoProfile;
 import com.cmslogin.backend.model.User;
 import com.cmslogin.backend.model.response.CommonResult;
 import com.cmslogin.backend.model.response.ListResult;
@@ -35,6 +37,8 @@ import lombok.RequiredArgsConstructor;
 public class SignController {
   @Autowired
   private UserService userService;
+
+  private final KakaoService kakaoService;
 
   private final JwtTokenProvider JwtTokenProvider;
 
@@ -92,4 +96,16 @@ public class SignController {
     return responseService.getListResult(userService.getAllUser());
     // 결과데이터가 여러건인 경우 getListResult를 이용해서 결과를 출력
   }
+
+  @ApiOperation(value="소셜 로그인", notes = "소셜 회원 로그인을 한다.")
+  @PostMapping(value="/signin/{provider}")
+  public SingleResult<String> signinByProvider(
+    @ApiParam(value="서비스 제공자 provider", required = true, defaultValue = "kakao") @PathVariable String provider,
+    @ApiParam(value="소셜 access_token", required = true) @RequestParam String accessToken){
+      KakaoProfile profile = kakaoService.getKakaoProfile(accessToken);
+      kakaoService.getKakaoProfile(accessToken);
+      User user = userService.getUserByUidAndProvider(String.valueOf(profile.getId()),provider).orElseThrow(CUserNotFoundException::new);
+      return responseService.getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getUid()), user.getAUTHORITY()));
+    }
+  )
 }
