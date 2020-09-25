@@ -1,0 +1,8 @@
+[2020-09-24 18:30:16:069] ==> {requestTime=1600939815995, method=OPTIONS, queryString=null, url=http://localhost:3500/v1/user}
+[2020-09-24 18:30:16:734] <== {requestTime=null, statuscode=403, body={"timestamp":1600939816686,"status":403,"error":"Forbidden","message":"Access Denied","path":"/v1/user"}, url=http://localhost:3500/error}
+[2020-09-24 18:30:33:941] ==> {requestTime=1600939833941, method=OPTIONS, queryString=null, url=http://localhost:3500/v1/signin}
+[2020-09-24 18:30:34:036] ==> {requestTime=1600939834036, method=POST, queryString=null, url=http://localhost:3500/v1/signin}
+[2020-09-24 18:30:34:088] ==> {requestTime=1600939834036, body=User(msrl=0, uid=kimbomin, password=kimbomin, name=null, AUTHORITY=null)}
+[2020-09-24 18:30:34:511] <== {requestTime=1600939834036, statuscode=200, body={"success":true,"code":0,"msg":"성공하였습니다.","data":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJraW1ib21pbiIsInJvbGVzIjoiUk9MRV9BRE1JTiIsImlhdCI6MTYwMDkzOTgzNCwiZXhwIjoxNjAwOTQzNDM0fQ.qQtfIvWNGMnUS1OziHAXtjDWs9eb4O06GrBLoYf8DnI"}, url=http://localhost:3500/v1/signin}
+[2020-09-24 18:30:36:767] ==> {requestTime=1600939836766, method=GET, queryString=null, url=http://localhost:3500/v1/user}
+[2020-09-24 18:30:36:902] <== {requestTime=1600939836766, statuscode=200, body={"success":true,"code":0,"msg":"성공하였습니다.","data":{"msrl":0,"uid":"kimbomin","name":"kimbomin","enabled":true,"credentialsNonExpired":true,"accountNonExpired":true,"username":"kimbomin","authorities":[{"authority":"ROLE_ADMIN"}],"authority":"ROLE_ADMIN","accountNonLocked":true}}, url=http://localhost:3500/v1/user}

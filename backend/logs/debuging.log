@@ -1,0 +1,68 @@
+[2020-09-25 09:57:52:191] WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h14m38s291ms813µs600ns).
+[2020-09-25 09:57:54:557] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 09:57:54:558] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:57:54:559] DEBUG - HikariPool-1 - Add connection elided, waiting 0, queue 1
+[2020-09-25 09:57:54:559] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@40db5502: (connection has passed maxLifetime)
+[2020-09-25 09:57:54:559] DEBUG - HikariPool-1 - Add connection elided, waiting 0, queue 1
+[2020-09-25 09:57:54:560] DEBUG - HikariPool-1 - Add connection elided, waiting 0, queue 1
+[2020-09-25 09:57:54:690] DEBUG - HikariPool-1 - Add connection elided, waiting 0, queue 1
+[2020-09-25 09:57:54:968] DEBUG - HikariPool-1 - Add connection elided, waiting 0, queue 1
+[2020-09-25 09:57:54:968] DEBUG - HikariPool-1 - Add connection elided, waiting 0, queue 1
+[2020-09-25 09:57:54:968] DEBUG - HikariPool-1 - Add connection elided, waiting 0, queue 1
+[2020-09-25 09:57:54:969] DEBUG - HikariPool-1 - Add connection elided, waiting 0, queue 1
+[2020-09-25 09:57:55:076] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@65dd62c6: (connection has passed maxLifetime)
+[2020-09-25 09:57:55:077] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:57:55:077] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@236fd28e: (connection has passed maxLifetime)
+[2020-09-25 09:57:55:078] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:57:55:079] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@5f91ee2b: (connection has passed maxLifetime)
+[2020-09-25 09:57:55:079] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:57:55:079] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@7017337d: (connection has passed maxLifetime)
+[2020-09-25 09:57:55:080] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:57:55:080] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@106b0192: (connection has passed maxLifetime)
+[2020-09-25 09:57:55:081] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:57:55:081] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@51560ba9: (connection has passed maxLifetime)
+[2020-09-25 09:57:55:081] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:57:55:082] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@5569855b: (connection has passed maxLifetime)
+[2020-09-25 09:57:55:082] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:57:55:083] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@431ac8b9: (connection has passed maxLifetime)
+[2020-09-25 09:57:55:083] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:57:55:083] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@740a6228: (connection has passed maxLifetime)
+[2020-09-25 09:57:55:084] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:57:56:017] DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@bca81d7
+[2020-09-25 09:57:56:019] DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@50d6ede
+[2020-09-25 09:57:56:022] DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@132eaa7
+[2020-09-25 09:57:56:023] DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@443064e5
+[2020-09-25 09:57:56:025] DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@1b2b918d
+[2020-09-25 09:57:56:249] DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@753e67a8
+[2020-09-25 09:57:56:251] DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@63cfcc7a
+[2020-09-25 09:57:56:253] DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@241f9baa
+[2020-09-25 09:57:56:255] DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@637fd15d
+[2020-09-25 09:57:56:257] DEBUG - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@657af9bd
+[2020-09-25 09:58:24:560] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 09:58:26:231] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:58:56:234] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 09:58:56:234] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:59:26:237] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 09:59:26:237] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 09:59:56:240] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 09:59:56:240] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 10:00:26:242] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 10:00:26:242] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 10:00:56:243] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 10:00:56:243] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 10:01:26:246] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 10:01:26:246] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 10:01:56:249] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 10:01:56:249] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 10:02:26:251] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 10:02:26:251] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 10:02:56:253] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 10:02:56:253] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 10:03:26:256] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 10:03:26:256] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 10:03:56:258] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 10:03:56:258] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 10:04:26:260] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 10:04:26:260] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-09-25 10:04:56:262] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-09-25 10:04:56:262] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.

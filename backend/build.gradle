@@ -45,7 +45,6 @@ dependencies {
   //메시지파일 저장을 위한 yml라이브러리
   implementation 'net.rakugakibox.util:yaml-resource-bundle:1.1'
 
-
   implementation 'javax.xml.bind:jaxb-api:2.3.0'
   implementation 'javax.activation:activation:1.1'
   implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.0'
