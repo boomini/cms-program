@@ -39,7 +39,7 @@ export default {
       password: null,
       role: null
     };
-  },
+  },                                             
   computed: {
     ...mapState(["userList"])
   },

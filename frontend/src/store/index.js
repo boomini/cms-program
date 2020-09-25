@@ -1,7 +1,8 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import router from "../router"
-import axios from "axios";
+import axios from "axios"
+import NetworkUtils from "../utils/NetworkUtils";
 
 Vue.use(Vuex);
 
@@ -42,40 +43,43 @@ export default new Vuex.Store({
     actions: {
         //로그인 시도
         signin({ dispatch }, params) {
-            //로그인 -> 토큰 변환
-            // console.log(loginObj)
-            // let selectedUser = null;
-            // state.allUsers.forEach(user => {
-            //     if (user.email === loginObj.email) selectedUser = user;
-            // });
-            // if (selectedUser === null || selectedUser.password !== loginObj.password)
-            //     commit("loginError")
-            // else {
-            //     commit("loginSuccess", selectedUser);
-            //     router.push({ name: "mypage" })
+            return NetworkUtils.LOGIN(params).then((res) => {
+                console.log(res)
+                let token = res.data
+                    //토큰을 로컬스토리지에 저장
+                localStorage.setItem("x-auth-token", token)
+                dispatch("getMemberInfo")
+                alert("로그인이 되었습니다.")
 
-            // }
-            axios
-                .post("http://localhost:3500/v1/signin", params, {
-                    headers: { 'x-accept-type': 'operator' }
-                })
-                //post방식에는 두번째 인자로 파라미터가 오고
-                .then(res => {
-                    //성공시 token(실제로는 token과 함께 user_id값을 받아올 것이다.)
-                    //토큰을 헤더에 포함시켜서 유저 정보를 요청
-                    let token = res.data.data
-                        //토큰을 로컬스토리지에 저장
-                    localStorage.setItem("x-auth-token", token)
-                    dispatch("getMemberInfo")
-                    alert("로그인이 완료되었습니다..")
+            }).catch(res => {
+                alert(res),
+                    console.log(res)
+            });
+        }
+        // axios
+        //     .post("http://localhost:3500/v1/signin", params, {
+        //         headers: { 'x-accept-type': 'operator' }
+        //     })
+        //     //post방식에는 두번째 인자로 파라미터가 오고
+        //     .then(res => {
 
-                })
-                .catch(err => {
-                    alert('이메일과 비밀번호를 확인하세요')
-                    console.log(err);
-                });
 
-        },
+        //     //성공시 token(실제로는 token과 함께 user_id값을 받아올 것이다.)
+        //     //토큰을 헤더에 포함시켜서 유저 정보를 요청
+        //     let token = res.data.data
+        //         //토큰을 로컬스토리지에 저장
+        //     localStorage.setItem("x-auth-token", token)
+        //     dispatch("getMemberInfo")
+        //     alert("로그인이 완료되었습니다..")
+        //     console.log(res)
+        // })
+        // .catch(err => {
+        //     //alert('이메일과 비밀번호를 확인하세요')
+        //     console.log(err);
+        // });
+        ,
+
+
 
         //로그아웃시
         logout({ commit }) {
@@ -104,31 +108,27 @@ export default new Vuex.Store({
                     router.push({ name: "mypage" })
                 })
                 .catch(error => {
-                    alert('이메일과 비밀번호를 확인하세요')
+                    //alert('이메일과 비밀번호를 확인하세요')
                     console.log(error)
                 })
                 //get방식에는 두번째 인자로 config가 온다.
         },
         // //회원가입시
-        signup({ dispatch }, signObj) {
-            axios
-                .post("http://localhost:3500/v1/signup", signObj)
-                .then(res => {
-                    console.log(res);
-                    let userInfo = {
-                        uid: signObj.uid,
-                        password: signObj.password,
-                    }
-                    console.log(userInfo)
-                    dispatch("signin", userInfo)
-                    alert("회원가입이 성공하였습니다.")
-                })
-                .catch(err => {
-                    console.log(err);
+        signup({ dispatch }, params) {
 
+            return NetworkUtils.SIGNUP(params).then((res) => {
+                console.log(res)
+                let userInfo = {
+                    uid: params.uid,
+                    password: params.password,
+                }
+                dispatch("signin", userInfo)
+                alert("회원가입이 되었습니다.")
+            }).catch(res => {
+                alert(res),
+                    console.log(res)
+            });
 
-                });
-            router.push({ name: "signin" })
         },
         //리스트불러오기
         getUserList({ commit }) {

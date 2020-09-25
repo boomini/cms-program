@@ -2,14 +2,17 @@ package com.cmslogin.backend.advice;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.cmslogin.backend.advice.exception.CAuthenticationEntryPointException;
 import com.cmslogin.backend.advice.exception.CEmailSigninFailedException;
 import com.cmslogin.backend.advice.exception.CUserNotFoundException;
+import com.cmslogin.backend.advice.exception.CUserSignupFailedException;
 import com.cmslogin.backend.model.response.CommonResult;
 import com.cmslogin.backend.service.ResponseService;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -36,21 +39,38 @@ public class ExceptionAdvice {
   // }
 
   @ExceptionHandler(CUserNotFoundException.class)
-  @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+  // @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
   protected CommonResult userNotFoundException(HttpServletRequest request, CUserNotFoundException e) {
     return responseService.getFailResult(Integer.valueOf(getMessage("userNotFound.code")),
         getMessage("userNotFound.msg"));
   }
 
   @ExceptionHandler(CEmailSigninFailedException.class)
-  @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+  // @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
   protected CommonResult emailSigninFailed(HttpServletRequest request, CEmailSigninFailedException e) {
-    return responseService.getFailResult(Integer.valueOf(getMessage("userNotFound.code")),
-        getMessage("userNotFound.msg"));
-    // Integer.valueOf(getMessage("EMAIL
-    // ERROR")),getMessage("emailSigninFailed.msg")
+    return responseService.getFailResult(Integer.valueOf(getMessage("emailSigninFailed.code")),
+        getMessage("emailSigninFailed.msg"));
+
   }
 
+  @ExceptionHandler(CAuthenticationEntryPointException.class)
+  public CommonResult authenticationEntryPointException(HttpServletRequest request,
+      CAuthenticationEntryPointException e) {
+    return responseService.getFailResult(Integer.valueOf(getMessage("entryPointException.code")),
+        getMessage("entryPointException.msg"));
+  }
+
+  @ExceptionHandler(AccessDeniedException.class)
+  public CommonResult AccessDeniedException(HttpServletRequest request, AccessDeniedException e) {
+    return responseService.getFailResult(Integer.valueOf(getMessage("accessDenied.code")),
+        getMessage("accessDenied.msg"));
+  }
+
+  @ExceptionHandler(CUserSignupFailedException.class)
+  public CommonResult usersignupfailedexception(HttpServletRequest request, CUserSignupFailedException e) {
+    return responseService.getFailResult(Integer.valueOf(getMessage("sighUpFailed.code")),
+        getMessage("sighUpFailed.msg"));
+  }
   // @ExceptionHandelr(Exception.class)
   // Exception이 발생하면 해당 Handler로 처리하겠다고 명시하는 annotation.
   // 괄호안에는 어던 exception이 발생할 때 handler를 적용할 것인지 Exception class를 인자로 넣습니다.

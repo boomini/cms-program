@@ -35,12 +35,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         // 다음리퀘스트에 대한 사용권한체크
         .antMatchers("/*/signin", "/*/signup", "/*/userlist").permitAll()
         // 가입 및 인증 주소는 누구나 접근 가능
-        .antMatchers(HttpMethod.OPTIONS).permitAll().antMatchers(HttpMethod.GET, "helloworld/**").permitAll()
+        .antMatchers(HttpMethod.OPTIONS).permitAll().antMatchers(HttpMethod.GET, "helloworld/**", "/exception/**")
+        .permitAll()
         // helloworld로 시작하는 get요청 리소스는 누구나 접근 가능
         .antMatchers("/*/users").hasRole("ADMIN").anyRequest().hasAnyRole("USER, ADMIN")
         // 그외나머지 요청은 모두 인증된 회원만 접근 가능
         // 커스터마이징 하기.
-        .and()
+        .and().exceptionHandling().authenticationEntryPoint(new CustomAuthenticationEntryPoint()).and()
+        .exceptionHandling().accessDeniedHandler(new CustomAccessDeniedHandler()).and()
         .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class)
         // 토큰이 있으면 UsernamePasswordAuthenticationFilter를 건너뛴다.(아이디 패스워드를 인증한느 필터)
         .headers().frameOptions().sameOrigin();

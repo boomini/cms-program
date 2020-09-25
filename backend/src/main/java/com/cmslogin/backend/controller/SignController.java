@@ -5,6 +5,7 @@ import java.util.Optional;
 import com.cmslogin.backend.service.ResponseService;
 import com.cmslogin.backend.service.UserService;
 import com.cmslogin.backend.advice.exception.CEmailSigninFailedException;
+import com.cmslogin.backend.advice.exception.CUserSignupFailedException;
 import com.cmslogin.backend.config.security.JwtTokenProvider;
 import com.cmslogin.backend.config.security.PasswordEncoding;
 import com.cmslogin.backend.model.User;
@@ -81,6 +82,11 @@ public class SignController {
   public CommonResult signup(@RequestBody User model) {
 
     User user = new User(model.getUid(), passwordEncoding.encode(model.getPassword()), model.getName());
+    if (userService.getUserByUid(user.getUid()) != null) {
+      System.out.println("왜안되는고야");
+      throw new CUserSignupFailedException();
+    }
+
     userService.addUser(user);
     return responseService.getSuccessResult();
   }
