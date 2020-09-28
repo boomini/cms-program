@@ -62,6 +62,12 @@ const routes = [{
         component: () =>
             import ( /* webpackChunkName: "mypage" */ "../views/UpdateUserInfo.vue")
     },
+    {
+        path: "/sociallogin",
+        name: "sociallogin",
+        component: () =>
+            import ( /* webpackChunkName: "mypage" */ "../views/SocialLogin.vue")
+    },
 
 ];
 

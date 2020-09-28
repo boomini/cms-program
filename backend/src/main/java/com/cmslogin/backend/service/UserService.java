@@ -44,6 +44,10 @@ public class UserService {
     userMapper.insertUser(user);
   }
 
+  public void addSocialUser(User user) {
+    userMapper.inserKakaoUser(user);
+  }
+
   public void deleteUser(String uid) {
     userMapper.deleteUser(uid);
   }

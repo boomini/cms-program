@@ -2,28 +2,49 @@
   <v-container fill-height style="max-width:450px">
     <v-layout align-center row wrap>
       <v-flex xs12>
-        <v-alert class="mb-3" :value="isLoginError" type="error">아이디와 비밀번호를 확인해주세요.</v-alert>
-        <v-alert class="mb-3" :value="isLogin" type="success">로그인이 성공하였습니다.</v-alert>
+        <v-alert class="mb-3" :value="isLoginError" type="error"
+          >아이디와 비밀번호를 확인해주세요.</v-alert
+        >
+        <v-alert class="mb-3" :value="isLogin" type="success"
+          >로그인이 성공하였습니다.</v-alert
+        >
         <v-card>
           <v-toolbar flat dense>
             <v-toolbar-title>로그인</v-toolbar-title>
           </v-toolbar>
           <div class="pa-3">
-            <v-text-field v-model="uid" label="이메일을 입력하세요"></v-text-field>
-            <v-text-field v-model="password" type="password" label="패스워드를 입력하세요"></v-text-field>
+            <v-text-field
+              v-model="uid"
+              label="이메일을 입력하세요"
+            ></v-text-field>
+            <v-text-field
+              v-model="password"
+              type="password"
+              label="패스워드를 입력하세요"
+            ></v-text-field>
             <v-btn
               @click="
                 signin({
                   uid,
-                  password,
+                  password
                 })
               "
               depressed
               block
               large
               color="primary"
-            >로그인</v-btn>
-            <v-btn router-link :to="{name: 'signup'}">회원가입</v-btn>
+              >로그인</v-btn
+            >
+            <v-btn
+              depressed
+              block
+              large
+              color="yellow"
+              router
+              @click="kakaoLogin"
+              >카카오톡 로그인</v-btn
+            >
+            <v-btn router-link :to="{ name: 'signup' }">회원가입</v-btn>
           </div>
         </v-card>
       </v-flex>
@@ -44,9 +65,25 @@ export default {
   computed: {
     ...mapState(["isLogin", "isLoginError"])
   },
+  mounted() {
+    window.Kakao.Auth.setAccessToken(this.$route.params.accessToken);
+    window.Kakao.API.request({
+      url: "/mypage",
+      success(response) {
+        console.log(response);
+      },
+      fail(error) {
+        console.log(error);
+      }
+    });
+  },
   methods: {
-    ...mapActions(["signin", "signup"])
-
+    ...mapActions(["signin", "signup"]),
+    kakaoLogin() {
+      window.Kakao.Auth.authorize({
+        redirectUri: `${window.location.origin}/sociallogin`
+      });
+    }
     // test() {
     //   axios
     //     .get("http://localhost:3500/v1/userlist")

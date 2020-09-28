@@ -6,6 +6,8 @@ import com.cmslogin.backend.service.KakaoService;
 import com.cmslogin.backend.service.ResponseService;
 import com.cmslogin.backend.service.UserService;
 import com.cmslogin.backend.advice.exception.CEmailSigninFailedException;
+import com.cmslogin.backend.advice.exception.CUserExistException;
+import com.cmslogin.backend.advice.exception.CUserNotFoundException;
 import com.cmslogin.backend.config.security.JwtTokenProvider;
 import com.cmslogin.backend.config.security.PasswordEncoding;
 import com.cmslogin.backend.model.KakaoProfile;
@@ -97,15 +99,40 @@ public class SignController {
     // 결과데이터가 여러건인 경우 getListResult를 이용해서 결과를 출력
   }
 
-  @ApiOperation(value="소셜 로그인", notes = "소셜 회원 로그인을 한다.")
-  @PostMapping(value="/signin/{provider}")
+  @ApiOperation(value = "소셜 로그인", notes = "소셜 회원 로그인을 한다.")
+  @PostMapping(value = "/signin/{provider}")
   public SingleResult<String> signinByProvider(
-    @ApiParam(value="서비스 제공자 provider", required = true, defaultValue = "kakao") @PathVariable String provider,
-    @ApiParam(value="소셜 access_token", required = true) @RequestParam String accessToken){
-      KakaoProfile profile = kakaoService.getKakaoProfile(accessToken);
-      kakaoService.getKakaoProfile(accessToken);
-      User user = userService.getUserByUidAndProvider(String.valueOf(profile.getId()),provider).orElseThrow(CUserNotFoundException::new);
-      return responseService.getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getUid()), user.getAUTHORITY()));
+      @ApiParam(value = "서비스 제공자 provider", required = true, defaultValue = "kakao") @PathVariable String provider,
+      @ApiParam(value = "소셜 access_token", required = true) @RequestParam String accessToken) {
+    KakaoProfile profile = kakaoService.getKakaoProfile(accessToken);
+    kakaoService.getKakaoProfile(accessToken);
+    User user = new User();
+    try {
+      user = userService.getUserByUidAndProvider(String.valueOf(profile.getId()), provider);
+    } catch (CUserNotFoundException e) {
+      e.getMessage();
     }
-  )
+    // .orElseThrow(CUserNotFoundException::new);
+    return responseService
+        .getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getUid()), user.getAUTHORITY()));
+  }
+
+  @ApiOperation(value = "소셜 계정 가입", notes = "소셜 계정 회원가입을 한다.")
+  @PostMapping(value = "/signup/{provider}")
+  public CommonResult signupProvider(
+      @ApiParam(value = "서비스 제공자 provider", required = true, defaultValue = "kakao") @PathVariable String provider,
+      @ApiParam(value = "소셜 access_token", required = true) @RequestParam String accessToken,
+      @ApiParam(value = "이름", required = true) @RequestParam String name) {
+
+    KakaoProfile profile = kakaoService.getKakaoProfile(accessToken);
+    User user = userService.getUserByUidAndProvider(String.valueOf(profile.getId()), provider);
+    Optional<User> userException = Optional.ofNullable(user);
+    if (userException.isPresent())
+      throw new CUserExistException();
+
+    userService.addUser(user);
+
+    return responseService.getSuccessResult();
+  }
+
 }

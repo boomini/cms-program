@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.cmslogin.backend.advice.exception.CCommunicationException;
 import com.cmslogin.backend.advice.exception.CEmailSigninFailedException;
+import com.cmslogin.backend.advice.exception.CUserExistException;
 import com.cmslogin.backend.advice.exception.CUserNotFoundException;
 import com.cmslogin.backend.model.response.CommonResult;
 import com.cmslogin.backend.service.ResponseService;
@@ -58,6 +59,14 @@ public class ExceptionAdvice {
     return responseService.getFailResult(Integer.valueOf(getMessage("communicationError.code")),
         getMessage("communicationError.msg"));
   }
+
+  @ExceptionHandler(CUserExistException.class)
+  @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+  public CommonResult communicationException(HttpServletRequest request, CUserExistException e) {
+    return responseService.getFailResult(Integer.valueOf(getMessage("existingUser.code")),
+        getMessage("existingUser.msg"));
+  }
+
   // @ExceptionHandelr(Exception.class)
   // Exception이 발생하면 해당 Handler로 처리하겠다고 명시하는 annotation.
   // 괄호안에는 어던 exception이 발생할 때 handler를 적용할 것인지 Exception class를 인자로 넣습니다.

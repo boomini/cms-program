@@ -20,5 +20,7 @@ public interface UserMapper {
 
   User selectUserByUid(String uid);
 
+  void inserKakaoUser(User user);
+
   User selectUserByUidAndProvider(String uid, String provider);
 }

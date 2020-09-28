@@ -30,10 +30,10 @@ public class KakaoService {
   @Value("${spring.url.base}")
   private String baseUrl;
 
-  @Value("${social.kakao.client_id}")
+  @Value("${spring.social.kakao.client_id}")
   private String kakaoClientId;
 
-  @Value("${social.kakao.redirect}")
+  @Value("${spring.social.kakao.redirect}")
   private String kakaoRedirect;
 
   public KakaoProfile getKakaoProfile(String accessToken) {
@@ -46,8 +46,8 @@ public class KakaoService {
     HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(null, headers);
     try {
       // Request Profile
-      ResponseEntity<String> response = restTemplate.postForEntity(env.getProperty("social.kakao.url.profile"), request,
-          String.class);
+      ResponseEntity<String> response = restTemplate.postForEntity(env.getProperty("spring.social.kakao.url.profile"),
+          request, String.class);
       if (response.getStatusCode() == HttpStatus.OK)
         return gson.fromJson(response.getBody(), KakaoProfile.class);
     } catch (Exception e) {
@@ -56,7 +56,7 @@ public class KakaoService {
     throw new CCommunicationException();
   }
 
-  public RetKakaoAuth getKakaoTokenInfor(String code) {
+  public RetKakaoAuth getKakaoTokenInfo(String code) {
     // set header : content-type : application/x-www-form-urlencoded
     HttpHeaders headers = new HttpHeaders();
 
@@ -71,8 +71,8 @@ public class KakaoService {
 
     // set Http entity
     HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(params, headers);
-    ResponseEntity<String> response = restTemplate.postForEntity(env.getProperty("social.kakao.url.token"), request,
-        String.class);
+    ResponseEntity<String> response = restTemplate.postForEntity(env.getProperty("spring.social.kakao.url.token"),
+        request, String.class);
 
     if (response.getStatusCode() == HttpStatus.OK) {
       return gson.fromJson(response.getBody(), RetKakaoAuth.class);

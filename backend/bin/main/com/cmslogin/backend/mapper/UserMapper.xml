@@ -46,6 +46,11 @@
     VALUES (#{uid}, #{password}, #{name})
   </insert>
 
+  <insert id = "insertKakaoUser" useGeneratedKeys="true" keyProperty="msrl">
+    INSERT INTO USER (UID, NAME, PROVIDER)
+    VALUES (#{uid}, #{name}, #{provider})
+  </insert>
+
   <delete id = "deleteUser">
     DELETE FROM USER
       WHERE UID = #{uid}

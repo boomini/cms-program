@@ -11,6 +11,7 @@ export default new Vuex.Store({
         isLogin: false,
         isLoginError: false,
         adminCheck: false,
+        userAccessToken: null,
         userList: []
     },
     mutations: {

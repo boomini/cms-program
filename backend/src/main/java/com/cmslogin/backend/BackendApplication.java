@@ -45,6 +45,7 @@ public class BackendApplication implements CommandLineRunner {
   public RestTemplate getRestTemplate() {
     return new RestTemplate();
   }
+  // 카카오통신이 필요하므로 bean추가
 
   @Override
   public void run(final String... args) throws Exception {
