@@ -3266,3 +3266,566 @@ java.sql.SQLException: Duplicate entry '1489445126' for key 'PRIMARY'
 2020-10-05 14:34:50.015  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-resources/**'], []
 2020-10-05 14:34:50.015  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-ui.html'], []
 2020-10-05 14:34:50.016  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2020-10-05 14:34:50.016  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger/**'], []
+2020-10-05 14:34:50.031  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@632f6a77, org.springframework.security.web.context.SecurityContextPersistenceFilter@25841be, org.springframework.security.web.header.HeaderWriterFilter@6533c049, org.springframework.security.web.authentication.logout.LogoutFilter@d5009f5, com.cmslogin.backend.config.security.JwtAuthenticationFilter@56edeb6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@229d826a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59573ff8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66f36f02, org.springframework.security.web.session.SessionManagementFilter@173076c6, org.springframework.security.web.access.ExceptionTranslationFilter@794fe29, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@191f0f60]
+2020-10-05 14:34:50.062  INFO 19320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3500 (http) with context path ''
+2020-10-05 14:34:50.064  INFO 19320 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-05 14:34:50.065  INFO 19320 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-05 14:34:50.078  INFO 19320 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-05 14:34:50.144  INFO 19320 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUserUsingGET_1
+2020-10-05 14:34:50.156  INFO 19320 --- [restartedMain] com.cmslogin.backend.BackendApplication  : Started BackendApplication in 1.049 seconds (JVM running for 2000.928)
+2020-10-05 14:34:50.170  INFO 19320 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-05 14:37:29.366  INFO 19320 --- [http-nio-3500-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-05 14:37:29.368  INFO 19320 --- [http-nio-3500-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-05 14:37:29.371  INFO 19320 --- [http-nio-3500-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-10-05 14:37:29.390  WARN 19320 --- [http-nio-3500-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'accessToken' is not present]
+2020-10-05 14:37:41.269  WARN 19320 --- [http-nio-3500-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'accessToken' is not present]
+2020-10-05 14:38:41.469  INFO 19320 --- [http-nio-3500-exec-8] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/v1/signin/kakao?accessToken={this.accessToken}]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:491) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2020-10-05 14:39:16.921  WARN 19320 --- [http-nio-3500-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cmslogin.backend.advice.exception.CCommunicationException]
+2020-10-05 14:39:16.924  WARN 19320 --- [http-nio-3500-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cmslogin.backend.advice.exception.CCommunicationException]
+2020-10-05 14:39:33.215  WARN 19320 --- [http-nio-3500-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cmslogin.backend.advice.exception.CCommunicationException]
+2020-10-05 14:40:10.897  WARN 19320 --- [http-nio-3500-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cmslogin.backend.advice.exception.CCommunicationException]
+2020-10-05 14:40:15.856  WARN 19320 --- [http-nio-3500-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cmslogin.backend.advice.exception.CCommunicationException]
+2020-10-05 14:42:14.655  WARN 19320 --- [http-nio-3500-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cmslogin.backend.advice.exception.CCommunicationException]
+2020-10-05 14:42:24.529  WARN 19320 --- [http-nio-3500-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'accessToken' is not present]
+2020-10-05 14:42:31.222  WARN 19320 --- [http-nio-3500-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'accessToken' is not present]
+2020-10-05 14:43:58.874  INFO 19320 --- [Thread-38] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-05 14:43:58.879  INFO 19320 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2020-10-05 14:43:58.890  INFO 19320 --- [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2020-10-05 14:43:59.018  INFO 19320 --- [restartedMain] com.cmslogin.backend.BackendApplication  : Starting BackendApplication on DESKTOP-F43DUUU with PID 19320 (C:\Users\bomin\workspace\cms-login\backend\bin\main started by bomin in C:\Users\bomin\workspace\cms-login\backend)
+2020-10-05 14:43:59.025  INFO 19320 --- [restartedMain] com.cmslogin.backend.BackendApplication  : No active profile set, falling back to default profiles: default
+2020-10-05 14:43:59.371  INFO 19320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3500 (http)
+2020-10-05 14:43:59.372  INFO 19320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-05 14:43:59.373  INFO 19320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-05 14:43:59.398  INFO 19320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-05 14:43:59.398  INFO 19320 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 369 ms
+2020-10-05 14:43:59.486  INFO 19320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2020-10-05 14:43:59.489  INFO 19320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2020-10-05 14:43:59.594  INFO 19320 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-05 14:43:59.597  INFO 19320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-05 14:43:59.642  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/v2/api-docs'], []
+2020-10-05 14:43:59.643  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+2020-10-05 14:43:59.644  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+2020-10-05 14:43:59.644  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2020-10-05 14:43:59.644  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger/**'], []
+2020-10-05 14:43:59.657  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10159ab9, org.springframework.security.web.context.SecurityContextPersistenceFilter@74ff5465, org.springframework.security.web.header.HeaderWriterFilter@6b94d942, org.springframework.security.web.authentication.logout.LogoutFilter@190ede27, com.cmslogin.backend.config.security.JwtAuthenticationFilter@210d2695, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3355dfbb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e464e5a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d2d3e9a, org.springframework.security.web.session.SessionManagementFilter@75439619, org.springframework.security.web.access.ExceptionTranslationFilter@6e830b9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@230732f7]
+2020-10-05 14:43:59.685  INFO 19320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3500 (http) with context path ''
+2020-10-05 14:43:59.686  INFO 19320 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-05 14:43:59.687  INFO 19320 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-05 14:43:59.702  INFO 19320 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-05 14:43:59.770  INFO 19320 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUserUsingGET_1
+2020-10-05 14:43:59.780  INFO 19320 --- [restartedMain] com.cmslogin.backend.BackendApplication  : Started BackendApplication in 0.813 seconds (JVM running for 2550.551)
+2020-10-05 14:43:59.783  INFO 19320 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-05 14:44:10.993  INFO 19320 --- [http-nio-3500-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-05 14:44:10.994  INFO 19320 --- [http-nio-3500-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-05 14:44:10.997  INFO 19320 --- [http-nio-3500-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-10-05 14:44:11.070  WARN 19320 --- [http-nio-3500-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cmslogin.backend.advice.exception.CCommunicationException]
+2020-10-05 14:45:28.608  INFO 19320 --- [Thread-43] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-05 14:45:28.619  INFO 19320 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2020-10-05 14:45:28.717  INFO 19320 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2020-10-05 14:45:28.887  INFO 19320 --- [restartedMain] com.cmslogin.backend.BackendApplication  : Starting BackendApplication on DESKTOP-F43DUUU with PID 19320 (C:\Users\bomin\workspace\cms-login\backend\bin\main started by bomin in C:\Users\bomin\workspace\cms-login\backend)
+2020-10-05 14:45:28.888  INFO 19320 --- [restartedMain] com.cmslogin.backend.BackendApplication  : No active profile set, falling back to default profiles: default
+2020-10-05 14:45:29.235  INFO 19320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3500 (http)
+2020-10-05 14:45:29.236  INFO 19320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-05 14:45:29.236  INFO 19320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-05 14:45:29.255  INFO 19320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-05 14:45:29.256  INFO 19320 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 365 ms
+2020-10-05 14:45:29.354  INFO 19320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2020-10-05 14:45:29.357  INFO 19320 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2020-10-05 14:45:29.450  INFO 19320 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-05 14:45:29.451  INFO 19320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-05 14:45:29.487  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/v2/api-docs'], []
+2020-10-05 14:45:29.487  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+2020-10-05 14:45:29.488  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+2020-10-05 14:45:29.488  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2020-10-05 14:45:29.489  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger/**'], []
+2020-10-05 14:45:29.492  INFO 19320 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3171f111, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e53e8f9, org.springframework.security.web.header.HeaderWriterFilter@79c14f0b, org.springframework.security.web.authentication.logout.LogoutFilter@138bfb8, com.cmslogin.backend.config.security.JwtAuthenticationFilter@1197fe81, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e9c9f47, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2dd63a88, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e5dd454, org.springframework.security.web.session.SessionManagementFilter@2377d434, org.springframework.security.web.access.ExceptionTranslationFilter@609205b9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33d7f4a4]
+2020-10-05 14:45:29.529  INFO 19320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3500 (http) with context path ''
+2020-10-05 14:45:29.530  INFO 19320 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-05 14:45:29.531  INFO 19320 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-05 14:45:29.534  INFO 19320 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-05 14:45:29.586  INFO 19320 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUserUsingGET_1
+2020-10-05 14:45:29.598  INFO 19320 --- [restartedMain] com.cmslogin.backend.BackendApplication  : Started BackendApplication in 0.768 seconds (JVM running for 2640.37)
+2020-10-05 14:45:29.604  INFO 19320 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-10-05 14:45:34.247  INFO 19320 --- [http-nio-3500-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-05 14:45:34.250  INFO 19320 --- [http-nio-3500-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-05 14:45:34.252  INFO 19320 --- [http-nio-3500-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-10-05 14:45:34.352  WARN 19320 --- [http-nio-3500-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cmslogin.backend.advice.exception.CCommunicationException]
+2020-10-05 14:49:26.048 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 14:49:26.050 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 14:49:26.054 TRACE 19320 --- [http-nio-3500-exec-2] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 14:49:26.055 TRACE 19320 --- [http-nio-3500-exec-2] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 14:49:26.056 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 14:49:31.634  WARN 19320 --- [http-nio-3500-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.cmslogin.backend.model.response.SingleResult<java.lang.String> com.cmslogin.backend.controller.SignController.signinByProvider(java.lang.String)]
+2020-10-05 14:49:34.286 DEBUG 19320 --- [http-nio-3500-exec-4] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 14:49:34.287 DEBUG 19320 --- [http-nio-3500-exec-4] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 14:49:34.289 TRACE 19320 --- [http-nio-3500-exec-4] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 14:49:34.301 TRACE 19320 --- [http-nio-3500-exec-4] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 14:49:34.302 DEBUG 19320 --- [http-nio-3500-exec-4] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 14:52:48.682 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 14:52:48.683 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 14:52:48.684 DEBUG 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 14:52:48.684 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 14:52:48.689 DEBUG 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 14:52:48.689 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 14:52:48.690 TRACE 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 14:52:48.694 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 14:52:48.694 TRACE 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 14:52:48.695 DEBUG 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 14:52:53.404  WARN 19320 --- [http-nio-3500-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.cmslogin.backend.model.response.SingleResult<java.lang.String> com.cmslogin.backend.controller.SignController.signinByProvider(java.lang.String)]
+2020-10-05 14:52:57.257 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 14:52:57.258 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 14:52:57.259 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 14:52:57.269 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 14:52:57.270 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:19:39.722  WARN 19320 --- [http-nio-3500-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.cmslogin.backend.model.response.SingleResult<java.lang.String> com.cmslogin.backend.controller.SignController.signinByProvider(java.lang.String)]
+2020-10-05 15:19:43.606 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:19:43.607 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:19:43.612 TRACE 19320 --- [http-nio-3500-exec-3] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:19:43.622 TRACE 19320 --- [http-nio-3500-exec-3] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:19:43.623 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:27:20.668 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:27:20.681 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:27:20.707 TRACE 19320 --- [http-nio-3500-exec-5] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:27:20.712 TRACE 19320 --- [http-nio-3500-exec-5] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:27:20.712 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:27:20.713 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:27:20.713 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:27:20.737 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:27:20.755 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:27:20.757 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:27:20.760 DEBUG 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:27:20.761 DEBUG 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:27:20.764 TRACE 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:27:20.793 TRACE 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:27:20.794 DEBUG 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:27:20.811 DEBUG 19320 --- [http-nio-3500-exec-8] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:27:20.816 DEBUG 19320 --- [http-nio-3500-exec-8] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:27:20.821 TRACE 19320 --- [http-nio-3500-exec-8] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:27:20.823 TRACE 19320 --- [http-nio-3500-exec-8] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:27:20.824 DEBUG 19320 --- [http-nio-3500-exec-8] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:27:20.925 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:27:20.926 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:27:20.927 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:27:20.948 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:27:20.949 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:27:21.046 DEBUG 19320 --- [http-nio-3500-exec-10] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:27:21.050 DEBUG 19320 --- [http-nio-3500-exec-10] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:27:21.061 TRACE 19320 --- [http-nio-3500-exec-10] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:27:21.100 TRACE 19320 --- [http-nio-3500-exec-10] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:27:21.102 DEBUG 19320 --- [http-nio-3500-exec-10] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:27:21.164 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:27:21.166 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:27:21.172 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:27:21.173 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:27:21.174 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:27:21.260 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:27:21.261 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:27:21.263 TRACE 19320 --- [http-nio-3500-exec-2] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:27:21.283 TRACE 19320 --- [http-nio-3500-exec-2] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:27:21.286 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:27:21.321 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:27:21.324 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:27:21.327 TRACE 19320 --- [http-nio-3500-exec-3] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:27:21.349 TRACE 19320 --- [http-nio-3500-exec-3] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:27:21.350 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:40:39.728 DEBUG 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:40:39.729 DEBUG 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:40:39.730 TRACE 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:40:39.748 TRACE 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:40:39.750 DEBUG 19320 --- [http-nio-3500-exec-7] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:40:43.030 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:40:43.031 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: 1489445126(String)
+2020-10-05 15:40:43.032 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:40:43.052 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:40:43.053 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:40:43.059 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:40:43.060 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: 1489445126(String)
+2020-10-05 15:40:43.061 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:40:43.083 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:40:43.084 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:40:52.129 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:40:52.131 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: 1489445126(String)
+2020-10-05 15:40:52.148 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:40:52.150 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:40:52.151 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:40:52.170 ERROR 19320 --- [http-nio-3500-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: rawPassword cannot be null] with root cause
+
+java.lang.IllegalArgumentException: rawPassword cannot be null
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:103) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.cmslogin.backend.config.security.PasswordEncoding.encode(PasswordEncoding.java:19) ~[main/:na]
+	at com.cmslogin.backend.controller.UserController.modify(UserController.java:98) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.cmslogin.backend.config.security.JwtAuthenticationFilter.doFilter(JwtAuthenticationFilter.java:39) ~[main/:na]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2020-10-05 15:40:52.336 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:40:52.337 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: 1489445126(String)
+2020-10-05 15:40:52.337 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:40:52.340 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:40:52.346 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:40:56.146 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:40:56.148 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: 1489445126(String)
+2020-10-05 15:40:56.165 TRACE 19320 --- [http-nio-3500-exec-2] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:40:56.165 TRACE 19320 --- [http-nio-3500-exec-2] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:40:56.174 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:40:56.189 ERROR 19320 --- [http-nio-3500-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: rawPassword cannot be null] with root cause
+
+java.lang.IllegalArgumentException: rawPassword cannot be null
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:103) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.cmslogin.backend.config.security.PasswordEncoding.encode(PasswordEncoding.java:19) ~[main/:na]
+	at com.cmslogin.backend.controller.UserController.modify(UserController.java:98) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.cmslogin.backend.config.security.JwtAuthenticationFilter.doFilter(JwtAuthenticationFilter.java:39) ~[main/:na]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2020-10-05 15:40:56.359 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:40:56.360 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: 1489445126(String)
+2020-10-05 15:40:56.367 TRACE 19320 --- [http-nio-3500-exec-2] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:40:56.367 TRACE 19320 --- [http-nio-3500-exec-2] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:40:56.369 DEBUG 19320 --- [http-nio-3500-exec-2] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:40:58.244 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:40:58.246 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: 1489445126(String)
+2020-10-05 15:40:58.264 TRACE 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:40:58.265 TRACE 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:40:58.266 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:40:58.270 ERROR 19320 --- [http-nio-3500-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: rawPassword cannot be null] with root cause
+
+java.lang.IllegalArgumentException: rawPassword cannot be null
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:103) ~[spring-security-core-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.cmslogin.backend.config.security.PasswordEncoding.encode(PasswordEncoding.java:19) ~[main/:na]
+	at com.cmslogin.backend.controller.UserController.modify(UserController.java:98) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.cmslogin.backend.config.security.JwtAuthenticationFilter.doFilter(JwtAuthenticationFilter.java:39) ~[main/:na]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2020-10-05 15:40:58.444 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:40:58.444 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: 1489445126(String)
+2020-10-05 15:40:58.445 TRACE 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:40:58.453 TRACE 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:40:58.454 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:41:22.517 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:41:22.518 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:41:22.519 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED, PROVIDER
+2020-10-05 15:41:22.529 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1, kakao
+2020-10-05 15:41:22.530 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 1
+2020-10-05 15:41:25.558 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:41:25.560 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: 1489445126(String)
+2020-10-05 15:41:25.577 TRACE 19320 --- [http-nio-3500-exec-5] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:41:25.578 TRACE 19320 --- [http-nio-3500-exec-5] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:41:25.579 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:41:25.582 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:41:25.583 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: 1489445126(String)
+2020-10-05 15:41:25.584 TRACE 19320 --- [http-nio-3500-exec-5] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:41:25.587 TRACE 19320 --- [http-nio-3500-exec-5] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:41:25.588 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:43:17.356 DEBUG 19320 --- [http-nio-3500-exec-8] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:43:17.358 DEBUG 19320 --- [http-nio-3500-exec-8] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: kimbomin(String)
+2020-10-05 15:43:17.378 TRACE 19320 --- [http-nio-3500-exec-8] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:43:17.379 TRACE 19320 --- [http-nio-3500-exec-8] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: kimbomin, $2a$10$WbedcXWA7IM44j.d8XSdvuQebE1aA/UPsH.L4DSIInhujQ8TJXe8q, kimbomin, ROLE_ADMIN, 1
+2020-10-05 15:43:17.380 DEBUG 19320 --- [http-nio-3500-exec-8] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:43:18.715 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:43:18.716 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: kimbomin(String)
+2020-10-05 15:43:18.718 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:43:18.734 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: kimbomin, $2a$10$WbedcXWA7IM44j.d8XSdvuQebE1aA/UPsH.L4DSIInhujQ8TJXe8q, kimbomin, ROLE_ADMIN, 1
+2020-10-05 15:43:18.736 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:43:18.741 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:43:18.743 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: kimbomin(String)
+2020-10-05 15:43:18.744 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:43:18.747 TRACE 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: kimbomin, $2a$10$WbedcXWA7IM44j.d8XSdvuQebE1aA/UPsH.L4DSIInhujQ8TJXe8q, kimbomin, ROLE_ADMIN, 1
+2020-10-05 15:43:18.748 DEBUG 19320 --- [http-nio-3500-exec-9] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:43:21.049 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:43:21.051 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: kimbomin(String)
+2020-10-05 15:43:21.072 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:43:21.073 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: kimbomin, $2a$10$WbedcXWA7IM44j.d8XSdvuQebE1aA/UPsH.L4DSIInhujQ8TJXe8q, kimbomin, ROLE_ADMIN, 1
+2020-10-05 15:43:21.081 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:43:21.084 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectAllUser    : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER 
+2020-10-05 15:43:21.087 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectAllUser    : ==> Parameters: 
+2020-10-05 15:43:21.100 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectAllUser    : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:43:21.116 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectAllUser    : <==        Row: 1489445126, null, ㅎㅎ, ROLE_USER, 1
+2020-10-05 15:43:21.117 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectAllUser    : <==        Row: fffffff, $2a$10$gY1Fw854Pcpdk7OYh/v4WeLZweassN6Uf9FhDaAKNZt79dvf43R42, ffffffffffff, ROLE_USER, 1
+2020-10-05 15:43:21.119 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectAllUser    : <==        Row: hoza@gmail.com, $2a$10$kML91AS/rN3XmGHcNgGfQej05d916Ig.VRtpUyQJ3VxXw7QtiBYwe, 호자, ROLE_USER, 1
+2020-10-05 15:43:21.135 TRACE 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectAllUser    : <==        Row: kimbomin, $2a$10$WbedcXWA7IM44j.d8XSdvuQebE1aA/UPsH.L4DSIInhujQ8TJXe8q, kimbomin, ROLE_ADMIN, 1
+2020-10-05 15:43:21.151 DEBUG 19320 --- [http-nio-3500-exec-1] c.c.b.mapper.UserMapper.selectAllUser    : <==      Total: 4
+2020-10-05 15:43:22.453 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:43:22.455 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: kimbomin(String)
+2020-10-05 15:43:22.475 TRACE 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:43:22.476 TRACE 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: kimbomin, $2a$10$WbedcXWA7IM44j.d8XSdvuQebE1aA/UPsH.L4DSIInhujQ8TJXe8q, kimbomin, ROLE_ADMIN, 1
+2020-10-05 15:43:22.478 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:43:22.482 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.deleteUser       : ==>  Preparing: DELETE FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:43:22.483 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.deleteUser       : ==> Parameters: 1489445126(String)
+2020-10-05 15:43:22.484 DEBUG 19320 --- [http-nio-3500-exec-3] c.c.b.mapper.UserMapper.deleteUser       : <==    Updates: 1
+2020-10-05 15:43:23.653 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectUserByUid  : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER WHERE UID = ? /*uid*/ 
+2020-10-05 15:43:23.655 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectUserByUid  : ==> Parameters: kimbomin(String)
+2020-10-05 15:43:23.680 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectUserByUid  : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:43:23.681 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectUserByUid  : <==        Row: kimbomin, $2a$10$WbedcXWA7IM44j.d8XSdvuQebE1aA/UPsH.L4DSIInhujQ8TJXe8q, kimbomin, ROLE_ADMIN, 1
+2020-10-05 15:43:23.683 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectUserByUid  : <==      Total: 1
+2020-10-05 15:43:23.686 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectAllUser    : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED FROM USER 
+2020-10-05 15:43:23.689 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectAllUser    : ==> Parameters: 
+2020-10-05 15:43:23.696 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectAllUser    : <==    Columns: UID, PASSWORD, NAME, AUTHORITY, ENABLED
+2020-10-05 15:43:23.708 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectAllUser    : <==        Row: fffffff, $2a$10$gY1Fw854Pcpdk7OYh/v4WeLZweassN6Uf9FhDaAKNZt79dvf43R42, ffffffffffff, ROLE_USER, 1
+2020-10-05 15:43:23.715 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectAllUser    : <==        Row: hoza@gmail.com, $2a$10$kML91AS/rN3XmGHcNgGfQej05d916Ig.VRtpUyQJ3VxXw7QtiBYwe, 호자, ROLE_USER, 1
+2020-10-05 15:43:23.719 TRACE 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectAllUser    : <==        Row: kimbomin, $2a$10$WbedcXWA7IM44j.d8XSdvuQebE1aA/UPsH.L4DSIInhujQ8TJXe8q, kimbomin, ROLE_ADMIN, 1
+2020-10-05 15:43:23.741 DEBUG 19320 --- [http-nio-3500-exec-6] c.c.b.mapper.UserMapper.selectAllUser    : <==      Total: 3
+2020-10-05 15:43:31.184 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:43:31.185 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:43:31.186 DEBUG 19320 --- [http-nio-3500-exec-5] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 0
+2020-10-05 15:43:31.191  WARN 19320 --- [http-nio-3500-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cmslogin.backend.advice.exception.CUserNotFoundException]
+2020-10-05 15:46:34.107 DEBUG 19320 --- [http-nio-3500-exec-4] c.c.b.m.U.selectUserByUidAndProvider     : ==>  Preparing: SELECT UID ,PASSWORD ,NAME ,AUTHORITY ,ENABLED ,PROVIDER FROM USER WHERE UID = ? /*uid*/ AND PROVIDER = ? /*provider*/ 
+2020-10-05 15:46:34.109 DEBUG 19320 --- [http-nio-3500-exec-4] c.c.b.m.U.selectUserByUidAndProvider     : ==> Parameters: 1489445126(String), kakao(String)
+2020-10-05 15:46:34.110 DEBUG 19320 --- [http-nio-3500-exec-4] c.c.b.m.U.selectUserByUidAndProvider     : <==      Total: 0
+2020-10-05 15:46:34.114  WARN 19320 --- [http-nio-3500-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cmslogin.backend.advice.exception.CUserNotFoundException]

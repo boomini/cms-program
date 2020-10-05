@@ -102,7 +102,8 @@ public class SignController {
   @ApiOperation(value = "소셜 로그인", notes = "소셜 회원 로그인을 한다.")
   @PostMapping(value = "/signin/kakao")
   public SingleResult<String> signinByProvider(
-      @ApiParam(value = "소셜 access_token", required = true) @RequestParam String accessToken) {
+      @ApiParam(value = "소셜 access_token", required = true) @RequestBody String accessToken) {
+    System.out.println("token check : " + accessToken);
     KakaoProfile profile = kakaoService.getKakaoProfile(accessToken);
     kakaoService.getKakaoProfile(accessToken);
     User user = new User();

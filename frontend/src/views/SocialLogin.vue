@@ -4,7 +4,11 @@
 
 <script>
 import axios from "axios";
+import { mapActions } from "vuex";
 export default {
+  methods: {
+    ...mapActions(["kakaosignin"])
+  },
   mounted() {
     console.log(this.$route.query.code);
     const qs = require("qs");
@@ -25,12 +29,13 @@ export default {
         console.log(res);
         accessToken = res.data.access_token;
         console.log(accessToken);
-        this.$router.push({
-          name: "signin",
-          params: {
-            accessToken
-          }
-        });
+        this.kakaosignin(accessToken);
+        // this.$router.push({
+        //   name: "signin",
+        //   params: {
+        //     accessToken
+        //   }
+        // });
       });
   }
 };
