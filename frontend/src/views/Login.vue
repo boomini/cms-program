@@ -54,19 +54,44 @@
 
 <script>
 import { mapState, mapActions } from "vuex";
-
+import axios from "axios";
 export default {
   data() {
     return {
       uid: null,
-      password: null
+      password: null,
+      accessToken: null
     };
   },
   computed: {
     ...mapState(["isLogin", "isLoginError"])
   },
   mounted() {
-    window.Kakao.Auth.setAccessToken(this.$route.params.accessToken);
+    this.accessToken = this.$route.params.accessToken;
+    //window.Kakao.Auth.setAccessToken(this.$route.params.accessToken);
+    axios
+      .post(
+        "http://localhost:3500/v1/signin/kakao",
+        { accessToken: this.accessToken },
+        {
+          headers: { "x-accept-type": "operator" }
+        }
+      )
+      //post방식에는 두번째 인자로 파라미터가 오고
+      .then(res => {
+        //성공시 token(실제로는 token과 함께 user_id값을 받아올 것이다.)
+        //토큰을 헤더에 포함시켜서 유저 정보를 요청
+        console.log(res);
+        // let token = res.data.data
+        //     //토큰을 로컬스토리지에 저장
+        // localStorage.setItem("x-auth-token", token)
+        // dispatch("getMemberInfo")
+        // alert("로그인이 완료되었습니다..")
+      })
+      .catch(err => {
+        // alert('이메일과 비밀번호를 확인하세요')
+        console.log(err);
+      });
     window.Kakao.API.request({
       url: "/mypage",
       success(response) {

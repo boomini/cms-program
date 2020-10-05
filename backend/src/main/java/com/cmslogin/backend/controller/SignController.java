@@ -100,18 +100,16 @@ public class SignController {
   }
 
   @ApiOperation(value = "소셜 로그인", notes = "소셜 회원 로그인을 한다.")
-  @PostMapping(value = "/signin/{provider}")
+  @PostMapping(value = "/signin/kakao")
   public SingleResult<String> signinByProvider(
-      @ApiParam(value = "서비스 제공자 provider", required = true, defaultValue = "kakao") @PathVariable String provider,
       @ApiParam(value = "소셜 access_token", required = true) @RequestParam String accessToken) {
     KakaoProfile profile = kakaoService.getKakaoProfile(accessToken);
     kakaoService.getKakaoProfile(accessToken);
     User user = new User();
-    try {
-      user = userService.getUserByUidAndProvider(String.valueOf(profile.getId()), provider);
-    } catch (CUserNotFoundException e) {
-      e.getMessage();
-    }
+    user = userService.getUserByUidAndProvider(String.valueOf(profile.getId()), "kakao");
+    if (user == null)
+      throw new CUserNotFoundException();
+
     // .orElseThrow(CUserNotFoundException::new);
     return responseService
         .getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getUid()), user.getAUTHORITY()));
@@ -126,11 +124,17 @@ public class SignController {
 
     KakaoProfile profile = kakaoService.getKakaoProfile(accessToken);
     User user = userService.getUserByUidAndProvider(String.valueOf(profile.getId()), provider);
+
     Optional<User> userException = Optional.ofNullable(user);
     if (userException.isPresent())
       throw new CUserExistException();
-
-    userService.addUser(user);
+    user = new User();
+    user.setUid(String.valueOf(profile.getId()));
+    user.setName(name);
+    user.setProvider(provider);
+    ;
+    System.out.println("user정보" + user);
+    userService.addSocialUser(user);
 
     return responseService.getSuccessResult();
   }

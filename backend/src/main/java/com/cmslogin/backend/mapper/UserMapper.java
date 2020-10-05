@@ -5,6 +5,7 @@ import java.util.List;
 import com.cmslogin.backend.model.User;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface UserMapper {
@@ -22,5 +23,5 @@ public interface UserMapper {
 
   void inserKakaoUser(User user);
 
-  User selectUserByUidAndProvider(String uid, String provider);
+  User selectUserByUidAndProvider(@Param("uid") String uid, @Param("provider") String provider);
 }

@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   mounted() {
     console.log(this.$route.query.code);
@@ -11,16 +12,19 @@ export default {
     const parameter = {
       grant_type: "authorization_code",
       client_id: "9711a4064e369abb0bab51007aa18a4b",
+      redirect_uri: `${window.location.origin}/sociallogin`,
       code: this.$route.query.code
     };
-    this.$axios
+    axios
       .post("https://kauth.kakao.com/oauth/token", qs.stringify(parameter), {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded;charset=utf-8"
         }
       })
       .then(res => {
+        console.log(res);
         accessToken = res.data.access_token;
+        console.log(accessToken);
         this.$router.push({
           name: "signin",
           params: {
