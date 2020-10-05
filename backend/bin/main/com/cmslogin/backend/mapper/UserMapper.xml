@@ -22,6 +22,16 @@
       WHERE UID = #{uid}
   </select>
 
+  <select id="selectUserByUidAndProvider" resultType="user" parameterType="map">
+    SELECT UID
+          ,PASSWORD
+          ,NAME
+          ,AUTHORITY
+          ,ENABLED
+          ,PROVIDER
+        FROM USER
+      WHERE UID = #{uid} AND PROVIDER = #{provider}
+  </select>
   <select id="selectAllUser" resultType="user">
     SELECT UID
           ,PASSWORD
@@ -34,6 +44,11 @@
   <insert id = "insertUser" useGeneratedKeys="true" keyProperty="msrl">
     INSERT INTO USER (UID, PASSWORD, NAME)
     VALUES (#{uid}, #{password}, #{name})
+  </insert>
+
+  <insert id = "inserKakaoUser" useGeneratedKeys="true" keyProperty="msrl">
+    INSERT INTO USER (UID, NAME, PROVIDER)
+    VALUES (#{uid}, #{name}, #{provider})
   </insert>
 
   <delete id = "deleteUser">

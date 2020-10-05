@@ -12,6 +12,7 @@ export default new Vuex.Store({
         isLogin: false,
         isLoginError: false,
         adminCheck: false,
+        userAccessoken: null,
         userList: []
     },
     mutations: {
@@ -78,8 +79,28 @@ export default new Vuex.Store({
         //     console.log(err);
         // });
         ,
+        kakaosignin({ dispatch }, param) {
+            axios
+                .post("http://localhost:3500/v1/signin/kakao", param, {
+                    headers: { "x-accept-type": "operator" }
+                })
+                //post방식에는 두번째 인자로 파라미터가 오고
+                .then(res => {
+                    //성공시 token(실제로는 token과 함께 user_id값을 받아올 것이다.)
+                    //토큰을 헤더에 포함시켜서 유저 정보를 요청
+                    console.log(res);
+                    let token = res.data.data;
+                    //토큰을 로컬스토리지에 저장
+                    localStorage.setItem("x-auth-token", token);
+                    dispatch("getMemberInfo")
+                    alert("로그인이 완료되었습니다..");
+                })
+                .catch(err => {
+                    // alert('이메일과 비밀번호를 확인하세요')
+                    console.log("error" + err);
+                });
 
-
+        },
 
         //로그아웃시
         logout({ commit }) {

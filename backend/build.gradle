@@ -33,8 +33,10 @@ dependencies {
   //swagger
   implementation 'io.springfox:springfox-swagger2:2.6.1'
   implementation 'io.springfox:springfox-swagger-ui:2.6.1'
-
-
+  
+  //freemarker
+  implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+  
   //springsecurity
   implementation 'org.springframework.boot:spring-boot-starter-security'
 
@@ -44,6 +46,9 @@ dependencies {
 
   //메시지파일 저장을 위한 yml라이브러리
   implementation 'net.rakugakibox.util:yaml-resource-bundle:1.1'
+
+  //카카오 연동 시 결과 Json을 객체로 맵핑하기 위해 Gson라이브러리를 사용.
+  implementation 'com.google.code.gson:gson'
 
   implementation 'javax.xml.bind:jaxb-api:2.3.0'
   implementation 'javax.activation:activation:1.1'

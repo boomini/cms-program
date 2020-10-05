@@ -33,7 +33,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         // jwt token으로 인증하므로 세션은 필요없으므로 생성안함
         .and().authorizeRequests()
         // 다음리퀘스트에 대한 사용권한체크
-        .antMatchers("/*/signin", "/*/signup", "/*/userlist").permitAll()
+        .antMatchers("/*/signin", "/*/signin/**", "/*/signup", "/*/signup/**", "/*/userlist", "/social/**").permitAll()
         // 가입 및 인증 주소는 누구나 접근 가능
         .antMatchers(HttpMethod.OPTIONS).permitAll().antMatchers(HttpMethod.GET, "helloworld/**", "/exception/**")
         .permitAll()

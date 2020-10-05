@@ -5,6 +5,7 @@ import java.util.List;
 import com.cmslogin.backend.model.User;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface UserMapper {
@@ -19,4 +20,8 @@ public interface UserMapper {
   void deleteUser(String uid);
 
   User selectUserByUid(String uid);
+
+  void inserKakaoUser(User user);
+
+  User selectUserByUidAndProvider(@Param("uid") String uid, @Param("provider") String provider);
 }

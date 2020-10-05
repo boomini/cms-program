@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.client.RestTemplate;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -39,6 +40,12 @@ public class BackendApplication implements CommandLineRunner {
   public PasswordEncoder passwordEncoder() {
     return PasswordEncoderFactories.createDelegatingPasswordEncoder();
   }
+
+  @Bean
+  public RestTemplate getRestTemplate() {
+    return new RestTemplate();
+  }
+  // 카카오통신이 필요하므로 bean추가
 
   @Override
   public void run(final String... args) throws Exception {

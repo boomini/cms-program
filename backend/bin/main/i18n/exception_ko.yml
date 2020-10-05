@@ -17,3 +17,9 @@ accessDenied:
 sighUpFailed:
   code: "-10000"
   msg: "해당 이메일 계정이 존재합니다."
+communicationError:
+  code: "-1004"
+  msg: "통신 중 오류가 발생하였습니다."
+existingUser:
+  code: "-1005"
+  msg: "이미 가입한 회원입니다."

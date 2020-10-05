@@ -27,6 +27,10 @@ public class UserService {
     return userMapper.selectUserByUid(uid);
   }
 
+  public User getUserByUidAndProvider(String uid, String provider) {
+    return userMapper.selectUserByUidAndProvider(uid, provider);
+  }
+
   public List<User> getAllUser() {
     return userMapper.selectAllUser();
   }
@@ -38,6 +42,10 @@ public class UserService {
   @Options(useGeneratedKeys = true, keyProperty = "msrl")
   public void addUser(User user) {
     userMapper.insertUser(user);
+  }
+
+  public void addSocialUser(User user) {
+    userMapper.inserKakaoUser(user);
   }
 
   public void deleteUser(String uid) {

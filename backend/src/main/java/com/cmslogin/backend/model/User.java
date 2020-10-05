@@ -30,6 +30,7 @@ public class User implements UserDetails {
   private String name;
   // private List<String> AUTHORITY = new ArrayList<>();
   private String AUTHORITY;
+  private String provider;
 
   public User(String uid, String name) {
     this.uid = uid;
