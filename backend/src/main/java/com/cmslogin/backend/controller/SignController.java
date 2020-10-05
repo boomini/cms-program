@@ -12,6 +12,7 @@ import com.cmslogin.backend.advice.exception.CUserNotFoundException;
 import com.cmslogin.backend.config.security.JwtTokenProvider;
 import com.cmslogin.backend.config.security.PasswordEncoding;
 import com.cmslogin.backend.model.KakaoProfile;
+import com.cmslogin.backend.model.KakaoUser;
 import com.cmslogin.backend.model.User;
 import com.cmslogin.backend.model.response.CommonResult;
 import com.cmslogin.backend.model.response.ListResult;
@@ -89,7 +90,6 @@ public class SignController {
 
     User user = new User(model.getUid(), passwordEncoding.encode(model.getPassword()), model.getName());
     if (userService.getUserByUid(user.getUid()) != null) {
-      System.out.println("왜안되는고야");
       throw new CUserSignupFailedException();
     }
 
@@ -123,22 +123,19 @@ public class SignController {
   }
 
   @ApiOperation(value = "소셜 계정 가입", notes = "소셜 계정 회원가입을 한다.")
-  @PostMapping(value = "/signup/{provider}")
-  public CommonResult signupProvider(
-      @ApiParam(value = "서비스 제공자 provider", required = true, defaultValue = "kakao") @PathVariable String provider,
-      @ApiParam(value = "소셜 access_token", required = true) @RequestParam String accessToken,
-      @ApiParam(value = "이름", required = true) @RequestParam String name) {
-
-    KakaoProfile profile = kakaoService.getKakaoProfile(accessToken);
-    User user = userService.getUserByUidAndProvider(String.valueOf(profile.getId()), provider);
-
-    Optional<User> userException = Optional.ofNullable(user);
-    if (userException.isPresent())
+  @PostMapping(value = "/signup/kakao")
+  public CommonResult signupProvider(@RequestBody KakaoUser authuser) {
+    KakaoProfile profile = kakaoService.getKakaoProfile(authuser.getToken());
+    if (userService.getUserByUidAndProvider(String.valueOf(profile.getId()), "kakao") != null) {
       throw new CUserExistException();
-    user = new User();
+    }
+    ;
+
+    User user = new User();
     user.setUid(String.valueOf(profile.getId()));
-    user.setName(name);
-    user.setProvider(provider);
+    user.setName(authuser.getName());
+    user.setPassword(authuser.getPassword());
+    user.setProvider("kakao");
     ;
     System.out.println("user정보" + user);
     userService.addSocialUser(user);
