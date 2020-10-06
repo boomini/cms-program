@@ -66,7 +66,7 @@ export default {
     let accessToken = null;
     const parameter = {
       grant_type: "authorization_code",
-      client_id: "9711a4064e369abb0bab51007aa18a4b",
+      client_id: "#####",
       // redirect_uri: `${window.location.origin}/sociallogin`,
       code: this.$route.query.code
     };

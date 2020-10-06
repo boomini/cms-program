@@ -2925,3 +2925,1325 @@ Unconditional classes:
 [2020-10-06 11:07:29:915] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
 [2020-10-06 11:07:59:917] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 [2020-10-06 11:07:59:919] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-10-06 11:08:29:921] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:08:29:923] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-10-06 11:08:59:926] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:08:59:926] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-10-06 11:09:29:929] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:09:29:929] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-10-06 11:09:59:931] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:09:59:932] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-10-06 11:10:29:933] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:10:29:935] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-10-06 11:10:59:937] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:10:59:937] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-10-06 11:11:29:940] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:11:29:940] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-10-06 11:11:59:942] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:11:59:942] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-10-06 11:12:29:944] DEBUG - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:12:29:945] DEBUG - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[2020-10-06 11:12:47:582] DEBUG - Restarting application
+[2020-10-06 11:12:47:584] DEBUG - Stopping application
+[2020-10-06 11:12:47:585] DEBUG - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17f15384, started on Tue Oct 06 10:18:53 KST 2020
+[2020-10-06 11:12:47:594] DEBUG - Stopping beans in phase 2147483647
+[2020-10-06 11:12:47:605] DEBUG - Bean 'documentationPluginsBootstrapper' completed its stop procedure
+[2020-10-06 11:12:47:607] DEBUG - Bean 'webServerGracefulShutdown' completed its stop procedure
+[2020-10-06 11:12:47:607] DEBUG - Stopping beans in phase 2147483646
+[2020-10-06 11:12:47:645] DEBUG - Bean 'webServerStartStop' completed its stop procedure
+[2020-10-06 11:12:47:656] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+[2020-10-06 11:12:47:662] INFO - HikariPool-1 - Shutdown initiated...
+[2020-10-06 11:12:47:671] DEBUG - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:12:47:674] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@44a8b8a9: (connection evicted)
+[2020-10-06 11:12:47:675] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@65ac492a: (connection evicted)
+[2020-10-06 11:12:47:676] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@6b6babef: (connection evicted)
+[2020-10-06 11:12:47:678] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@6f54225a: (connection evicted)
+[2020-10-06 11:12:47:678] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@2a56a1d4: (connection evicted)
+[2020-10-06 11:12:47:686] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@45878649: (connection evicted)
+[2020-10-06 11:12:47:687] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@1a5eb8c9: (connection evicted)
+[2020-10-06 11:12:47:688] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@4db45bfa: (connection evicted)
+[2020-10-06 11:12:47:689] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@4373bc3c: (connection evicted)
+[2020-10-06 11:12:47:689] DEBUG - HikariPool-1 - Closing connection org.mariadb.jdbc.MariaDbConnection@56769a5c: (connection evicted)
+[2020-10-06 11:12:47:690] DEBUG - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[2020-10-06 11:12:47:690] INFO - HikariPool-1 - Shutdown completed.
+[2020-10-06 11:12:47:729] DEBUG - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4e6eabbf
+[2020-10-06 11:12:47:734] DEBUG - Starting application com.cmslogin.backend.BackendApplication with URLs [file:/C:/Users/bomin/workspace/cms-login/backend/bin/main/]
+[2020-10-06 11:12:47:823] DEBUG - Application started with classpath: [file:/C:/Users/bomin/workspace/cms-login/backend/bin/main/]
+[2020-10-06 11:12:47:839] INFO - Starting BackendApplication on DESKTOP-F43DUUU with PID 5508 (C:\Users\bomin\workspace\cms-login\backend\bin\main started by bomin in C:\Users\bomin\workspace\cms-login\backend)
+[2020-10-06 11:12:47:840] DEBUG - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[2020-10-06 11:12:47:840] INFO - No active profile set, falling back to default profiles: default
+[2020-10-06 11:12:47:841] DEBUG - Loading source class com.cmslogin.backend.BackendApplication
+[2020-10-06 11:12:47:847] DEBUG - Loaded config file 'file:/C:/Users/bomin/workspace/cms-login/backend/bin/main/application.properties' (classpath:/application.properties)
+[2020-10-06 11:12:47:853] DEBUG - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba
+[2020-10-06 11:12:47:855] DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[2020-10-06 11:12:47:857] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+[2020-10-06 11:12:47:872] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\advice\ExceptionAdvice.class]
+[2020-10-06 11:12:47:877] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\MessageConfiguration.class]
+[2020-10-06 11:12:47:878] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\SwaggerConfiguration.class]
+[2020-10-06 11:12:47:887] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\WebConfig.class]
+[2020-10-06 11:12:47:890] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\security\CustomAccessDeniedHandler.class]
+[2020-10-06 11:12:47:893] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\security\JwtTokenProvider.class]
+[2020-10-06 11:12:47:897] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\security\SecurityConfiguration.class]
+[2020-10-06 11:12:47:910] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\controller\SignController.class]
+[2020-10-06 11:12:47:914] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\controller\UserController.class]
+[2020-10-06 11:12:47:920] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\controller\common\SocialController.class]
+[2020-10-06 11:12:47:923] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\controller\exception\ExceptionController.class]
+[2020-10-06 11:12:47:926] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\logging\LoggingRequestAdapter.class]
+[2020-10-06 11:12:47:928] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\logging\LoggingRequestFilter.class]
+[2020-10-06 11:12:47:938] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\logging\LoggingResponseAdapter.class]
+[2020-10-06 11:12:47:945] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\service\CustomUserDetailService.class]
+[2020-10-06 11:12:47:946] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\service\KakaoService.class]
+[2020-10-06 11:12:47:955] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\service\ResponseService.class]
+[2020-10-06 11:12:47:958] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\service\UserService.class]
+[2020-10-06 11:12:47:972] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger2/2.6.1/73c3a70ec0b10b61c8eb9ef1659131cd78dbbd82/springfox-swagger2-2.6.1.jar!/springfox/documentation/swagger2/web/Swagger2Controller.class]
+[2020-10-06 11:12:47:976] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger2/2.6.1/73c3a70ec0b10b61c8eb9ef1659131cd78dbbd82/springfox-swagger2-2.6.1.jar!/springfox/documentation/swagger2/mappers/LicenseMapperImpl.class]
+[2020-10-06 11:12:47:979] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger2/2.6.1/73c3a70ec0b10b61c8eb9ef1659131cd78dbbd82/springfox-swagger2-2.6.1.jar!/springfox/documentation/swagger2/mappers/ModelMapperImpl.class]
+[2020-10-06 11:12:47:992] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger2/2.6.1/73c3a70ec0b10b61c8eb9ef1659131cd78dbbd82/springfox-swagger2-2.6.1.jar!/springfox/documentation/swagger2/mappers/ParameterMapperImpl.class]
+[2020-10-06 11:12:47:999] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger2/2.6.1/73c3a70ec0b10b61c8eb9ef1659131cd78dbbd82/springfox-swagger2-2.6.1.jar!/springfox/documentation/swagger2/mappers/SecurityMapperImpl.class]
+[2020-10-06 11:12:48:006] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger2/2.6.1/73c3a70ec0b10b61c8eb9ef1659131cd78dbbd82/springfox-swagger2-2.6.1.jar!/springfox/documentation/swagger2/mappers/ServiceModelToSwagger2MapperImpl.class]
+[2020-10-06 11:12:48:009] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger2/2.6.1/73c3a70ec0b10b61c8eb9ef1659131cd78dbbd82/springfox-swagger2-2.6.1.jar!/springfox/documentation/swagger2/mappers/VendorExtensionsMapperImpl.class]
+[2020-10-06 11:12:48:018] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionLookup.class]
+[2020-10-06 11:12:48:022] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/scanners/ApiDescriptionReader.class]
+[2020-10-06 11:12:48:024] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/scanners/ApiDocumentationScanner.class]
+[2020-10-06 11:12:48:027] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/scanners/ApiListingReader.class]
+[2020-10-06 11:12:48:030] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/scanners/ApiListingReferenceScanner.class]
+[2020-10-06 11:12:48:038] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/scanners/ApiListingScanner.class]
+[2020-10-06 11:12:48:041] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/scanners/ApiModelReader.class]
+[2020-10-06 11:12:48:043] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/scanners/CachingOperationReader.class]
+[2020-10-06 11:12:48:046] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/scanners/MediaTypeReader.class]
+[2020-10-06 11:12:48:055] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/ApiOperationReader.class]
+[2020-10-06 11:12:48:058] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/CachingOperationNameGenerator.class]
+[2020-10-06 11:12:48:061] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/DefaultOperationReader.class]
+[2020-10-06 11:12:48:063] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/DefaultTagsProvider.class]
+[2020-10-06 11:12:48:073] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/OperationDeprecatedReader.class]
+[2020-10-06 11:12:48:075] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/OperationModelsProvider.class]
+[2020-10-06 11:12:48:078] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterHeadersConditionReader.class]
+[2020-10-06 11:12:48:089] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterReader.class]
+[2020-10-06 11:12:48:091] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/OperationParameterRequestConditionReader.class]
+[2020-10-06 11:12:48:094] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/OperationResponseClassReader.class]
+[2020-10-06 11:12:48:095] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/OperationTagsReader.class]
+[2020-10-06 11:12:48:105] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/operation/ResponseMessagesReader.class]
+[2020-10-06 11:12:48:108] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/parameter/ExpandedParameterBuilder.class]
+[2020-10-06 11:12:48:112] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/parameter/ModelAttributeParameterExpander.class]
+[2020-10-06 11:12:48:121] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDataTypeReader.class]
+[2020-10-06 11:12:48:124] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/parameter/ParameterDefaultReader.class]
+[2020-10-06 11:12:48:125] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/parameter/ParameterMultiplesReader.class]
+[2020-10-06 11:12:48:129] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/parameter/ParameterNameReader.class]
+[2020-10-06 11:12:48:137] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/parameter/ParameterRequiredReader.class]
+[2020-10-06 11:12:48:140] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/readers/parameter/ParameterTypeReader.class]
+[2020-10-06 11:12:48:144] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]
+[2020-10-06 11:12:48:146] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsManager.class]
+[2020-10-06 11:12:48:156] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]
+[2020-10-06 11:12:48:160] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/paths/OperationPathDecorator.class]
+[2020-10-06 11:12:48:163] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/paths/PathMappingDecorator.class]
+[2020-10-06 11:12:48:172] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/paths/PathSanitizer.class]
+[2020-10-06 11:12:48:176] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar!/springfox/documentation/spring/web/paths/QueryStringUriTemplateDecorator.class]
+[2020-10-06 11:12:48:206] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/CachingModelDependencyProvider.class]
+[2020-10-06 11:12:48:208] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/CachingModelProvider.class]
+[2020-10-06 11:12:48:214] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/DefaultModelDependencyProvider.class]
+[2020-10-06 11:12:48:227] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/DefaultModelProvider.class]
+[2020-10-06 11:12:48:242] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/plugins/SchemaPluginsManager.class]
+[2020-10-06 11:12:48:246] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/property/bean/AccessorsProvider.class]
+[2020-10-06 11:12:48:260] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/property/CachingModelPropertiesProvider.class]
+[2020-10-06 11:12:48:263] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/property/FactoryMethodProvider.class]
+[2020-10-06 11:12:48:271] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/property/field/FieldProvider.class]
+[2020-10-06 11:12:48:275] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/property/ObjectMapperBeanPropertyNamingStrategy.class]
+[2020-10-06 11:12:48:280] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/property/OptimizedModelPropertiesProvider.class]
+[2020-10-06 11:12:48:291] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar!/springfox/documentation/schema/TypeNameExtractor.class]
+[2020-10-06 11:12:48:304] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/schema/ApiModelBuilder.class]
+[2020-10-06 11:12:48:307] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/schema/ApiModelPropertyPropertyBuilder.class]
+[2020-10-06 11:12:48:308] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/schema/ApiModelTypeNameProvider.class]
+[2020-10-06 11:12:48:310] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/OperationAuthReader.class]
+[2020-10-06 11:12:48:313] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/OperationHiddenReader.class]
+[2020-10-06 11:12:48:321] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/OperationHttpMethodReader.class]
+[2020-10-06 11:12:48:323] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParameterReader.class]
+[2020-10-06 11:12:48:327] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/OperationImplicitParametersReader.class]
+[2020-10-06 11:12:48:328] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/OperationNicknameIntoUniqueIdReader.class]
+[2020-10-06 11:12:48:336] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/OperationNotesReader.class]
+[2020-10-06 11:12:48:339] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/OperationPositionReader.class]
+[2020-10-06 11:12:48:340] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/OperationSummaryReader.class]
+[2020-10-06 11:12:48:343] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/SwaggerMediaTypeReader.class]
+[2020-10-06 11:12:48:345] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationModelsProvider.class]
+[2020-10-06 11:12:48:354] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationResponseClassReader.class]
+[2020-10-06 11:12:48:357] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/SwaggerOperationTagsReader.class]
+[2020-10-06 11:12:48:359] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/SwaggerResponseMessageReader.class]
+[2020-10-06 11:12:48:362] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/operation/VendorExtensionsReader.class]
+[2020-10-06 11:12:48:364] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/parameter/ApiParamParameterBuilder.class]
+[2020-10-06 11:12:48:373] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/readers/parameter/SwaggerExpandedParameterBuilder.class]
+[2020-10-06 11:12:48:377] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/web/ApiResourceController.class]
+[2020-10-06 11:12:48:388] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/web/ClassOrApiAnnotationResourceGrouping.class]
+[2020-10-06 11:12:48:391] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/web/InMemorySwaggerResourcesProvider.class]
+[2020-10-06 11:12:48:394] DEBUG - Identified candidate component class: URL [jar:file:/C:/Users/bomin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar!/springfox/documentation/swagger/web/SwaggerApiListingReader.class]
+[2020-10-06 11:12:48:501] DEBUG - Found key 'spring.messages.basename' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:48:541] DEBUG - Found key 'spring.template.provider.cache' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:48:564] DEBUG - Found key 'spring.datasource.url' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:48:656] DEBUG - Found key 'spring.template.provider.cache' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:48:740] DEBUG - Creating shared instance of singleton bean 'com.cmslogin.backend.BackendApplication#MapperScannerRegistrar#0'
+[2020-10-06 11:12:48:741] DEBUG - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+[2020-10-06 11:12:48:750] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\BackendApplication.class]
+[2020-10-06 11:12:48:752] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\advice\ExceptionAdvice.class]
+[2020-10-06 11:12:48:753] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\advice\exception\CAuthenticationEntryPointException.class]
+[2020-10-06 11:12:48:756] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\advice\exception\CCommunicationException.class]
+[2020-10-06 11:12:48:757] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\advice\exception\CEmailSigninFailedException.class]
+[2020-10-06 11:12:48:761] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\advice\exception\CUserExistException.class]
+[2020-10-06 11:12:48:762] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\advice\exception\CUserNotFoundException.class]
+[2020-10-06 11:12:48:773] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\advice\exception\CUserSignupFailedException.class]
+[2020-10-06 11:12:48:776] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\EnhanceMybatisLanguageDriver.class]
+[2020-10-06 11:12:48:777] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\MessageConfiguration$YamlMessageSource.class]
+[2020-10-06 11:12:48:780] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\MessageConfiguration.class]
+[2020-10-06 11:12:48:790] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\SwaggerConfiguration.class]
+[2020-10-06 11:12:48:790] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\WebConfig.class]
+[2020-10-06 11:12:48:794] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\security\CustomAccessDeniedHandler.class]
+[2020-10-06 11:12:48:795] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\security\CustomAuthenticationEntryPoint.class]
+[2020-10-06 11:12:48:805] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\security\JwtAuthenticationFilter.class]
+[2020-10-06 11:12:48:806] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\security\JwtTokenProvider.class]
+[2020-10-06 11:12:48:809] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\security\PasswordEncoding.class]
+[2020-10-06 11:12:48:810] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\config\security\SecurityConfiguration.class]
+[2020-10-06 11:12:48:813] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\controller\SignController.class]
+[2020-10-06 11:12:48:813] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\controller\UserController.class]
+[2020-10-06 11:12:48:823] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\controller\common\SocialController.class]
+[2020-10-06 11:12:48:824] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\controller\exception\ExceptionController.class]
+[2020-10-06 11:12:48:827] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\logging\LoggingRequestAdapter.class]
+[2020-10-06 11:12:48:828] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\logging\LoggingRequestFilter.class]
+[2020-10-06 11:12:48:838] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\logging\LoggingResponseAdapter.class]
+[2020-10-06 11:12:48:839] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\mapper\TestMapper.class]
+[2020-10-06 11:12:48:842] DEBUG - Identified candidate component class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\mapper\UserMapper.class]
+[2020-10-06 11:12:48:842] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\model\KakaoProfile$Properties.class]
+[2020-10-06 11:12:48:846] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\model\KakaoProfile.class]
+[2020-10-06 11:12:48:846] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\model\KakaoUser.class]
+[2020-10-06 11:12:48:857] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\model\RetKakaoAuth.class]
+[2020-10-06 11:12:48:857] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\model\User.class]
+[2020-10-06 11:12:48:860] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\model\response\CommonResult.class]
+[2020-10-06 11:12:48:863] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\model\response\ListResult.class]
+[2020-10-06 11:12:48:864] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\model\response\SingleResult.class]
+[2020-10-06 11:12:48:872] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\service\CustomUserDetailService.class]
+[2020-10-06 11:12:48:876] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\service\KakaoService.class]
+[2020-10-06 11:12:48:876] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\service\ResponseService$CommonResponse.class]
+[2020-10-06 11:12:48:879] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\service\ResponseService.class]
+[2020-10-06 11:12:48:888] DEBUG - Ignored because not a concrete top-level class: file [C:\Users\bomin\workspace\cms-login\backend\bin\main\com\cmslogin\backend\service\UserService.class]
+[2020-10-06 11:12:48:889] DEBUG - Creating MapperFactoryBean with name 'testMapper' and 'com.cmslogin.backend.mapper.TestMapper' mapperInterface
+[2020-10-06 11:12:48:891] DEBUG - Enabling autowire by type for MapperFactoryBean with name 'testMapper'.
+[2020-10-06 11:12:48:892] DEBUG - Creating MapperFactoryBean with name 'userMapper' and 'com.cmslogin.backend.mapper.UserMapper' mapperInterface
+[2020-10-06 11:12:48:895] DEBUG - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+[2020-10-06 11:12:48:913] DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+[2020-10-06 11:12:48:918] DEBUG - Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+[2020-10-06 11:12:48:919] DEBUG - Creating shared instance of singleton bean 'conversionServicePostProcessor'
+[2020-10-06 11:12:48:922] DEBUG - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[2020-10-06 11:12:48:922] DEBUG - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+[2020-10-06 11:12:48:925] DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[2020-10-06 11:12:48:929] DEBUG - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[2020-10-06 11:12:48:937] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+[2020-10-06 11:12:48:938] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+[2020-10-06 11:12:48:942] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+[2020-10-06 11:12:48:943] DEBUG - Creating shared instance of singleton bean 'dataSourceInitializerPostProcessor'
+[2020-10-06 11:12:48:957] DEBUG - Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+[2020-10-06 11:12:48:958] DEBUG - Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+[2020-10-06 11:12:48:960] DEBUG - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+[2020-10-06 11:12:48:963] DEBUG - Creating shared instance of singleton bean 'objectMapperConfigurer'
+[2020-10-06 11:12:48:972] DEBUG - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[2020-10-06 11:12:48:973] DEBUG - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+[2020-10-06 11:12:48:976] DEBUG - Creating shared instance of singleton bean 'transactionAttributeSource'
+[2020-10-06 11:12:48:978] DEBUG - Creating shared instance of singleton bean 'transactionInterceptor'
+[2020-10-06 11:12:48:981] DEBUG - Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+[2020-10-06 11:12:48:990] DEBUG - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+[2020-10-06 11:12:48:992] DEBUG - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+[2020-10-06 11:12:48:993] DEBUG - Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+[2020-10-06 11:12:48:998] DEBUG - Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+[2020-10-06 11:12:49:008] DEBUG - Creating shared instance of singleton bean 'messageSource'
+[2020-10-06 11:12:49:009] DEBUG - Creating shared instance of singleton bean 'messageConfiguration'
+[2020-10-06 11:12:49:011] DEBUG - Found key 'spring.messages.basename' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:49:012] DEBUG - Found key 'spring.messages.basename' in PropertySource 'environmentProperties' with value of type String
+[2020-10-06 11:12:49:013] DEBUG - Found key 'spring.messages.encoding' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:49:024] DEBUG - Found key 'spring.messages.encoding' in PropertySource 'environmentProperties' with value of type String
+[2020-10-06 11:12:49:034] DEBUG - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@37898082]
+[2020-10-06 11:12:49:039] DEBUG - Creating shared instance of singleton bean 'tomcatServletWebServerFactory'
+[2020-10-06 11:12:49:041] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
+[2020-10-06 11:12:49:045] DEBUG - Creating shared instance of singleton bean 'websocketServletWebServerCustomizer'
+[2020-10-06 11:12:49:046] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+[2020-10-06 11:12:49:047] DEBUG - Creating shared instance of singleton bean 'servletWebServerFactoryCustomizer'
+[2020-10-06 11:12:49:056] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+[2020-10-06 11:12:49:058] DEBUG - Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2020-10-06 11:12:49:060] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+[2020-10-06 11:12:49:071] DEBUG - Autowiring by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2020-10-06 11:12:49:075] DEBUG - Creating shared instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'
+[2020-10-06 11:12:49:078] DEBUG - Autowiring by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2020-10-06 11:12:49:080] DEBUG - Creating shared instance of singleton bean 'tomcatWebServerFactoryCustomizer'
+[2020-10-06 11:12:49:087] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration'
+[2020-10-06 11:12:49:090] DEBUG - Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment'
+[2020-10-06 11:12:49:091] DEBUG - Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2020-10-06 11:12:49:092] DEBUG - Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer'
+[2020-10-06 11:12:49:095] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+[2020-10-06 11:12:49:097] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2020-10-06 11:12:49:108] DEBUG - Creating shared instance of singleton bean 'errorPageCustomizer'
+[2020-10-06 11:12:49:109] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+[2020-10-06 11:12:49:110] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2020-10-06 11:12:49:113] DEBUG - Creating shared instance of singleton bean 'dispatcherServletRegistration'
+[2020-10-06 11:12:49:115] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
+[2020-10-06 11:12:49:123] DEBUG - Creating shared instance of singleton bean 'dispatcherServlet'
+[2020-10-06 11:12:49:124] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration'
+[2020-10-06 11:12:49:125] DEBUG - Creating shared instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+[2020-10-06 11:12:49:129] DEBUG - Autowiring by type from bean name 'dispatcherServlet' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+[2020-10-06 11:12:49:138] DEBUG - Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet'
+[2020-10-06 11:12:49:141] DEBUG - Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+[2020-10-06 11:12:49:142] DEBUG - Creating shared instance of singleton bean 'multipartConfigElement'
+[2020-10-06 11:12:49:144] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration'
+[2020-10-06 11:12:49:145] DEBUG - Creating shared instance of singleton bean 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+[2020-10-06 11:12:49:148] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via constructor to bean named 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+[2020-10-06 11:12:49:159] DEBUG - Autowiring by type from bean name 'errorPageCustomizer' via factory method to bean named 'dispatcherServletRegistration'
+[2020-10-06 11:12:49:167] DEBUG - Code archive: C:\Users\bomin\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\2.3.3.RELEASE\74f0cfae433a6ba6d936c61baa5a5316a688dc22\spring-boot-2.3.3.RELEASE.jar
+[2020-10-06 11:12:49:176] DEBUG - Code archive: C:\Users\bomin\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\2.3.3.RELEASE\74f0cfae433a6ba6d936c61baa5a5316a688dc22\spring-boot-2.3.3.RELEASE.jar
+[2020-10-06 11:12:49:177] DEBUG - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+[2020-10-06 11:12:49:194] INFO - Tomcat initialized with port(s): 3500 (http)
+[2020-10-06 11:12:49:195] INFO - Initializing ProtocolHandler ["http-nio-3500"]
+[2020-10-06 11:12:49:197] INFO - Starting service [Tomcat]
+[2020-10-06 11:12:49:206] INFO - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[2020-10-06 11:12:49:235] INFO - Initializing Spring embedded WebApplicationContext
+[2020-10-06 11:12:49:237] DEBUG - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[2020-10-06 11:12:49:237] INFO - Root WebApplicationContext: initialization completed in 1384 ms
+[2020-10-06 11:12:49:238] DEBUG - Creating shared instance of singleton bean 'securityFilterChainRegistration'
+[2020-10-06 11:12:49:242] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration'
+[2020-10-06 11:12:49:243] DEBUG - Creating shared instance of singleton bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+[2020-10-06 11:12:49:246] DEBUG - Autowiring by type from bean name 'securityFilterChainRegistration' via factory method to bean named 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+[2020-10-06 11:12:49:260] DEBUG - Creating shared instance of singleton bean 'loggingRequestFilter'
+[2020-10-06 11:12:49:265] DEBUG - Creating shared instance of singleton bean 'requestContextFilter'
+[2020-10-06 11:12:49:270] DEBUG - Creating shared instance of singleton bean 'formContentFilter'
+[2020-10-06 11:12:49:271] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+[2020-10-06 11:12:49:275] DEBUG - Creating shared instance of singleton bean 'characterEncodingFilter'
+[2020-10-06 11:12:49:278] DEBUG - Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, loggingRequestFilter urls=[/*] order=2147483647
+[2020-10-06 11:12:49:279] DEBUG - Mapping servlets: dispatcherServlet urls=[/]
+[2020-10-06 11:12:49:280] DEBUG - Filter 'requestContextFilter' configured for use
+[2020-10-06 11:12:49:292] DEBUG - Filter 'loggingRequestFilter' configured for use
+[2020-10-06 11:12:49:293] DEBUG - Filter 'characterEncodingFilter' configured for use
+[2020-10-06 11:12:49:293] DEBUG - Filter 'springSecurityFilterChain' configured for use
+[2020-10-06 11:12:49:294] DEBUG - Filter 'formContentFilter' configured for use
+[2020-10-06 11:12:49:296] DEBUG - Creating shared instance of singleton bean 'backendApplication'
+[2020-10-06 11:12:49:297] DEBUG - Creating shared instance of singleton bean 'testMapper'
+[2020-10-06 11:12:49:302] DEBUG - Creating shared instance of singleton bean 'sqlSessionFactory'
+[2020-10-06 11:12:49:303] DEBUG - Creating shared instance of singleton bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration'
+[2020-10-06 11:12:49:304] DEBUG - Cannot find '.class' file for class [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$35be3714] - unable to determine constructor/method parameter names
+[2020-10-06 11:12:49:306] DEBUG - Creating shared instance of singleton bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties'
+[2020-10-06 11:12:49:319] DEBUG - Autowiring by type from bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' via constructor to bean named 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties'
+[2020-10-06 11:12:49:321] DEBUG - Autowiring by type from bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:49:327] DEBUG - Creating shared instance of singleton bean 'dataSource'
+[2020-10-06 11:12:49:328] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari'
+[2020-10-06 11:12:49:330] DEBUG - Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+[2020-10-06 11:12:49:349] DEBUG - Autowiring by type from bean name 'dataSource' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+[2020-10-06 11:12:49:357] DEBUG - Driver class org.mariadb.jdbc.Driver found in Thread context class loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4e6eabbf
+[2020-10-06 11:12:49:367] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker'
+[2020-10-06 11:12:49:372] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+[2020-10-06 11:12:49:374] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:49:375] DEBUG - Autowiring by type from bean name 'sqlSessionFactory' via factory method to bean named 'dataSource'
+[2020-10-06 11:12:49:389] DEBUG - Property 'mapperLocations' was not specified.
+[2020-10-06 11:12:49:393] DEBUG - Creating shared instance of singleton bean 'sqlSessionTemplate'
+[2020-10-06 11:12:49:393] DEBUG - Autowiring by type from bean name 'sqlSessionTemplate' via factory method to bean named 'sqlSessionFactory'
+[2020-10-06 11:12:49:408] DEBUG - Creating shared instance of singleton bean 'userService'
+[2020-10-06 11:12:49:411] DEBUG - Creating shared instance of singleton bean 'userMapper'
+[2020-10-06 11:12:49:452] DEBUG - Creating shared instance of singleton bean 'exceptionAdvice'
+[2020-10-06 11:12:49:461] DEBUG - Creating shared instance of singleton bean 'responseService'
+[2020-10-06 11:12:49:462] DEBUG - Autowiring by type from bean name 'exceptionAdvice' via constructor to bean named 'responseService'
+[2020-10-06 11:12:49:462] DEBUG - Autowiring by type from bean name 'exceptionAdvice' via constructor to bean named 'messageSource'
+[2020-10-06 11:12:49:463] DEBUG - Creating shared instance of singleton bean 'swaggerConfiguration'
+[2020-10-06 11:12:49:469] DEBUG - Creating shared instance of singleton bean 'webConfig'
+[2020-10-06 11:12:49:479] DEBUG - Creating shared instance of singleton bean 'customAccessDeniedHandler'
+[2020-10-06 11:12:49:481] DEBUG - Creating shared instance of singleton bean 'jwtTokenProvider'
+[2020-10-06 11:12:49:489] DEBUG - Creating shared instance of singleton bean 'customUserDetailService'
+[2020-10-06 11:12:49:490] DEBUG - Autowiring by type from bean name 'jwtTokenProvider' via constructor to bean named 'customUserDetailService'
+[2020-10-06 11:12:49:491] DEBUG - Found key 'spring.jwt.secret' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:49:493] DEBUG - Found key 'spring.jwt.secret' in PropertySource 'environmentProperties' with value of type String
+[2020-10-06 11:12:49:495] DEBUG - Creating shared instance of singleton bean 'securityConfiguration'
+[2020-10-06 11:12:49:499] DEBUG - Cannot find '.class' file for class [class com.cmslogin.backend.config.security.SecurityConfiguration$$EnhancerBySpringCGLIB$$5a398a62] - unable to determine constructor/method parameter names
+[2020-10-06 11:12:49:509] DEBUG - Autowiring by type from bean name 'securityConfiguration' via constructor to bean named 'jwtTokenProvider'
+[2020-10-06 11:12:49:520] DEBUG - Not strongly caching class [com.cmslogin.backend.config.security.SecurityConfiguration$$EnhancerBySpringCGLIB$$5a398a62] because it is not cache-safe
+[2020-10-06 11:12:49:525] DEBUG - Creating shared instance of singleton bean 'objectPostProcessor'
+[2020-10-06 11:12:49:527] DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration'
+[2020-10-06 11:12:49:529] DEBUG - Autowiring by type from bean name 'objectPostProcessor' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@817f92d'
+[2020-10-06 11:12:49:532] DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration'
+[2020-10-06 11:12:49:543] DEBUG - Creating shared instance of singleton bean 'enableGlobalAuthenticationAutowiredConfigurer'
+[2020-10-06 11:12:49:547] DEBUG - Autowiring by type from bean name 'enableGlobalAuthenticationAutowiredConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:49:557] DEBUG - Creating shared instance of singleton bean 'initializeUserDetailsBeanManagerConfigurer'
+[2020-10-06 11:12:49:560] DEBUG - Autowiring by type from bean name 'initializeUserDetailsBeanManagerConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:49:561] DEBUG - Creating shared instance of singleton bean 'initializeAuthenticationProviderBeanManagerConfigurer'
+[2020-10-06 11:12:49:563] DEBUG - Autowiring by type from bean name 'initializeAuthenticationProviderBeanManagerConfigurer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:49:565] DEBUG - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+[2020-10-06 11:12:49:575] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+[2020-10-06 11:12:49:576] DEBUG - Creating shared instance of singleton bean 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+[2020-10-06 11:12:49:581] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+[2020-10-06 11:12:49:589] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@817f92d'
+[2020-10-06 11:12:49:592] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+[2020-10-06 11:12:49:595] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+[2020-10-06 11:12:49:599] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+[2020-10-06 11:12:49:607] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@817f92d'
+[2020-10-06 11:12:49:609] DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration'
+[2020-10-06 11:12:49:614] DEBUG - Creating shared instance of singleton bean 'signController'
+[2020-10-06 11:12:49:625] DEBUG - Creating shared instance of singleton bean 'kakaoService'
+[2020-10-06 11:12:49:627] DEBUG - Creating shared instance of singleton bean 'getRestTemplate'
+[2020-10-06 11:12:49:628] DEBUG - Creating shared instance of singleton bean 'transactionManager'
+[2020-10-06 11:12:49:628] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration'
+[2020-10-06 11:12:49:629] DEBUG - Autowiring by type from bean name 'transactionManager' via factory method to bean named 'dataSource'
+[2020-10-06 11:12:49:630] DEBUG - Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
+[2020-10-06 11:12:49:634] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
+[2020-10-06 11:12:49:644] DEBUG - Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties'
+[2020-10-06 11:12:49:648] DEBUG - Creating new transaction with name [com.cmslogin.backend.BackendApplication$$EnhancerBySpringCGLIB$$396efa00.getRestTemplate]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[2020-10-06 11:12:49:656] DEBUG - HikariPool-2 - configuration:
+[2020-10-06 11:12:49:657] DEBUG - allowPoolSuspension.............false
+[2020-10-06 11:12:49:659] DEBUG - autoCommit......................true
+[2020-10-06 11:12:49:660] DEBUG - catalog.........................none
+[2020-10-06 11:12:49:660] DEBUG - connectionInitSql...............none
+[2020-10-06 11:12:49:660] DEBUG - connectionTestQuery.............none
+[2020-10-06 11:12:49:661] DEBUG - connectionTimeout...............30000
+[2020-10-06 11:12:49:661] DEBUG - dataSource......................none
+[2020-10-06 11:12:49:661] DEBUG - dataSourceClassName.............none
+[2020-10-06 11:12:49:661] DEBUG - dataSourceJNDI..................none
+[2020-10-06 11:12:49:661] DEBUG - dataSourceProperties............{password=<masked>}
+[2020-10-06 11:12:49:662] DEBUG - driverClassName................."org.mariadb.jdbc.Driver"
+[2020-10-06 11:12:49:662] DEBUG - exceptionOverrideClassName......none
+[2020-10-06 11:12:49:662] DEBUG - healthCheckProperties...........{}
+[2020-10-06 11:12:49:662] DEBUG - healthCheckRegistry.............none
+[2020-10-06 11:12:49:662] DEBUG - idleTimeout.....................600000
+[2020-10-06 11:12:49:663] DEBUG - initializationFailTimeout.......1
+[2020-10-06 11:12:49:663] DEBUG - isolateInternalQueries..........false
+[2020-10-06 11:12:49:664] DEBUG - jdbcUrl.........................jdbc:mariadb://localhost:3306/test
+[2020-10-06 11:12:49:669] DEBUG - leakDetectionThreshold..........0
+[2020-10-06 11:12:49:670] DEBUG - maxLifetime.....................1800000
+[2020-10-06 11:12:49:670] DEBUG - maximumPoolSize.................10
+[2020-10-06 11:12:49:670] DEBUG - metricRegistry..................none
+[2020-10-06 11:12:49:670] DEBUG - metricsTrackerFactory...........none
+[2020-10-06 11:12:49:671] DEBUG - minimumIdle.....................10
+[2020-10-06 11:12:49:671] DEBUG - password........................<masked>
+[2020-10-06 11:12:49:671] DEBUG - poolName........................"HikariPool-2"
+[2020-10-06 11:12:49:671] DEBUG - readOnly........................false
+[2020-10-06 11:12:49:672] DEBUG - registerMbeans..................false
+[2020-10-06 11:12:49:672] DEBUG - scheduledExecutor...............none
+[2020-10-06 11:12:49:672] DEBUG - schema..........................none
+[2020-10-06 11:12:49:672] DEBUG - threadFactory...................internal
+[2020-10-06 11:12:49:673] DEBUG - transactionIsolation............default
+[2020-10-06 11:12:49:673] DEBUG - username........................"root"
+[2020-10-06 11:12:49:673] DEBUG - validationTimeout...............5000
+[2020-10-06 11:12:49:673] INFO - HikariPool-2 - Starting...
+[2020-10-06 11:12:49:676] DEBUG - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@3c76230c
+[2020-10-06 11:12:49:676] INFO - HikariPool-2 - Start completed.
+[2020-10-06 11:12:49:677] DEBUG - Acquired Connection [HikariProxyConnection@316558774 wrapping org.mariadb.jdbc.MariaDbConnection@3c76230c] for JDBC transaction
+[2020-10-06 11:12:49:677] DEBUG - Switching JDBC Connection [HikariProxyConnection@316558774 wrapping org.mariadb.jdbc.MariaDbConnection@3c76230c] to manual commit
+[2020-10-06 11:12:49:689] DEBUG - Initiating transaction commit
+[2020-10-06 11:12:49:690] DEBUG - Committing JDBC transaction on Connection [HikariProxyConnection@316558774 wrapping org.mariadb.jdbc.MariaDbConnection@3c76230c]
+[2020-10-06 11:12:49:691] DEBUG - Releasing JDBC Connection [HikariProxyConnection@316558774 wrapping org.mariadb.jdbc.MariaDbConnection@3c76230c] after transaction
+[2020-10-06 11:12:49:695] DEBUG - Creating shared instance of singleton bean 'gson'
+[2020-10-06 11:12:49:697] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration'
+[2020-10-06 11:12:49:698] DEBUG - Creating shared instance of singleton bean 'gsonBuilder'
+[2020-10-06 11:12:49:707] DEBUG - Creating shared instance of singleton bean 'standardGsonBuilderCustomizer'
+[2020-10-06 11:12:49:710] DEBUG - Creating shared instance of singleton bean 'spring.gson-org.springframework.boot.autoconfigure.gson.GsonProperties'
+[2020-10-06 11:12:49:713] DEBUG - Autowiring by type from bean name 'standardGsonBuilderCustomizer' via factory method to bean named 'spring.gson-org.springframework.boot.autoconfigure.gson.GsonProperties'
+[2020-10-06 11:12:49:714] DEBUG - Autowiring by type from bean name 'gsonBuilder' via factory method to bean named 'standardGsonBuilderCustomizer'
+[2020-10-06 11:12:49:724] DEBUG - Autowiring by type from bean name 'gson' via factory method to bean named 'gsonBuilder'
+[2020-10-06 11:12:49:727] DEBUG - Autowiring by type from bean name 'kakaoService' via constructor to bean named 'getRestTemplate'
+[2020-10-06 11:12:49:728] DEBUG - Autowiring by type from bean name 'kakaoService' via constructor to bean named 'environment'
+[2020-10-06 11:12:49:728] DEBUG - Autowiring by type from bean name 'kakaoService' via constructor to bean named 'gson'
+[2020-10-06 11:12:49:728] DEBUG - Found key 'spring.url.base' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:49:729] DEBUG - Found key 'spring.url.base' in PropertySource 'environmentProperties' with value of type String
+[2020-10-06 11:12:49:738] DEBUG - Found key 'spring.social.kakao.client_id' in PropertySource 'applicationConfig: [classpath:/application.properties]' with value of type String
+[2020-10-06 11:12:49:739] DEBUG - Found key 'spring.social.kakao.client_id' in PropertySource 'environmentProperties' with value of type String
+[2020-10-06 11:12:49:742] DEBUG - Found key 'spring.social.kakao.redirect' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:49:742] DEBUG - Found key 'spring.social.kakao.redirect' in PropertySource 'environmentProperties' with value of type String
+[2020-10-06 11:12:49:743] DEBUG - Autowiring by type from bean name 'signController' via constructor to bean named 'kakaoService'
+[2020-10-06 11:12:49:746] DEBUG - Autowiring by type from bean name 'signController' via constructor to bean named 'jwtTokenProvider'
+[2020-10-06 11:12:49:746] DEBUG - Autowiring by type from bean name 'signController' via constructor to bean named 'responseService'
+[2020-10-06 11:12:49:748] DEBUG - Creating shared instance of singleton bean 'userController'
+[2020-10-06 11:12:49:757] DEBUG - Autowiring by type from bean name 'userController' via constructor to bean named 'responseService'
+[2020-10-06 11:12:49:759] DEBUG - Creating shared instance of singleton bean 'socialController'
+[2020-10-06 11:12:49:761] DEBUG - Autowiring by type from bean name 'socialController' via constructor to bean named 'environment'
+[2020-10-06 11:12:49:763] DEBUG - Autowiring by type from bean name 'socialController' via constructor to bean named 'getRestTemplate'
+[2020-10-06 11:12:49:763] DEBUG - Autowiring by type from bean name 'socialController' via constructor to bean named 'gson'
+[2020-10-06 11:12:49:764] DEBUG - Autowiring by type from bean name 'socialController' via constructor to bean named 'kakaoService'
+[2020-10-06 11:12:49:767] DEBUG - Found key 'spring.url.base' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:49:774] DEBUG - Found key 'spring.url.base' in PropertySource 'environmentProperties' with value of type String
+[2020-10-06 11:12:49:774] DEBUG - Found key 'spring.social.kakao.client_id' in PropertySource 'applicationConfig: [classpath:/application.properties]' with value of type String
+[2020-10-06 11:12:49:778] DEBUG - HikariPool-2 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[2020-10-06 11:12:49:779] DEBUG - Found key 'spring.social.kakao.client_id' in PropertySource 'environmentProperties' with value of type String
+[2020-10-06 11:12:49:779] DEBUG - Found key 'spring.social.kakao.redirect' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:49:782] DEBUG - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@16ae051b
+[2020-10-06 11:12:49:791] DEBUG - Found key 'spring.social.kakao.redirect' in PropertySource 'environmentProperties' with value of type String
+[2020-10-06 11:12:49:793] DEBUG - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@1869f9be
+[2020-10-06 11:12:49:796] DEBUG - Creating shared instance of singleton bean 'exceptionController'
+[2020-10-06 11:12:49:797] DEBUG - Creating shared instance of singleton bean 'loggingRequestAdapter'
+[2020-10-06 11:12:49:797] DEBUG - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@1c566e6b
+[2020-10-06 11:12:49:806] DEBUG - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@5954f385
+[2020-10-06 11:12:49:807] DEBUG - Creating shared instance of singleton bean 'loggingResponseAdapter'
+[2020-10-06 11:12:49:810] DEBUG - Creating shared instance of singleton bean 'swagger2Controller'
+[2020-10-06 11:12:49:810] DEBUG - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@3fb4b369
+[2020-10-06 11:12:49:811] DEBUG - Creating shared instance of singleton bean 'resourceGroupCache'
+[2020-10-06 11:12:49:812] DEBUG - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@68c70928
+[2020-10-06 11:12:49:812] DEBUG - Creating shared instance of singleton bean 'springfox.documentation.spring.web.SpringfoxWebMvcConfiguration'
+[2020-10-06 11:12:49:814] DEBUG - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@47cd176d
+[2020-10-06 11:12:49:814] DEBUG - Creating shared instance of singleton bean 'serviceModelToSwagger2MapperImpl'
+[2020-10-06 11:12:49:822] DEBUG - Creating shared instance of singleton bean 'modelMapperImpl'
+[2020-10-06 11:12:49:824] DEBUG - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@397b0cca
+[2020-10-06 11:12:49:825] DEBUG - Creating shared instance of singleton bean 'parameterMapperImpl'
+[2020-10-06 11:12:49:825] DEBUG - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@234edf77
+[2020-10-06 11:12:49:826] DEBUG - Creating shared instance of singleton bean 'securityMapperImpl'
+[2020-10-06 11:12:49:826] DEBUG - HikariPool-2 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[2020-10-06 11:12:49:827] DEBUG - Creating shared instance of singleton bean 'licenseMapperImpl'
+[2020-10-06 11:12:49:827] DEBUG - Creating shared instance of singleton bean 'vendorExtensionsMapperImpl'
+[2020-10-06 11:12:49:828] DEBUG - Creating shared instance of singleton bean 'jsonSerializer'
+[2020-10-06 11:12:49:829] DEBUG - Creating shared instance of singleton bean 'swagger2Module'
+[2020-10-06 11:12:49:830] DEBUG - Creating shared instance of singleton bean 'springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration'
+[2020-10-06 11:12:49:831] DEBUG - Autowiring by type from bean name 'jsonSerializer' via factory method to bean named 'swagger2Module'
+[2020-10-06 11:12:49:839] DEBUG - Creating shared instance of singleton bean 'apiDescriptionLookup'
+[2020-10-06 11:12:49:842] DEBUG - Creating shared instance of singleton bean 'apiDescriptionReader'
+[2020-10-06 11:12:49:844] DEBUG - Creating shared instance of singleton bean 'cachingOperationReader'
+[2020-10-06 11:12:49:846] DEBUG - Creating shared instance of singleton bean 'apiOperationReader'
+[2020-10-06 11:12:49:847] DEBUG - Creating shared instance of singleton bean 'documentationPluginsManager'
+[2020-10-06 11:12:49:849] DEBUG - Creating shared instance of singleton bean 'documentationPluginRegistry'
+[2020-10-06 11:12:49:864] DEBUG - Creating shared instance of singleton bean 'apiListingBuilderPluginRegistry'
+[2020-10-06 11:12:49:865] DEBUG - Creating shared instance of singleton bean 'parameterBuilderPluginRegistry'
+[2020-10-06 11:12:49:871] DEBUG - Creating shared instance of singleton bean 'expandedParameterBuilderPluginRegistry'
+[2020-10-06 11:12:49:874] DEBUG - Creating shared instance of singleton bean 'operationBuilderPluginRegistry'
+[2020-10-06 11:12:49:875] DEBUG - Creating shared instance of singleton bean 'resourceGroupingStrategyRegistry'
+[2020-10-06 11:12:49:877] DEBUG - Creating shared instance of singleton bean 'operationModelsProviderPluginRegistry'
+[2020-10-06 11:12:49:879] DEBUG - Creating shared instance of singleton bean 'defaultsProviderPluginRegistry'
+[2020-10-06 11:12:49:880] DEBUG - Creating shared instance of singleton bean 'pathDecoratorRegistry'
+[2020-10-06 11:12:49:882] DEBUG - Creating shared instance of singleton bean 'cachingOperationNameGenerator'
+[2020-10-06 11:12:49:892] DEBUG - Autowiring by type from bean name 'apiOperationReader' via constructor to bean named 'documentationPluginsManager'
+[2020-10-06 11:12:49:892] DEBUG - Autowiring by type from bean name 'apiOperationReader' via constructor to bean named 'cachingOperationNameGenerator'
+[2020-10-06 11:12:49:895] DEBUG - Autowiring by type from bean name 'cachingOperationReader' via constructor to bean named 'apiOperationReader'
+[2020-10-06 11:12:49:896] DEBUG - Autowiring by type from bean name 'apiDescriptionReader' via constructor to bean named 'cachingOperationReader'
+[2020-10-06 11:12:49:914] DEBUG - Autowiring by type from bean name 'apiDescriptionReader' via constructor to bean named 'documentationPluginsManager'
+[2020-10-06 11:12:49:923] DEBUG - Autowiring by type from bean name 'apiDescriptionReader' via constructor to bean named 'apiDescriptionLookup'
+[2020-10-06 11:12:49:924] DEBUG - Creating shared instance of singleton bean 'apiDocumentationScanner'
+[2020-10-06 11:12:49:925] DEBUG - Creating shared instance of singleton bean 'apiListingReferenceScanner'
+[2020-10-06 11:12:49:928] DEBUG - Creating shared instance of singleton bean 'apiListingScanner'
+[2020-10-06 11:12:49:930] DEBUG - Creating shared instance of singleton bean 'apiModelReader'
+[2020-10-06 11:12:49:932] DEBUG - Creating shared instance of singleton bean 'cachingModelProvider'
+[2020-10-06 11:12:49:939] DEBUG - Creating shared instance of singleton bean 'defaultModelProvider'
+[2020-10-06 11:12:49:940] DEBUG - Creating shared instance of singleton bean 'typeResolver'
+[2020-10-06 11:12:49:941] DEBUG - Creating shared instance of singleton bean 'springfox.documentation.schema.configuration.ModelsConfiguration'
+[2020-10-06 11:12:49:942] DEBUG - Creating shared instance of singleton bean 'cachingModelPropertiesProvider'
+[2020-10-06 11:12:49:944] DEBUG - Creating shared instance of singleton bean 'optimized'
+[2020-10-06 11:12:49:945] DEBUG - Creating shared instance of singleton bean 'accessorsProvider'
+[2020-10-06 11:12:49:947] DEBUG - Autowiring by type from bean name 'accessorsProvider' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:49:948] DEBUG - Creating shared instance of singleton bean 'fieldProvider'
+[2020-10-06 11:12:49:958] DEBUG - Autowiring by type from bean name 'fieldProvider' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:49:959] DEBUG - Creating shared instance of singleton bean 'factoryMethodProvider'
+[2020-10-06 11:12:49:960] DEBUG - Autowiring by type from bean name 'factoryMethodProvider' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:49:961] DEBUG - Creating shared instance of singleton bean 'objectMapperBeanPropertyNamingStrategy'
+[2020-10-06 11:12:49:962] DEBUG - Creating shared instance of singleton bean 'schemaPluginsManager'
+[2020-10-06 11:12:49:965] DEBUG - Creating shared instance of singleton bean 'modelPropertyBuilderPluginRegistry'
+[2020-10-06 11:12:49:974] DEBUG - Creating shared instance of singleton bean 'modelBuilderPluginRegistry'
+[2020-10-06 11:12:49:975] DEBUG - Autowiring by type from bean name 'schemaPluginsManager' via constructor to bean named 'modelPropertyBuilderPluginRegistry'
+[2020-10-06 11:12:49:976] DEBUG - Autowiring by type from bean name 'schemaPluginsManager' via constructor to bean named 'modelBuilderPluginRegistry'
+[2020-10-06 11:12:49:979] DEBUG - Creating shared instance of singleton bean 'typeNameExtractor'
+[2020-10-06 11:12:49:980] DEBUG - Creating shared instance of singleton bean 'typeNameProviderPluginRegistry'
+[2020-10-06 11:12:49:982] DEBUG - Autowiring by type from bean name 'typeNameExtractor' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:49:990] DEBUG - Autowiring by type from bean name 'typeNameExtractor' via constructor to bean named 'typeNameProviderPluginRegistry'
+[2020-10-06 11:12:49:991] DEBUG - Autowiring by type from bean name 'optimized' via constructor to bean named 'accessorsProvider'
+[2020-10-06 11:12:49:993] DEBUG - Autowiring by type from bean name 'optimized' via constructor to bean named 'fieldProvider'
+[2020-10-06 11:12:49:993] DEBUG - Autowiring by type from bean name 'optimized' via constructor to bean named 'factoryMethodProvider'
+[2020-10-06 11:12:49:993] DEBUG - Autowiring by type from bean name 'optimized' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:49:996] DEBUG - Autowiring by type from bean name 'optimized' via constructor to bean named 'objectMapperBeanPropertyNamingStrategy'
+[2020-10-06 11:12:49:996] DEBUG - Autowiring by type from bean name 'optimized' via constructor to bean named 'schemaPluginsManager'
+[2020-10-06 11:12:49:996] DEBUG - Autowiring by type from bean name 'optimized' via constructor to bean named 'typeNameExtractor'
+[2020-10-06 11:12:50:000] DEBUG - Autowiring by type from bean name 'cachingModelPropertiesProvider' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:006] DEBUG - Autowiring by type from bean name 'cachingModelPropertiesProvider' via constructor to bean named 'optimized'
+[2020-10-06 11:12:50:007] DEBUG - Creating shared instance of singleton bean 'cachingModelDependencyProvider'
+[2020-10-06 11:12:50:010] DEBUG - Creating shared instance of singleton bean 'defaultModelDependencyProvider'
+[2020-10-06 11:12:50:011] DEBUG - Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:012] DEBUG - Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'cachingModelPropertiesProvider'
+[2020-10-06 11:12:50:012] DEBUG - Autowiring by type from bean name 'defaultModelDependencyProvider' via constructor to bean named 'typeNameExtractor'
+[2020-10-06 11:12:50:022] DEBUG - Autowiring by type from bean name 'cachingModelDependencyProvider' via constructor to bean named 'defaultModelDependencyProvider'
+[2020-10-06 11:12:50:023] DEBUG - Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:026] DEBUG - Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'cachingModelPropertiesProvider'
+[2020-10-06 11:12:50:026] DEBUG - Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'cachingModelDependencyProvider'
+[2020-10-06 11:12:50:029] DEBUG - Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'schemaPluginsManager'
+[2020-10-06 11:12:50:030] DEBUG - Autowiring by type from bean name 'defaultModelProvider' via constructor to bean named 'typeNameExtractor'
+[2020-10-06 11:12:50:039] DEBUG - Autowiring by type from bean name 'cachingModelProvider' via constructor to bean named 'defaultModelProvider'
+[2020-10-06 11:12:50:040] DEBUG - Autowiring by type from bean name 'apiModelReader' via constructor to bean named 'cachingModelProvider'
+[2020-10-06 11:12:50:042] DEBUG - Autowiring by type from bean name 'apiModelReader' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:042] DEBUG - Autowiring by type from bean name 'apiModelReader' via constructor to bean named 'documentationPluginsManager'
+[2020-10-06 11:12:50:043] DEBUG - Autowiring by type from bean name 'apiListingScanner' via constructor to bean named 'apiDescriptionReader'
+[2020-10-06 11:12:50:046] DEBUG - Autowiring by type from bean name 'apiListingScanner' via constructor to bean named 'apiModelReader'
+[2020-10-06 11:12:50:046] DEBUG - Autowiring by type from bean name 'apiListingScanner' via constructor to bean named 'documentationPluginsManager'
+[2020-10-06 11:12:50:051] DEBUG - Autowiring by type from bean name 'apiDocumentationScanner' via constructor to bean named 'apiListingReferenceScanner'
+[2020-10-06 11:12:50:057] DEBUG - Autowiring by type from bean name 'apiDocumentationScanner' via constructor to bean named 'apiListingScanner'
+[2020-10-06 11:12:50:058] DEBUG - Creating shared instance of singleton bean 'apiListingReader'
+[2020-10-06 11:12:50:061] DEBUG - Creating shared instance of singleton bean 'mediaTypeReader'
+[2020-10-06 11:12:50:061] DEBUG - Autowiring by type from bean name 'mediaTypeReader' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:063] DEBUG - Creating shared instance of singleton bean 'defaultOperationReader'
+[2020-10-06 11:12:50:064] DEBUG - Creating shared instance of singleton bean 'defaultTagsProvider'
+[2020-10-06 11:12:50:064] DEBUG - Creating shared instance of singleton bean 'operationDeprecatedReader'
+[2020-10-06 11:12:50:070] DEBUG - Creating shared instance of singleton bean 'operationModelsProvider'
+[2020-10-06 11:12:50:071] DEBUG - Autowiring by type from bean name 'operationModelsProvider' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:072] DEBUG - Creating shared instance of singleton bean 'operationParameterHeadersConditionReader'
+[2020-10-06 11:12:50:073] DEBUG - Autowiring by type from bean name 'operationParameterHeadersConditionReader' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:075] DEBUG - Creating shared instance of singleton bean 'operationParameterReader'
+[2020-10-06 11:12:50:076] DEBUG - Creating shared instance of singleton bean 'modelAttributeParameterExpander'
+[2020-10-06 11:12:50:079] DEBUG - Autowiring by type from bean name 'modelAttributeParameterExpander' via constructor to bean named 'fieldProvider'
+[2020-10-06 11:12:50:080] DEBUG - Autowiring by type from bean name 'operationParameterReader' via constructor to bean named 'modelAttributeParameterExpander'
+[2020-10-06 11:12:50:081] DEBUG - Creating shared instance of singleton bean 'operationParameterRequestConditionReader'
+[2020-10-06 11:12:50:089] DEBUG - Autowiring by type from bean name 'operationParameterRequestConditionReader' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:090] DEBUG - Creating shared instance of singleton bean 'operationResponseClassReader'
+[2020-10-06 11:12:50:091] DEBUG - Autowiring by type from bean name 'operationResponseClassReader' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:092] DEBUG - Autowiring by type from bean name 'operationResponseClassReader' via constructor to bean named 'typeNameExtractor'
+[2020-10-06 11:12:50:093] DEBUG - Creating shared instance of singleton bean 'operationTagsReader'
+[2020-10-06 11:12:50:094] DEBUG - Autowiring by type from bean name 'operationTagsReader' via constructor to bean named 'defaultTagsProvider'
+[2020-10-06 11:12:50:096] DEBUG - Creating shared instance of singleton bean 'responseMessagesReader'
+[2020-10-06 11:12:50:097] DEBUG - Autowiring by type from bean name 'responseMessagesReader' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:103] DEBUG - Autowiring by type from bean name 'responseMessagesReader' via constructor to bean named 'typeNameExtractor'
+[2020-10-06 11:12:50:104] DEBUG - Creating shared instance of singleton bean 'expandedParameterBuilder'
+[2020-10-06 11:12:50:107] DEBUG - Autowiring by type from bean name 'expandedParameterBuilder' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:108] DEBUG - Creating shared instance of singleton bean 'parameterDataTypeReader'
+[2020-10-06 11:12:50:109] DEBUG - Autowiring by type from bean name 'parameterDataTypeReader' via constructor to bean named 'typeNameExtractor'
+[2020-10-06 11:12:50:111] DEBUG - Autowiring by type from bean name 'parameterDataTypeReader' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:112] DEBUG - Creating shared instance of singleton bean 'parameterDefaultReader'
+[2020-10-06 11:12:50:114] DEBUG - Creating shared instance of singleton bean 'parameterMultiplesReader'
+[2020-10-06 11:12:50:121] DEBUG - Creating shared instance of singleton bean 'parameterNameReader'
+[2020-10-06 11:12:50:121] DEBUG - Creating shared instance of singleton bean 'parameterRequiredReader'
+[2020-10-06 11:12:50:122] DEBUG - Creating shared instance of singleton bean 'parameterTypeReader'
+[2020-10-06 11:12:50:123] DEBUG - Creating shared instance of singleton bean 'documentationPluginsBootstrapper'
+[2020-10-06 11:12:50:124] DEBUG - Creating shared instance of singleton bean 'webMvcRequestHandlerProvider'
+[2020-10-06 11:12:50:126] DEBUG - Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+[2020-10-06 11:12:50:127] DEBUG - Creating shared instance of singleton bean 'mvcConversionService'
+[2020-10-06 11:12:50:131] DEBUG - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+[2020-10-06 11:12:50:138] DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+[2020-10-06 11:12:50:139] DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2020-10-06 11:12:50:141] DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2020-10-06 11:12:50:143] DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+[2020-10-06 11:12:50:146] DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2020-10-06 11:12:50:146] DEBUG - Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2020-10-06 11:12:50:157] DEBUG - Creating shared instance of singleton bean 'localeChangeInterceptor'
+[2020-10-06 11:12:50:168] DEBUG - 19 mappings in 'requestMappingHandlerMapping'
+[2020-10-06 11:12:50:173] DEBUG - Autowiring by type from bean name 'webMvcRequestHandlerProvider' via constructor to bean named 'requestMappingHandlerMapping'
+[2020-10-06 11:12:50:175] DEBUG - Creating shared instance of singleton bean 'defaults'
+[2020-10-06 11:12:50:178] DEBUG - Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'documentationPluginsManager'
+[2020-10-06 11:12:50:179] DEBUG - Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'webMvcRequestHandlerProvider'
+[2020-10-06 11:12:50:180] DEBUG - Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'resourceGroupCache'
+[2020-10-06 11:12:50:192] DEBUG - Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'apiDocumentationScanner'
+[2020-10-06 11:12:50:192] DEBUG - Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:193] DEBUG - Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'defaults'
+[2020-10-06 11:12:50:196] DEBUG - Autowiring by type from bean name 'documentationPluginsBootstrapper' via constructor to bean named 'servletContext'
+[2020-10-06 11:12:50:197] DEBUG - Creating shared instance of singleton bean 'operationPathDecorator'
+[2020-10-06 11:12:50:201] DEBUG - Creating shared instance of singleton bean 'pathMappingDecorator'
+[2020-10-06 11:12:50:207] DEBUG - Creating shared instance of singleton bean 'pathSanitizer'
+[2020-10-06 11:12:50:207] DEBUG - Creating shared instance of singleton bean 'queryStringUriTemplateDecorator'
+[2020-10-06 11:12:50:208] DEBUG - Creating shared instance of singleton bean 'apiModelBuilder'
+[2020-10-06 11:12:50:209] DEBUG - Autowiring by type from bean name 'apiModelBuilder' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:209] DEBUG - Creating shared instance of singleton bean 'apiModelPropertyPropertyBuilder'
+[2020-10-06 11:12:50:210] DEBUG - Creating shared instance of singleton bean 'apiModelTypeNameProvider'
+[2020-10-06 11:12:50:210] DEBUG - Creating shared instance of singleton bean 'operationAuthReader'
+[2020-10-06 11:12:50:211] DEBUG - Creating shared instance of singleton bean 'operationHiddenReader'
+[2020-10-06 11:12:50:211] DEBUG - Creating shared instance of singleton bean 'operationHttpMethodReader'
+[2020-10-06 11:12:50:212] DEBUG - Creating shared instance of singleton bean 'operationImplicitParameterReader'
+[2020-10-06 11:12:50:213] DEBUG - Creating shared instance of singleton bean 'operationImplicitParametersReader'
+[2020-10-06 11:12:50:213] DEBUG - Creating shared instance of singleton bean 'operationNicknameIntoUniqueIdReader'
+[2020-10-06 11:12:50:214] DEBUG - Creating shared instance of singleton bean 'operationNotesReader'
+[2020-10-06 11:12:50:214] DEBUG - Creating shared instance of singleton bean 'operationPositionReader'
+[2020-10-06 11:12:50:215] DEBUG - Creating shared instance of singleton bean 'operationSummaryReader'
+[2020-10-06 11:12:50:222] DEBUG - Creating shared instance of singleton bean 'swaggerMediaTypeReader'
+[2020-10-06 11:12:50:222] DEBUG - Creating shared instance of singleton bean 'swaggerOperationModelsProvider'
+[2020-10-06 11:12:50:223] DEBUG - Autowiring by type from bean name 'swaggerOperationModelsProvider' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:225] DEBUG - Creating shared instance of singleton bean 'swaggerOperationResponseClassReader'
+[2020-10-06 11:12:50:226] DEBUG - Autowiring by type from bean name 'swaggerOperationResponseClassReader' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:228] DEBUG - Autowiring by type from bean name 'swaggerOperationResponseClassReader' via constructor to bean named 'typeNameExtractor'
+[2020-10-06 11:12:50:229] DEBUG - Creating shared instance of singleton bean 'swaggerOperationTagsReader'
+[2020-10-06 11:12:50:232] DEBUG - Autowiring by type from bean name 'swaggerOperationTagsReader' via constructor to bean named 'defaultTagsProvider'
+[2020-10-06 11:12:50:239] DEBUG - Creating shared instance of singleton bean 'swaggerResponseMessageReader'
+[2020-10-06 11:12:50:241] DEBUG - Autowiring by type from bean name 'swaggerResponseMessageReader' via constructor to bean named 'typeNameExtractor'
+[2020-10-06 11:12:50:243] DEBUG - Autowiring by type from bean name 'swaggerResponseMessageReader' via constructor to bean named 'typeResolver'
+[2020-10-06 11:12:50:243] DEBUG - Creating shared instance of singleton bean 'vendorExtensionsReader'
+[2020-10-06 11:12:50:244] DEBUG - Creating shared instance of singleton bean 'swaggerParameterDescriptionReader'
+[2020-10-06 11:12:50:246] DEBUG - Creating shared instance of singleton bean 'swaggerExpandedParameterBuilder'
+[2020-10-06 11:12:50:247] DEBUG - Creating shared instance of singleton bean 'apiResourceController'
+[2020-10-06 11:12:50:248] DEBUG - Creating shared instance of singleton bean 'inMemorySwaggerResourcesProvider'
+[2020-10-06 11:12:50:255] DEBUG - Autowiring by type from bean name 'inMemorySwaggerResourcesProvider' via constructor to bean named 'resourceGroupCache'
+[2020-10-06 11:12:50:257] DEBUG - Autowiring by type from bean name 'apiResourceController' via constructor to bean named 'inMemorySwaggerResourcesProvider'
+[2020-10-06 11:12:50:259] DEBUG - Creating shared instance of singleton bean 'classOrApiAnnotationResourceGrouping'
+[2020-10-06 11:12:50:261] DEBUG - Creating shared instance of singleton bean 'swaggerApiListingReader'
+[2020-10-06 11:12:50:262] DEBUG - Creating shared instance of singleton bean 'localeResolver'
+[2020-10-06 11:12:50:263] DEBUG - Creating shared instance of singleton bean 'springfox.documentation.swagger.configuration.SwaggerCommonConfiguration'
+[2020-10-06 11:12:50:264] DEBUG - Creating shared instance of singleton bean 'swaggerApi'
+[2020-10-06 11:12:50:268] DEBUG - Creating shared instance of singleton bean 'authenticationManagerBean'
+[2020-10-06 11:12:50:278] DEBUG - Creating shared instance of singleton bean 'passwordEncoder'
+[2020-10-06 11:12:50:279] DEBUG - Creating new transaction with name [com.cmslogin.backend.BackendApplication$$EnhancerBySpringCGLIB$$396efa00.passwordEncoder]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+[2020-10-06 11:12:50:280] DEBUG - Acquired Connection [HikariProxyConnection@1661771492 wrapping org.mariadb.jdbc.MariaDbConnection@3c76230c] for JDBC transaction
+[2020-10-06 11:12:50:292] DEBUG - Switching JDBC Connection [HikariProxyConnection@1661771492 wrapping org.mariadb.jdbc.MariaDbConnection@3c76230c] to manual commit
+[2020-10-06 11:12:50:294] DEBUG - Initiating transaction commit
+[2020-10-06 11:12:50:297] DEBUG - Committing JDBC transaction on Connection [HikariProxyConnection@1661771492 wrapping org.mariadb.jdbc.MariaDbConnection@3c76230c]
+[2020-10-06 11:12:50:298] DEBUG - Releasing JDBC Connection [HikariProxyConnection@1661771492 wrapping org.mariadb.jdbc.MariaDbConnection@3c76230c] after transaction
+[2020-10-06 11:12:50:307] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+[2020-10-06 11:12:50:308] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+[2020-10-06 11:12:50:311] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
+[2020-10-06 11:12:50:312] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+[2020-10-06 11:12:50:315] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration'
+[2020-10-06 11:12:50:323] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+[2020-10-06 11:12:50:323] DEBUG - Creating shared instance of singleton bean 'taskExecutorBuilder'
+[2020-10-06 11:12:50:327] DEBUG - Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+[2020-10-06 11:12:50:329] DEBUG - Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+[2020-10-06 11:12:50:332] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration'
+[2020-10-06 11:12:50:341] DEBUG - Creating shared instance of singleton bean 'error'
+[2020-10-06 11:12:50:342] DEBUG - Creating shared instance of singleton bean 'beanNameViewResolver'
+[2020-10-06 11:12:50:344] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+[2020-10-06 11:12:50:345] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:50:345] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+[2020-10-06 11:12:50:356] DEBUG - Creating shared instance of singleton bean 'conventionErrorViewResolver'
+[2020-10-06 11:12:50:357] DEBUG - Creating shared instance of singleton bean 'errorAttributes'
+[2020-10-06 11:12:50:359] DEBUG - Creating shared instance of singleton bean 'basicErrorController'
+[2020-10-06 11:12:50:360] DEBUG - Autowiring by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
+[2020-10-06 11:12:50:361] DEBUG - Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+[2020-10-06 11:12:50:364] DEBUG - Creating shared instance of singleton bean 'mvcValidator'
+[2020-10-06 11:12:50:367] DEBUG - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+[2020-10-06 11:12:50:371] DEBUG - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+[2020-10-06 11:12:50:371] DEBUG - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+[2020-10-06 11:12:50:374] DEBUG - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+[2020-10-06 11:12:50:377] DEBUG - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+[2020-10-06 11:12:50:377] DEBUG - Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+[2020-10-06 11:12:50:380] DEBUG - Creating shared instance of singleton bean 'messageConverters'
+[2020-10-06 11:12:50:391] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+[2020-10-06 11:12:50:392] DEBUG - Creating shared instance of singleton bean 'stringHttpMessageConverter'
+[2020-10-06 11:12:50:394] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+[2020-10-06 11:12:50:395] DEBUG - Autowiring by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
+[2020-10-06 11:12:50:398] DEBUG - Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
+[2020-10-06 11:12:50:406] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+[2020-10-06 11:12:50:407] DEBUG - Creating shared instance of singleton bean 'jacksonObjectMapper'
+[2020-10-06 11:12:50:408] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+[2020-10-06 11:12:50:409] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+[2020-10-06 11:12:50:412] DEBUG - Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+[2020-10-06 11:12:50:414] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+[2020-10-06 11:12:50:422] DEBUG - Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+[2020-10-06 11:12:50:425] DEBUG - Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:50:427] DEBUG - Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+[2020-10-06 11:12:50:428] DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:50:431] DEBUG - Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
+[2020-10-06 11:12:50:440] DEBUG - Creating shared instance of singleton bean 'parameterNamesModule'
+[2020-10-06 11:12:50:441] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+[2020-10-06 11:12:50:443] DEBUG - Creating shared instance of singleton bean 'jsonComponentModule'
+[2020-10-06 11:12:50:445] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+[2020-10-06 11:12:50:448] DEBUG - Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+[2020-10-06 11:12:50:459] DEBUG - Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
+[2020-10-06 11:12:50:465] DEBUG - Creating shared instance of singleton bean 'applicationTaskExecutor'
+[2020-10-06 11:12:50:472] DEBUG - Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+[2020-10-06 11:12:50:473] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+[2020-10-06 11:12:50:475] DEBUG - Creating shared instance of singleton bean 'delegatingApplicationListener'
+[2020-10-06 11:12:50:476] DEBUG - Creating shared instance of singleton bean 'liveReloadServerEventListener'
+[2020-10-06 11:12:50:477] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$LiveReloadConfiguration'
+[2020-10-06 11:12:50:478] DEBUG - Creating shared instance of singleton bean 'optionalLiveReloadServer'
+[2020-10-06 11:12:50:480] DEBUG - Autowiring by type from bean name 'optionalLiveReloadServer' via factory method to bean named 'liveReloadServer'
+[2020-10-06 11:12:50:489] INFO - LiveReload server is running on port 35729
+[2020-10-06 11:12:50:490] DEBUG - Autowiring by type from bean name 'liveReloadServerEventListener' via factory method to bean named 'optionalLiveReloadServer'
+[2020-10-06 11:12:50:494] DEBUG - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 2 ResponseBodyAdvice
+[2020-10-06 11:12:50:496] DEBUG - Creating shared instance of singleton bean 'welcomePageHandlerMapping'
+[2020-10-06 11:12:50:499] DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:50:508] DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2020-10-06 11:12:50:508] DEBUG - Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2020-10-06 11:12:50:514] DEBUG - Found key 'spring.template.provider.cache' in PropertySource 'configurationProperties' with value of type String
+[2020-10-06 11:12:50:530] DEBUG - Creating shared instance of singleton bean 'mvcPathMatcher'
+[2020-10-06 11:12:50:531] DEBUG - Creating shared instance of singleton bean 'mvcUrlPathHelper'
+[2020-10-06 11:12:50:532] DEBUG - Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+[2020-10-06 11:12:50:538] DEBUG - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcPathMatcher'
+[2020-10-06 11:12:50:539] DEBUG - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcUrlPathHelper'
+[2020-10-06 11:12:50:539] DEBUG - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2020-10-06 11:12:50:543] DEBUG - Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2020-10-06 11:12:50:543] DEBUG - Creating shared instance of singleton bean 'beanNameHandlerMapping'
+[2020-10-06 11:12:50:544] DEBUG - Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2020-10-06 11:12:50:547] DEBUG - Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2020-10-06 11:12:50:550] DEBUG - Creating shared instance of singleton bean 'routerFunctionMapping'
+[2020-10-06 11:12:50:560] DEBUG - Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+[2020-10-06 11:12:50:561] DEBUG - Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2020-10-06 11:12:50:565] DEBUG - Creating shared instance of singleton bean 'resourceHandlerMapping'
+[2020-10-06 11:12:50:575] DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcUrlPathHelper'
+[2020-10-06 11:12:50:576] DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcPathMatcher'
+[2020-10-06 11:12:50:576] DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+[2020-10-06 11:12:50:579] DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+[2020-10-06 11:12:50:580] DEBUG - Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+[2020-10-06 11:12:50:591] DEBUG - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[2020-10-06 11:12:50:595] DEBUG - Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+[2020-10-06 11:12:50:595] DEBUG - Creating shared instance of singleton bean 'handlerFunctionAdapter'
+[2020-10-06 11:12:50:596] DEBUG - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+[2020-10-06 11:12:50:597] DEBUG - Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+[2020-10-06 11:12:50:598] DEBUG - Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+[2020-10-06 11:12:50:599] DEBUG - Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+[2020-10-06 11:12:50:609] DEBUG - Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+[2020-10-06 11:12:50:609] DEBUG - Creating shared instance of singleton bean 'handlerExceptionResolver'
+[2020-10-06 11:12:50:610] DEBUG - Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
+[2020-10-06 11:12:50:614] DEBUG - ControllerAdvice beans: 1 @ExceptionHandler, 2 ResponseBodyAdvice
+[2020-10-06 11:12:50:615] DEBUG - Creating shared instance of singleton bean 'mvcViewResolver'
+[2020-10-06 11:12:50:615] DEBUG - Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+[2020-10-06 11:12:50:622] DEBUG - Creating shared instance of singleton bean 'defaultViewResolver'
+[2020-10-06 11:12:50:625] DEBUG - Creating shared instance of singleton bean 'viewResolver'
+[2020-10-06 11:12:50:625] DEBUG - Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@817f92d'
+[2020-10-06 11:12:50:627] DEBUG - Creating shared instance of singleton bean 'freeMarkerViewResolver'
+[2020-10-06 11:12:50:628] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.freemarker.FreeMarkerServletWebConfiguration'
+[2020-10-06 11:12:50:629] DEBUG - Creating shared instance of singleton bean 'spring.freemarker-org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties'
+[2020-10-06 11:12:50:635] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.freemarker.FreeMarkerServletWebConfiguration' via constructor to bean named 'spring.freemarker-org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties'
+[2020-10-06 11:12:50:642] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari'
+[2020-10-06 11:12:50:646] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari' via constructor to bean named 'dataSource'
+[2020-10-06 11:12:50:647] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration'
+[2020-10-06 11:12:50:658] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration'
+[2020-10-06 11:12:50:659] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
+[2020-10-06 11:12:50:662] DEBUG - Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
+[2020-10-06 11:12:50:663] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration'
+[2020-10-06 11:12:50:672] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializationConfiguration'
+[2020-10-06 11:12:50:673] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration'
+[2020-10-06 11:12:50:677] DEBUG - Creating shared instance of singleton bean 'org.mybatis.spring.boot.autoconfigure.MybatisLanguageDriverAutoConfiguration'
+[2020-10-06 11:12:50:678] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration'
+[2020-10-06 11:12:50:681] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@817f92d'
+[2020-10-06 11:12:50:682] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+[2020-10-06 11:12:50:693] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+[2020-10-06 11:12:50:693] DEBUG - Creating shared instance of singleton bean 'applicationAvailability'
+[2020-10-06 11:12:50:697] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+[2020-10-06 11:12:50:698] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
+[2020-10-06 11:12:50:711] DEBUG - Creating shared instance of singleton bean 'lifecycleProcessor'
+[2020-10-06 11:12:50:712] DEBUG - Creating shared instance of singleton bean 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+[2020-10-06 11:12:50:715] DEBUG - Autowiring by type from bean name 'lifecycleProcessor' via factory method to bean named 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+[2020-10-06 11:12:50:724] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration'
+[2020-10-06 11:12:50:727] DEBUG - Creating shared instance of singleton bean 'freeMarkerConfigurer'
+[2020-10-06 11:12:50:728] DEBUG - Template loader path [class path resource [templates/]] resolved to file path [C:\Users\bomin\workspace\cms-login\backend\bin\main\templates]
+[2020-10-06 11:12:50:731] DEBUG - Creating shared instance of singleton bean 'freeMarkerConfiguration'
+[2020-10-06 11:12:50:733] DEBUG - Autowiring by type from bean name 'freeMarkerConfiguration' via factory method to bean named 'freeMarkerConfigurer'
+[2020-10-06 11:12:50:741] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration'
+[2020-10-06 11:12:50:742] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:50:743] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration' via constructor to bean named 'spring.freemarker-org.springframework.boot.autoconfigure.freemarker.FreeMarkerProperties'
+[2020-10-06 11:12:50:747] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
+[2020-10-06 11:12:50:762] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration'
+[2020-10-06 11:12:50:861] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+[2020-10-06 11:12:50:863] DEBUG - Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+[2020-10-06 11:12:50:876] DEBUG - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+[2020-10-06 11:12:50:879] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration'
+[2020-10-06 11:12:50:893] DEBUG - Creating shared instance of singleton bean 'jdbcTemplate'
+[2020-10-06 11:12:50:894] DEBUG - Creating shared instance of singleton bean 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
+[2020-10-06 11:12:50:897] DEBUG - Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'dataSource'
+[2020-10-06 11:12:50:900] DEBUG - Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
+[2020-10-06 11:12:50:913] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration'
+[2020-10-06 11:12:50:914] DEBUG - Creating shared instance of singleton bean 'namedParameterJdbcTemplate'
+[2020-10-06 11:12:50:915] DEBUG - Autowiring by type from bean name 'namedParameterJdbcTemplate' via factory method to bean named 'jdbcTemplate'
+[2020-10-06 11:12:50:927] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration'
+[2020-10-06 11:12:50:931] DEBUG - Creating shared instance of singleton bean 'authenticationManagerBuilder'
+[2020-10-06 11:12:50:931] DEBUG - Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'objectPostProcessor'
+[2020-10-06 11:12:50:940] DEBUG - Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:50:941] DEBUG - Creating shared instance of singleton bean 'authenticationEventPublisher'
+[2020-10-06 11:12:50:944] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration'
+[2020-10-06 11:12:50:945] DEBUG - Autowiring by type from bean name 'authenticationEventPublisher' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d954ba'
+[2020-10-06 11:12:50:949] DEBUG - Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration'
+[2020-10-06 11:12:50:961] DEBUG - Creating shared instance of singleton bean 'autowiredWebSecurityConfigurersIgnoreParents'
+[2020-10-06 11:12:50:965] DEBUG - Autowiring by type from bean name 'autowiredWebSecurityConfigurersIgnoreParents' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@817f92d'
+[2020-10-06 11:12:50:979] DEBUG - Creating shared instance of singleton bean 'springSecurityFilterChain'
+[2020-10-06 11:12:50:982] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration'
+[2020-10-06 11:12:50:992] DEBUG - Eagerly initializing {org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration=org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration@58c844b2}
+[2020-10-06 11:12:50:998] INFO - Creating filter chain: Ant [pattern='/v2/api-docs'], []
+[2020-10-06 11:12:50:999] INFO - Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+[2020-10-06 11:12:50:999] INFO - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+[2020-10-06 11:12:51:008] INFO - Creating filter chain: Ant [pattern='/webjars/**'], []
+[2020-10-06 11:12:51:008] INFO - Creating filter chain: Ant [pattern='/swagger/**'], []
+[2020-10-06 11:12:51:011] DEBUG - Adding web access control expression 'permitAll', for Ant [pattern='/*/signin']
+[2020-10-06 11:12:51:012] DEBUG - Adding web access control expression 'permitAll', for Ant [pattern='/*/signin/**']
+[2020-10-06 11:12:51:012] DEBUG - Adding web access control expression 'permitAll', for Ant [pattern='/*/signup']
+[2020-10-06 11:12:51:013] DEBUG - Adding web access control expression 'permitAll', for Ant [pattern='/*/signup/**']
+[2020-10-06 11:12:51:026] DEBUG - Adding web access control expression 'permitAll', for Ant [pattern='/*/userlist']
+[2020-10-06 11:12:51:026] DEBUG - Adding web access control expression 'permitAll', for Ant [pattern='/social/**']
+[2020-10-06 11:12:51:031] DEBUG - Adding web access control expression 'permitAll', for Ant [pattern='/**', OPTIONS]
+[2020-10-06 11:12:51:031] DEBUG - Adding web access control expression 'permitAll', for Ant [pattern='helloworld/**', GET]
+[2020-10-06 11:12:51:037] DEBUG - Adding web access control expression 'permitAll', for Ant [pattern='/exception/**', GET]
+[2020-10-06 11:12:51:045] DEBUG - Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/*/users']
+[2020-10-06 11:12:51:049] DEBUG - Adding web access control expression 'hasAnyRole('ROLE_USER, ADMIN')', for any request
+[2020-10-06 11:12:51:057] DEBUG - Validated configuration attributes
+[2020-10-06 11:12:51:060] DEBUG - Validated configuration attributes
+[2020-10-06 11:12:51:061] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dc7652c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4317d38a, org.springframework.security.web.header.HeaderWriterFilter@1209346a, org.springframework.security.web.authentication.logout.LogoutFilter@6b4db302, com.cmslogin.backend.config.security.JwtAuthenticationFilter@756998, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e4311cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@532d40a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1145ed1, org.springframework.security.web.session.SessionManagementFilter@25e6cf87, org.springframework.security.web.access.ExceptionTranslationFilter@1890ab37, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3db27b6]
+[2020-10-06 11:12:51:064] DEBUG - Creating shared instance of singleton bean 'webSecurityExpressionHandler'
+[2020-10-06 11:12:51:074] DEBUG - Creating shared instance of singleton bean 'privilegeEvaluator'
+[2020-10-06 11:12:51:075] DEBUG - Creating shared instance of singleton bean 'requestDataValueProcessor'
+[2020-10-06 11:12:51:076] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+[2020-10-06 11:12:51:077] DEBUG - Creating shared instance of singleton bean 'taskSchedulerBuilder'
+[2020-10-06 11:12:51:078] DEBUG - Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+[2020-10-06 11:12:51:081] DEBUG - Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+[2020-10-06 11:12:51:091] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration'
+[2020-10-06 11:12:51:094] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration'
+[2020-10-06 11:12:51:095] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration'
+[2020-10-06 11:12:51:098] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration'
+[2020-10-06 11:12:51:099] DEBUG - Creating shared instance of singleton bean 'transactionTemplate'
+[2020-10-06 11:12:51:110] DEBUG - Autowiring by type from bean name 'transactionTemplate' via factory method to bean named 'transactionManager'
+[2020-10-06 11:12:51:111] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration'
+[2020-10-06 11:12:51:113] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+[2020-10-06 11:12:51:114] DEBUG - Creating shared instance of singleton bean 'multipartResolver'
+[2020-10-06 11:12:51:124] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration'
+[2020-10-06 11:12:51:125] DEBUG - Creating shared instance of singleton bean 'inMemoryDatabaseShutdownExecutor'
+[2020-10-06 11:12:51:127] DEBUG - Autowiring by type from bean name 'inMemoryDatabaseShutdownExecutor' via factory method to bean named 'dataSource'
+[2020-10-06 11:12:51:127] DEBUG - Autowiring by type from bean name 'inMemoryDatabaseShutdownExecutor' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+[2020-10-06 11:12:51:135] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration'
+[2020-10-06 11:12:51:152] DEBUG - Creating shared instance of singleton bean 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+[2020-10-06 11:12:51:155] DEBUG - Autowiring by type from bean name 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartConfiguration' via constructor to bean named 'spring.devtools-org.springframework.boot.devtools.autoconfigure.DevToolsProperties'
+[2020-10-06 11:12:51:158] DEBUG - Creating shared instance of singleton bean 'restartingClassPathChangedEventListener'
+[2020-10-06 11:12:51:159] DEBUG - Creating shared instance of singleton bean 'fileSystemWatcherFactory'
+[2020-10-06 11:12:51:162] DEBUG - Autowiring by type from bean name 'restartingClassPathChangedEventListener' via factory method to bean named 'fileSystemWatcherFactory'
+[2020-10-06 11:12:51:163] DEBUG - Creating shared instance of singleton bean 'classPathFileSystemWatcher'
+[2020-10-06 11:12:51:164] DEBUG - Creating shared instance of singleton bean 'classPathRestartStrategy'
+[2020-10-06 11:12:51:168] DEBUG - Autowiring by type from bean name 'classPathFileSystemWatcher' via factory method to bean named 'fileSystemWatcherFactory'
+[2020-10-06 11:12:51:195] DEBUG - Autowiring by type from bean name 'classPathFileSystemWatcher' via factory method to bean named 'classPathRestartStrategy'
+[2020-10-06 11:12:51:210] DEBUG - Creating shared instance of singleton bean 'conditionEvaluationDeltaLoggingListener'
+[2020-10-06 11:12:51:211] DEBUG - Creating shared instance of singleton bean 'org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration'
+[2020-10-06 11:12:51:218] DEBUG - Starting beans in phase 2147483646
+[2020-10-06 11:12:51:228] INFO - Starting ProtocolHandler ["http-nio-3500"]
+[2020-10-06 11:12:51:232] INFO - Tomcat started on port(s): 3500 (http) with context path ''
+[2020-10-06 11:12:51:242] DEBUG - Successfully started bean 'webServerStartStop'
+[2020-10-06 11:12:51:243] DEBUG - Starting beans in phase 2147483647
+[2020-10-06 11:12:51:243] INFO - Context refreshed
+[2020-10-06 11:12:51:244] INFO - Found 1 custom documentation plugin(s)
+[2020-10-06 11:12:51:248] INFO - Scanning for api listing references
+[2020-10-06 11:12:51:252] DEBUG - Adding return parameter of type Lcom/cmslogin/backend/model/response/CommonResult;
+[2020-10-06 11:12:51:261] DEBUG - Reading parameters models for handlerMethod |accessdeniedException|
+[2020-10-06 11:12:51:261] DEBUG - Finished reading parameters models for handlerMethod |accessdeniedException|
+[2020-10-06 11:12:51:262] DEBUG - Reading parameters models for handlerMethod |accessdeniedException|
+[2020-10-06 11:12:51:264] DEBUG - Reading property success
+[2020-10-06 11:12:51:264] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:264] DEBUG - Name 'success' renamed to 'success'
+[2020-10-06 11:12:51:265] DEBUG - Adding property success to model
+[2020-10-06 11:12:51:265] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:266] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:274] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:274] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:275] DEBUG - Reading property code
+[2020-10-06 11:12:51:276] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:276] DEBUG - Name 'code' renamed to 'code'
+[2020-10-06 11:12:51:277] DEBUG - Adding property code to model
+[2020-10-06 11:12:51:277] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:277] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:277] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:278] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:278] DEBUG - Reading property msg
+[2020-10-06 11:12:51:278] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:279] DEBUG - Name 'msg' renamed to 'msg'
+[2020-10-06 11:12:51:279] DEBUG - Adding property msg to model
+[2020-10-06 11:12:51:279] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:279] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:279] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:280] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:280] DEBUG - Inferred 3 properties. Properties found code, msg, success
+[2020-10-06 11:12:51:281] DEBUG - Generated parameter model id: CommonResult, name: CommonResult, schema: {} models
+[2020-10-06 11:12:51:282] DEBUG - Adding a new model with key CommonResult
+[2020-10-06 11:12:51:283] DEBUG - Setting spring response class to:CommonResult
+[2020-10-06 11:12:51:291] DEBUG - Authorization count 0 for method accessdeniedException
+[2020-10-06 11:12:51:292] DEBUG - Setting response class to:CommonResult
+[2020-10-06 11:12:51:293] DEBUG - Adding return parameter of type Lcom/cmslogin/backend/model/response/CommonResult;
+[2020-10-06 11:12:51:294] DEBUG - Reading parameters models for handlerMethod |entrypointException|
+[2020-10-06 11:12:51:294] DEBUG - Finished reading parameters models for handlerMethod |entrypointException|
+[2020-10-06 11:12:51:294] DEBUG - Reading parameters models for handlerMethod |entrypointException|
+[2020-10-06 11:12:51:295] DEBUG - Generated parameter model id: CommonResult, name: CommonResult, schema: {} models
+[2020-10-06 11:12:51:295] DEBUG - Setting spring response class to:CommonResult
+[2020-10-06 11:12:51:296] DEBUG - Authorization count 0 for method entrypointException
+[2020-10-06 11:12:51:297] DEBUG - Setting response class to:CommonResult
+[2020-10-06 11:12:51:301] DEBUG - Adding return parameter of type Lcom/cmslogin/backend/model/response/ListResult<Lcom/cmslogin/backend/model/User;>;
+[2020-10-06 11:12:51:310] DEBUG - Reading parameters models for handlerMethod |findAllUser|
+[2020-10-06 11:12:51:310] DEBUG - Finished reading parameters models for handlerMethod |findAllUser|
+[2020-10-06 11:12:51:314] DEBUG - Reading parameters models for handlerMethod |findAllUser|
+[2020-10-06 11:12:51:316] DEBUG - Reading property success
+[2020-10-06 11:12:51:331] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:332] DEBUG - Name 'success' renamed to 'success'
+[2020-10-06 11:12:51:332] DEBUG - Adding property success to model
+[2020-10-06 11:12:51:346] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:346] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:346] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:347] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:348] DEBUG - Reading property code
+[2020-10-06 11:12:51:348] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:348] DEBUG - Name 'code' renamed to 'code'
+[2020-10-06 11:12:51:349] DEBUG - Adding property code to model
+[2020-10-06 11:12:51:349] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:362] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:362] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:362] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:363] DEBUG - Reading property msg
+[2020-10-06 11:12:51:363] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:364] DEBUG - Name 'msg' renamed to 'msg'
+[2020-10-06 11:12:51:364] DEBUG - Adding property msg to model
+[2020-10-06 11:12:51:364] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:364] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:365] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:365] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:365] DEBUG - Reading property list
+[2020-10-06 11:12:51:365] DEBUG - Evaluating unwrapped getter for member getList
+[2020-10-06 11:12:51:366] DEBUG - Name 'list' renamed to 'list'
+[2020-10-06 11:12:51:375] DEBUG - Adding property list to model
+[2020-10-06 11:12:51:376] DEBUG - Evaluating unwrapped getter for member getList
+[2020-10-06 11:12:51:376] DEBUG - Evaluating unwrapped getter for member getList
+[2020-10-06 11:12:51:376] DEBUG - Evaluating unwrapped getter for member getList
+[2020-10-06 11:12:51:377] DEBUG - Evaluating unwrapped getter for member getList
+[2020-10-06 11:12:51:377] DEBUG - Inferred 4 properties. Properties found code, list, msg, success
+[2020-10-06 11:12:51:378] DEBUG - Generated parameter model id: ListResult«User», name: ListResult«User», schema: {} models
+[2020-10-06 11:12:51:378] DEBUG - Adding a new model with key ListResult«User»
+[2020-10-06 11:12:51:378] DEBUG - Adding type for parameter Lcom/cmslogin/backend/model/User;
+[2020-10-06 11:12:51:379] DEBUG - Recursively resolving dependencies for parameter Lcom/cmslogin/backend/model/User;
+[2020-10-06 11:12:51:380] DEBUG - Reading property msrl
+[2020-10-06 11:12:51:381] DEBUG - Evaluating unwrapped getter for member getMsrl
+[2020-10-06 11:12:51:381] DEBUG - Name 'msrl' renamed to 'msrl'
+[2020-10-06 11:12:51:381] DEBUG - Adding property msrl to model
+[2020-10-06 11:12:51:382] DEBUG - Evaluating unwrapped getter for member getMsrl
+[2020-10-06 11:12:51:382] DEBUG - Evaluating unwrapped getter for member getMsrl
+[2020-10-06 11:12:51:382] DEBUG - Evaluating unwrapped getter for member getMsrl
+[2020-10-06 11:12:51:382] DEBUG - Evaluating unwrapped getter for member getMsrl
+[2020-10-06 11:12:51:383] DEBUG - Reading property uid
+[2020-10-06 11:12:51:392] DEBUG - Evaluating unwrapped getter for member getUid
+[2020-10-06 11:12:51:392] DEBUG - Name 'uid' renamed to 'uid'
+[2020-10-06 11:12:51:392] DEBUG - Adding property uid to model
+[2020-10-06 11:12:51:393] DEBUG - Evaluating unwrapped getter for member getUid
+[2020-10-06 11:12:51:393] DEBUG - Evaluating unwrapped getter for member getUid
+[2020-10-06 11:12:51:393] DEBUG - Evaluating unwrapped getter for member getUid
+[2020-10-06 11:12:51:394] DEBUG - Evaluating unwrapped getter for member getUid
+[2020-10-06 11:12:51:394] DEBUG - Reading property password
+[2020-10-06 11:12:51:394] DEBUG - Reading property name
+[2020-10-06 11:12:51:395] DEBUG - Evaluating unwrapped getter for member getName
+[2020-10-06 11:12:51:395] DEBUG - Name 'name' renamed to 'name'
+[2020-10-06 11:12:51:395] DEBUG - Adding property name to model
+[2020-10-06 11:12:51:395] DEBUG - Evaluating unwrapped getter for member getName
+[2020-10-06 11:12:51:396] DEBUG - Evaluating unwrapped getter for member getName
+[2020-10-06 11:12:51:396] DEBUG - Evaluating unwrapped getter for member getName
+[2020-10-06 11:12:51:396] DEBUG - Evaluating unwrapped getter for member getName
+[2020-10-06 11:12:51:396] DEBUG - Reading property provider
+[2020-10-06 11:12:51:397] DEBUG - Evaluating unwrapped getter for member getProvider
+[2020-10-06 11:12:51:397] DEBUG - Name 'provider' renamed to 'provider'
+[2020-10-06 11:12:51:397] DEBUG - Adding property provider to model
+[2020-10-06 11:12:51:397] DEBUG - Evaluating unwrapped getter for member getProvider
+[2020-10-06 11:12:51:398] DEBUG - Evaluating unwrapped getter for member getProvider
+[2020-10-06 11:12:51:398] DEBUG - Evaluating unwrapped getter for member getProvider
+[2020-10-06 11:12:51:398] DEBUG - Evaluating unwrapped getter for member getProvider
+[2020-10-06 11:12:51:398] DEBUG - Reading property enabled
+[2020-10-06 11:12:51:399] DEBUG - Evaluating unwrapped getter for member isEnabled
+[2020-10-06 11:12:51:399] DEBUG - Name 'enabled' renamed to 'enabled'
+[2020-10-06 11:12:51:399] DEBUG - Adding property enabled to model
+[2020-10-06 11:12:51:399] DEBUG - Evaluating unwrapped getter for member isEnabled
+[2020-10-06 11:12:51:410] DEBUG - Evaluating unwrapped getter for member isEnabled
+[2020-10-06 11:12:51:410] DEBUG - Evaluating unwrapped getter for member isEnabled
+[2020-10-06 11:12:51:410] DEBUG - Evaluating unwrapped getter for member isEnabled
+[2020-10-06 11:12:51:411] DEBUG - Reading property username
+[2020-10-06 11:12:51:411] DEBUG - Evaluating unwrapped getter for member getUsername
+[2020-10-06 11:12:51:411] DEBUG - Name 'username' renamed to 'username'
+[2020-10-06 11:12:51:412] DEBUG - Adding property username to model
+[2020-10-06 11:12:51:412] DEBUG - Evaluating unwrapped getter for member getUsername
+[2020-10-06 11:12:51:412] DEBUG - Evaluating unwrapped getter for member getUsername
+[2020-10-06 11:12:51:412] DEBUG - Evaluating unwrapped getter for member getUsername
+[2020-10-06 11:12:51:412] DEBUG - Evaluating unwrapped getter for member getUsername
+[2020-10-06 11:12:51:413] DEBUG - Reading property accountNonExpired
+[2020-10-06 11:12:51:413] DEBUG - Evaluating unwrapped getter for member isAccountNonExpired
+[2020-10-06 11:12:51:413] DEBUG - Name 'accountNonExpired' renamed to 'accountNonExpired'
+[2020-10-06 11:12:51:414] DEBUG - Adding property accountNonExpired to model
+[2020-10-06 11:12:51:414] DEBUG - Evaluating unwrapped getter for member isAccountNonExpired
+[2020-10-06 11:12:51:414] DEBUG - Evaluating unwrapped getter for member isAccountNonExpired
+[2020-10-06 11:12:51:414] DEBUG - Evaluating unwrapped getter for member isAccountNonExpired
+[2020-10-06 11:12:51:414] DEBUG - Evaluating unwrapped getter for member isAccountNonExpired
+[2020-10-06 11:12:51:415] DEBUG - Reading property credentialsNonExpired
+[2020-10-06 11:12:51:415] DEBUG - Evaluating unwrapped getter for member isCredentialsNonExpired
+[2020-10-06 11:12:51:415] DEBUG - Name 'credentialsNonExpired' renamed to 'credentialsNonExpired'
+[2020-10-06 11:12:51:415] DEBUG - Adding property credentialsNonExpired to model
+[2020-10-06 11:12:51:416] DEBUG - Evaluating unwrapped getter for member isCredentialsNonExpired
+[2020-10-06 11:12:51:416] DEBUG - Evaluating unwrapped getter for member isCredentialsNonExpired
+[2020-10-06 11:12:51:428] DEBUG - Evaluating unwrapped getter for member isCredentialsNonExpired
+[2020-10-06 11:12:51:428] DEBUG - Evaluating unwrapped getter for member isCredentialsNonExpired
+[2020-10-06 11:12:51:429] DEBUG - Reading property authorities
+[2020-10-06 11:12:51:430] DEBUG - Evaluating unwrapped getter for member getAuthorities
+[2020-10-06 11:12:51:430] DEBUG - Name 'authorities' renamed to 'authorities'
+[2020-10-06 11:12:51:430] DEBUG - Adding property authorities to model
+[2020-10-06 11:12:51:431] DEBUG - Evaluating unwrapped getter for member getAuthorities
+[2020-10-06 11:12:51:431] DEBUG - Evaluating unwrapped getter for member getAuthorities
+[2020-10-06 11:12:51:431] DEBUG - Evaluating unwrapped getter for member getAuthorities
+[2020-10-06 11:12:51:431] DEBUG - Evaluating unwrapped getter for member getAuthorities
+[2020-10-06 11:12:51:432] DEBUG - Reading property authority
+[2020-10-06 11:12:51:432] DEBUG - Evaluating unwrapped getter for member getAUTHORITY
+[2020-10-06 11:12:51:432] DEBUG - Name 'authority' renamed to 'authority'
+[2020-10-06 11:12:51:442] DEBUG - Adding property authority to model
+[2020-10-06 11:12:51:442] DEBUG - Evaluating unwrapped getter for member getAUTHORITY
+[2020-10-06 11:12:51:443] DEBUG - Evaluating unwrapped getter for member getAUTHORITY
+[2020-10-06 11:12:51:443] DEBUG - Evaluating unwrapped getter for member getAUTHORITY
+[2020-10-06 11:12:51:443] DEBUG - Evaluating unwrapped getter for member getAUTHORITY
+[2020-10-06 11:12:51:444] DEBUG - Reading property accountNonLocked
+[2020-10-06 11:12:51:445] DEBUG - Evaluating unwrapped getter for member isAccountNonLocked
+[2020-10-06 11:12:51:445] DEBUG - Name 'accountNonLocked' renamed to 'accountNonLocked'
+[2020-10-06 11:12:51:445] DEBUG - Adding property accountNonLocked to model
+[2020-10-06 11:12:51:445] DEBUG - Evaluating unwrapped getter for member isAccountNonLocked
+[2020-10-06 11:12:51:446] DEBUG - Evaluating unwrapped getter for member isAccountNonLocked
+[2020-10-06 11:12:51:446] DEBUG - Evaluating unwrapped getter for member isAccountNonLocked
+[2020-10-06 11:12:51:446] DEBUG - Evaluating unwrapped getter for member isAccountNonLocked
+[2020-10-06 11:12:51:447] DEBUG - Adding type Ljava/util/Collection<Lorg/springframework/security/core/GrantedAuthority;>; for parameter authorities
+[2020-10-06 11:12:51:447] DEBUG - Recursively resolving dependencies for type Ljava/util/Collection<Lorg/springframework/security/core/GrantedAuthority;>;
+[2020-10-06 11:12:51:449] DEBUG - Adding type for parameter Lorg/springframework/security/core/GrantedAuthority;
+[2020-10-06 11:12:51:449] DEBUG - Recursively resolving dependencies for parameter Lorg/springframework/security/core/GrantedAuthority;
+[2020-10-06 11:12:51:450] DEBUG - Reading property authority
+[2020-10-06 11:12:51:466] DEBUG - Evaluating unwrapped getter for member getAuthority
+[2020-10-06 11:12:51:475] DEBUG - Name 'authority' renamed to 'authority'
+[2020-10-06 11:12:51:475] DEBUG - Adding property authority to model
+[2020-10-06 11:12:51:476] DEBUG - Evaluating unwrapped getter for member getAuthority
+[2020-10-06 11:12:51:476] DEBUG - Evaluating unwrapped getter for member getAuthority
+[2020-10-06 11:12:51:476] DEBUG - Evaluating unwrapped getter for member getAuthority
+[2020-10-06 11:12:51:477] DEBUG - Evaluating unwrapped getter for member getAuthority
+[2020-10-06 11:12:51:477] DEBUG - Adding type Ljava/util/List<Lcom/cmslogin/backend/model/User;>; for parameter list
+[2020-10-06 11:12:51:478] DEBUG - Adding collectionElement type Lcom/cmslogin/backend/model/User;
+[2020-10-06 11:12:51:478] DEBUG - Recursively resolving dependencies for collectionElement type Lcom/cmslogin/backend/model/User;
+[2020-10-06 11:12:51:479] DEBUG - Adding type Ljava/util/Collection<Lorg/springframework/security/core/GrantedAuthority;>; for parameter authorities
+[2020-10-06 11:12:51:479] DEBUG - Recursively resolving dependencies for type Ljava/util/Collection<Lorg/springframework/security/core/GrantedAuthority;>;
+[2020-10-06 11:12:51:480] DEBUG - Adding type for parameter Lorg/springframework/security/core/GrantedAuthority;
+[2020-10-06 11:12:51:480] DEBUG - Recursively resolving dependencies for parameter Lorg/springframework/security/core/GrantedAuthority;
+[2020-10-06 11:12:51:501] DEBUG - Inferred 11 properties. Properties found accountNonExpired, accountNonLocked, authorities, authority, credentialsNonExpired, enabled, msrl, name, provider, uid, username
+[2020-10-06 11:12:51:506] DEBUG - Inferred 0 properties. Properties found 
+[2020-10-06 11:12:51:506] DEBUG - Inferred 1 properties. Properties found authority
+[2020-10-06 11:12:51:508] DEBUG - Skipping model of type Ljava/util/List<Lcom/cmslogin/backend/model/User;>; as its either a container type, map, enum or base type, or its already been handled
+[2020-10-06 11:12:51:509] DEBUG - Adding a new model with key User
+[2020-10-06 11:12:51:509] DEBUG - Adding a new model with key GrantedAuthority
+[2020-10-06 11:12:51:509] DEBUG - Adding a new model with key Collection«GrantedAuthority»
+[2020-10-06 11:12:51:512] DEBUG - Setting spring response class to:ListResult«User»
+[2020-10-06 11:12:51:514] DEBUG - Authorization count 0 for method findAllUser
+[2020-10-06 11:12:51:515] DEBUG - Setting response class to:ListResult«User»
+[2020-10-06 11:12:51:516] DEBUG - Extension count 1 for method findAllUser
+[2020-10-06 11:12:51:518] DEBUG - Adding return parameter of type Lcom/cmslogin/backend/model/response/SingleResult<Ljava/lang/String;>;
+[2020-10-06 11:12:51:519] DEBUG - Reading parameters models for handlerMethod |signin|
+[2020-10-06 11:12:51:520] DEBUG - Adding input parameter of type Lcom/cmslogin/backend/model/User;
+[2020-10-06 11:12:51:522] DEBUG - Finished reading parameters models for handlerMethod |signin|
+[2020-10-06 11:12:51:523] DEBUG - Reading parameters models for handlerMethod |signin|
+[2020-10-06 11:12:51:524] DEBUG - Reading property success
+[2020-10-06 11:12:51:525] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:525] DEBUG - Name 'success' renamed to 'success'
+[2020-10-06 11:12:51:525] DEBUG - Adding property success to model
+[2020-10-06 11:12:51:526] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:526] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:526] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:526] DEBUG - Evaluating unwrapped getter for member isSuccess
+[2020-10-06 11:12:51:527] DEBUG - Reading property code
+[2020-10-06 11:12:51:527] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:527] DEBUG - Name 'code' renamed to 'code'
+[2020-10-06 11:12:51:528] DEBUG - Adding property code to model
+[2020-10-06 11:12:51:528] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:528] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:528] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:529] DEBUG - Evaluating unwrapped getter for member getCode
+[2020-10-06 11:12:51:529] DEBUG - Reading property msg
+[2020-10-06 11:12:51:529] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:530] DEBUG - Name 'msg' renamed to 'msg'
+[2020-10-06 11:12:51:530] DEBUG - Adding property msg to model
+[2020-10-06 11:12:51:530] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:530] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:530] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:531] DEBUG - Evaluating unwrapped getter for member getMsg
+[2020-10-06 11:12:51:531] DEBUG - Reading property data
+[2020-10-06 11:12:51:531] DEBUG - Evaluating unwrapped getter for member getData
+[2020-10-06 11:12:51:532] DEBUG - Name 'data' renamed to 'data'
+[2020-10-06 11:12:51:532] DEBUG - Adding property data to model
+[2020-10-06 11:12:51:532] DEBUG - Evaluating unwrapped getter for member getData
+[2020-10-06 11:12:51:540] DEBUG - Evaluating unwrapped getter for member getData
+[2020-10-06 11:12:51:540] DEBUG - Evaluating unwrapped getter for member getData
+[2020-10-06 11:12:51:540] DEBUG - Evaluating unwrapped getter for member getData
+[2020-10-06 11:12:51:541] DEBUG - Inferred 4 properties. Properties found code, data, msg, success
+[2020-10-06 11:12:51:542] DEBUG - Generated parameter model id: SingleResult«string», name: SingleResult«string», schema: {} models
+[2020-10-06 11:12:51:542] DEBUG - Adding a new model with key SingleResult«string»
+[2020-10-06 11:12:51:543] DEBUG - Adding type for parameter Ljava/lang/String;
+[2020-10-06 11:12:51:543] DEBUG - Recursively resolving dependencies for parameter Ljava/lang/String;
+[2020-10-06 11:12:51:543] DEBUG - Marking base type Ljava/lang/String; as seen
+[2020-10-06 11:12:51:545] DEBUG - Reading property msrl
+[2020-10-06 11:12:51:545] DEBUG - Evaluating unwrapped setter for member setMsrl
+[2020-10-06 11:12:51:546] DEBUG - Name 'msrl' renamed to 'msrl'
+[2020-10-06 11:12:51:546] DEBUG - Adding property msrl to model
+[2020-10-06 11:12:51:546] DEBUG - Evaluating unwrapped setter for member setMsrl
+[2020-10-06 11:12:51:547] DEBUG - Evaluating unwrapped setter for member setMsrl
+[2020-10-06 11:12:51:547] DEBUG - Evaluating unwrapped setter for member setMsrl
+[2020-10-06 11:12:51:547] DEBUG - Evaluating unwrapped setter for member setMsrl
+[2020-10-06 11:12:51:547] DEBUG - Reading property uid
+[2020-10-06 11:12:51:548] DEBUG - Evaluating unwrapped setter for member setUid
+[2020-10-06 11:12:51:548] DEBUG - Name 'uid' renamed to 'uid'
+[2020-10-06 11:12:51:548] DEBUG - Adding property uid to model
+[2020-10-06 11:12:51:549] DEBUG - Evaluating unwrapped setter for member setUid
+[2020-10-06 11:12:51:560] DEBUG - Evaluating unwrapped setter for member setUid
+[2020-10-06 11:12:51:560] DEBUG - Evaluating unwrapped setter for member setUid
+[2020-10-06 11:12:51:561] DEBUG - Evaluating unwrapped setter for member setUid
+[2020-10-06 11:12:51:561] DEBUG - Reading property password
+[2020-10-06 11:12:51:561] DEBUG - Evaluating unwrapped setter for member setPassword
+[2020-10-06 11:12:51:562] DEBUG - Name 'password' renamed to 'password'
+[2020-10-06 11:12:51:562] DEBUG - Adding property password to model
+[2020-10-06 11:12:51:563] DEBUG - Evaluating unwrapped setter for member setPassword
+[2020-10-06 11:12:51:563] DEBUG - Evaluating unwrapped setter for member setPassword
+[2020-10-06 11:12:51:563] DEBUG - Evaluating unwrapped setter for member setPassword
+[2020-10-06 11:12:51:563] DEBUG - Evaluating unwrapped setter for member setPassword
+[2020-10-06 11:12:51:563] DEBUG - Reading property name
+[2020-10-06 11:12:51:564] DEBUG - Evaluating unwrapped setter for member setName
+[2020-10-06 11:12:51:564] DEBUG - Name 'name' renamed to 'name'
+[2020-10-06 11:12:51:564] DEBUG - Adding property name to model
+[2020-10-06 11:12:51:565] DEBUG - Evaluating unwrapped setter for member setName
+[2020-10-06 11:12:51:565] DEBUG - Evaluating unwrapped setter for member setName
+[2020-10-06 11:12:51:565] DEBUG - Evaluating unwrapped setter for member setName
+[2020-10-06 11:12:51:565] DEBUG - Evaluating unwrapped setter for member setName
+[2020-10-06 11:12:51:566] DEBUG - Reading property provider
+[2020-10-06 11:12:51:576] DEBUG - Evaluating unwrapped setter for member setProvider
+[2020-10-06 11:12:51:577] DEBUG - Name 'provider' renamed to 'provider'
+[2020-10-06 11:12:51:577] DEBUG - Adding property provider to model
+[2020-10-06 11:12:51:578] DEBUG - Evaluating unwrapped setter for member setProvider
+[2020-10-06 11:12:51:578] DEBUG - Evaluating unwrapped setter for member setProvider
+[2020-10-06 11:12:51:578] DEBUG - Evaluating unwrapped setter for member setProvider
+[2020-10-06 11:12:51:579] DEBUG - Evaluating unwrapped setter for member setProvider
+[2020-10-06 11:12:51:580] DEBUG - Reading property enabled
+[2020-10-06 11:12:51:580] DEBUG - Evaluating unwrapped getter for member isEnabled
+[2020-10-06 11:12:51:580] DEBUG - Name 'enabled' renamed to 'enabled'
+[2020-10-06 11:12:51:581] DEBUG - Adding property enabled to model
+[2020-10-06 11:12:51:581] DEBUG - Evaluating unwrapped getter for member isEnabled
+[2020-10-06 11:12:51:581] DEBUG - Evaluating unwrapped getter for member isEnabled
+[2020-10-06 11:12:51:581] DEBUG - Evaluating unwrapped getter for member isEnabled
+[2020-10-06 11:12:51:581] DEBUG - Evaluating unwrapped getter for member isEnabled
+[2020-10-06 11:12:51:582] DEBUG - Reading property username
+[2020-10-06 11:12:51:582] DEBUG - Evaluating unwrapped getter for member getUsername
+[2020-10-06 11:12:51:582] DEBUG - Name 'username' renamed to 'username'
+[2020-10-06 11:12:51:593] DEBUG - Adding property username to model
+[2020-10-06 11:12:51:593] DEBUG - Evaluating unwrapped getter for member getUsername
+[2020-10-06 11:12:51:594] DEBUG - Evaluating unwrapped getter for member getUsername
+[2020-10-06 11:12:51:594] DEBUG - Evaluating unwrapped getter for member getUsername
+[2020-10-06 11:12:51:594] DEBUG - Evaluating unwrapped getter for member getUsername
+[2020-10-06 11:12:51:594] DEBUG - Reading property accountNonExpired
+[2020-10-06 11:12:51:595] DEBUG - Evaluating unwrapped getter for member isAccountNonExpired
+[2020-10-06 11:12:51:595] DEBUG - Name 'accountNonExpired' renamed to 'accountNonExpired'
+[2020-10-06 11:12:51:596] DEBUG - Adding property accountNonExpired to model
+[2020-10-06 11:12:51:596] DEBUG - Evaluating unwrapped getter for member isAccountNonExpired
+[2020-10-06 11:12:51:596] DEBUG - Evaluating unwrapped getter for member isAccountNonExpired
+[2020-10-06 11:12:51:596] DEBUG - Evaluating unwrapped getter for member isAccountNonExpired
+[2020-10-06 11:12:51:597] DEBUG - Evaluating unwrapped getter for member isAccountNonExpired
+[2020-10-06 11:12:51:597] DEBUG - Reading property credentialsNonExpired
+[2020-10-06 11:12:51:597] DEBUG - Evaluating unwrapped getter for member isCredentialsNonExpired
+[2020-10-06 11:12:51:597] DEBUG - Name 'credentialsNonExpired' renamed to 'credentialsNonExpired'
+[2020-10-06 11:12:51:598] DEBUG - Adding property credentialsNonExpired to model
+[2020-10-06 11:12:51:598] DEBUG - Evaluating unwrapped getter for member isCredentialsNonExpired
+[2020-10-06 11:12:51:598] DEBUG - Evaluating unwrapped getter for member isCredentialsNonExpired
+[2020-10-06 11:12:51:598] DEBUG - Evaluating unwrapped getter for member isCredentialsNonExpired
+[2020-10-06 11:12:51:599] DEBUG - Evaluating unwrapped getter for member isCredentialsNonExpired
+[2020-10-06 11:12:51:599] DEBUG - Reading property authorities
+[2020-10-06 11:12:51:599] DEBUG - Evaluating unwrapped getter for member getAuthorities
+[2020-10-06 11:12:51:609] DEBUG - Name 'authorities' renamed to 'authorities'
+[2020-10-06 11:12:51:610] DEBUG - Adding property authorities to model
+[2020-10-06 11:12:51:610] DEBUG - Evaluating unwrapped getter for member getAuthorities
+[2020-10-06 11:12:51:610] DEBUG - Evaluating unwrapped getter for member getAuthorities
+[2020-10-06 11:12:51:611] DEBUG - Evaluating unwrapped getter for member getAuthorities
+[2020-10-06 11:12:51:611] DEBUG - Evaluating unwrapped getter for member getAuthorities
+[2020-10-06 11:12:51:611] DEBUG - Reading property authority
+[2020-10-06 11:12:51:612] DEBUG - Evaluating unwrapped setter for member setAUTHORITY
+[2020-10-06 11:12:51:612] DEBUG - Name 'authority' renamed to 'authority'
+[2020-10-06 11:12:51:612] DEBUG - Adding property authority to model
+[2020-10-06 11:12:51:612] DEBUG - Evaluating unwrapped setter for member setAUTHORITY
+[2020-10-06 11:12:51:613] DEBUG - Evaluating unwrapped setter for member setAUTHORITY
+[2020-10-06 11:12:51:613] DEBUG - Evaluating unwrapped setter for member setAUTHORITY
+[2020-10-06 11:12:51:613] DEBUG - Evaluating unwrapped setter for member setAUTHORITY
+[2020-10-06 11:12:51:613] DEBUG - Reading property accountNonLocked
+[2020-10-06 11:12:51:614] DEBUG - Evaluating unwrapped getter for member isAccountNonLocked
+[2020-10-06 11:12:51:614] DEBUG - Name 'accountNonLocked' renamed to 'accountNonLocked'
+[2020-10-06 11:12:51:614] DEBUG - Adding property accountNonLocked to model
+[2020-10-06 11:12:51:614] DEBUG - Evaluating unwrapped getter for member isAccountNonLocked
+[2020-10-06 11:12:51:615] DEBUG - Evaluating unwrapped getter for member isAccountNonLocked
+[2020-10-06 11:12:51:615] DEBUG - Evaluating unwrapped getter for member isAccountNonLocked
+[2020-10-06 11:12:51:615] DEBUG - Evaluating unwrapped getter for member isAccountNonLocked
+[2020-10-06 11:12:51:615] DEBUG - Inferred 12 properties. Properties found accountNonExpired, accountNonLocked, authorities, authority, credentialsNonExpired, enabled, msrl, name, password, provider, uid, username
+[2020-10-06 11:12:51:624] DEBUG - Generated parameter model id: User, name: User, schema: {} models
+[2020-10-06 11:12:51:625] DEBUG - Adding a missing property password to model User
+[2020-10-06 11:12:51:626] DEBUG - Adding type Ljava/util/Collection<Lorg/springframework/security/core/GrantedAuthority;>; for parameter authorities
+[2020-10-06 11:12:51:629] DEBUG - Recursively resolving dependencies for type Ljava/util/Collection<Lorg/springframework/security/core/GrantedAuthority;>;
+[2020-10-06 11:12:51:629] DEBUG - Adding type for parameter Lorg/springframework/security/core/GrantedAuthority;
+[2020-10-06 11:12:51:629] DEBUG - Recursively resolving dependencies for parameter Lorg/springframework/security/core/GrantedAuthority;
+[2020-10-06 11:12:51:644] DEBUG - Reading property authority
+[2020-10-06 11:12:51:644] DEBUG - Evaluating unwrapped getter for member getAuthority
+[2020-10-06 11:12:51:648] DEBUG - Name 'authority' renamed to 'authority'
+[2020-10-06 11:12:51:648] DEBUG - Adding property authority to model
+[2020-10-06 11:12:51:648] DEBUG - Evaluating unwrapped getter for member getAuthority
+[2020-10-06 11:12:51:649] DEBUG - Evaluating unwrapped getter for member getAuthority
+[2020-10-06 11:12:51:649] DEBUG - Evaluating unwrapped getter for member getAuthority
+[2020-10-06 11:12:51:649] DEBUG - Evaluating unwrapped getter for member getAuthority
+[2020-10-06 11:12:51:664] DEBUG - Inferred 0 properties. Properties found 
+[2020-10-06 11:12:51:666] DEBUG - Inferred 1 properties. Properties found authority
+[2020-10-06 11:12:51:678] DEBUG - Setting spring response class to:SingleResult«string»
+[2020-10-06 11:12:51:679] DEBUG - Authorization count 0 for method signin
+[2020-10-06 11:12:51:680] DEBUG - Setting response class to:SingleResult«string»
+[2020-10-06 11:12:51:681] DEBUG - Extension count 1 for method signin
+[2020-10-06 11:12:51:682] DEBUG - Adding return parameter of type Lcom/cmslogin/backend/model/response/SingleResult<Ljava/lang/String;>;
+[2020-10-06 11:12:51:692] DEBUG - Reading parameters models for handlerMethod |signinByProvider|
+[2020-10-06 11:12:51:693] DEBUG - Adding input parameter of type Ljava/lang/String;
+[2020-10-06 11:12:51:695] DEBUG - Finished reading parameters models for handlerMethod |signinByProvider|
+[2020-10-06 11:12:51:696] DEBUG - Reading parameters models for handlerMethod |signinByProvider|
+[2020-10-06 11:12:51:696] DEBUG - Generated parameter model id: SingleResult«string», name: SingleResult«string», schema: {} models
+[2020-10-06 11:12:51:697] DEBUG - Skipping model of type Ljava/lang/String; as its either a container type, map, enum or base type, or its already been handled
+[2020-10-06 11:12:51:698] DEBUG - Did not find any parameter models for java.lang.String
+[2020-10-06 11:12:51:698] DEBUG - Marking base type Ljava/lang/String; as seen
+[2020-10-06 11:12:51:702] DEBUG - Setting spring response class to:SingleResult«string»
+[2020-10-06 11:12:51:710] DEBUG - Authorization count 0 for method signinByProvider
+[2020-10-06 11:12:51:711] DEBUG - Setting response class to:SingleResult«string»
+[2020-10-06 11:12:51:713] DEBUG - Extension count 1 for method signinByProvider
+[2020-10-06 11:12:51:714] DEBUG - Adding return parameter of type Lcom/cmslogin/backend/model/response/CommonResult;
+[2020-10-06 11:12:51:714] DEBUG - Reading parameters models for handlerMethod |signup|
+[2020-10-06 11:12:51:715] DEBUG - Adding input parameter of type Lcom/cmslogin/backend/model/User;
+[2020-10-06 11:12:51:716] DEBUG - Finished reading parameters models for handlerMethod |signup|
+[2020-10-06 11:12:51:728] DEBUG - Reading parameters models for handlerMethod |signup|
+[2020-10-06 11:12:51:728] DEBUG - Generated parameter model id: CommonResult, name: CommonResult, schema: {} models
+[2020-10-06 11:12:51:729] DEBUG - Adding a new model with key CommonResult
+[2020-10-06 11:12:51:729] DEBUG - Generated parameter model id: User, name: User, schema: {} models
+[2020-10-06 11:12:51:730] DEBUG - Inferred 0 properties. Properties found 
+[2020-10-06 11:12:51:730] DEBUG - Inferred 1 properties. Properties found authority
+[2020-10-06 11:12:51:733] DEBUG - Setting spring response class to:CommonResult
+[2020-10-06 11:12:51:742] DEBUG - Authorization count 0 for method signup
+[2020-10-06 11:12:51:743] DEBUG - Setting response class to:CommonResult
+[2020-10-06 11:12:51:745] DEBUG - Extension count 1 for method signup
+[2020-10-06 11:12:51:746] DEBUG - Adding return parameter of type Lcom/cmslogin/backend/model/response/CommonResult;
+[2020-10-06 11:12:51:746] DEBUG - Reading parameters models for handlerMethod |signupProvider|
+[2020-10-06 11:12:51:747] DEBUG - Adding input parameter of type Lcom/cmslogin/backend/model/KakaoUser;
+[2020-10-06 11:12:51:748] DEBUG - Finished reading parameters models for handlerMethod |signupProvider|
+[2020-10-06 11:12:51:748] DEBUG - Reading parameters models for handlerMethod |signupProvider|
+[2020-10-06 11:12:51:749] DEBUG - Generated parameter model id: CommonResult, name: CommonResult, schema: {} models
+[2020-10-06 11:12:51:750] DEBUG - Reading property token
+[2020-10-06 11:12:51:763] DEBUG - Evaluating unwrapped setter for member setToken
+[2020-10-06 11:12:51:763] DEBUG - Name 'token' renamed to 'token'
+[2020-10-06 11:12:51:764] DEBUG - Adding property token to model
+[2020-10-06 11:12:51:764] DEBUG - Evaluating unwrapped setter for member setToken
+[2020-10-06 11:12:51:764] DEBUG - Evaluating unwrapped setter for member setToken
+[2020-10-06 11:12:51:765] DEBUG - Evaluating unwrapped setter for member setToken
+[2020-10-06 11:12:51:765] DEBUG - Evaluating unwrapped setter for member setToken
+[2020-10-06 11:12:51:766] DEBUG - Reading property name
+[2020-10-06 11:12:51:766] DEBUG - Evaluating unwrapped setter for member setName
+[2020-10-06 11:12:51:766] DEBUG - Name 'name' renamed to 'name'
+[2020-10-06 11:12:51:767] DEBUG - Adding property name to model
+[2020-10-06 11:12:51:774] DEBUG - Evaluating unwrapped setter for member setName
+[2020-10-06 11:12:51:775] DEBUG - Evaluating unwrapped setter for member setName
+[2020-10-06 11:12:51:775] DEBUG - Evaluating unwrapped setter for member setName
+[2020-10-06 11:12:51:775] DEBUG - Evaluating unwrapped setter for member setName
+[2020-10-06 11:12:51:776] DEBUG - Reading property password
+[2020-10-06 11:12:51:776] DEBUG - Evaluating unwrapped setter for member setPassword
+[2020-10-06 11:12:51:776] DEBUG - Name 'password' renamed to 'password'
+[2020-10-06 11:12:51:777] DEBUG - Adding property password to model
+[2020-10-06 11:12:51:777] DEBUG - Evaluating unwrapped setter for member setPassword
+[2020-10-06 11:12:51:777] DEBUG - Evaluating unwrapped setter for member setPassword
+[2020-10-06 11:12:51:777] DEBUG - Evaluating unwrapped setter for member setPassword
+[2020-10-06 11:12:51:778] DEBUG - Evaluating unwrapped setter for member setPassword
+[2020-10-06 11:12:51:778] DEBUG - Inferred 3 properties. Properties found name, password, token
+[2020-10-06 11:12:51:778] DEBUG - Generated parameter model id: KakaoUser, name: KakaoUser, schema: {} models
+[2020-10-06 11:12:51:779] DEBUG - Adding a new model with key KakaoUser
+[2020-10-06 11:12:51:782] DEBUG - Setting spring response class to:CommonResult
+[2020-10-06 11:12:51:783] DEBUG - Authorization count 0 for method signupProvider
+[2020-10-06 11:12:51:783] DEBUG - Setting response class to:CommonResult
+[2020-10-06 11:12:51:795] DEBUG - Extension count 1 for method signupProvider
+[2020-10-06 11:12:51:796] DEBUG - Adding return parameter of type Lorg/springframework/web/servlet/ModelAndView;
+[2020-10-06 11:12:51:797] DEBUG - Reading parameters models for handlerMethod |redirectKakao|
+[2020-10-06 11:12:51:798] DEBUG - Finished reading parameters models for handlerMethod |redirectKakao|
+[2020-10-06 11:12:51:798] DEBUG - Reading parameters models for handlerMethod |redirectKakao|
+[2020-10-06 11:12:51:800] DEBUG - Reading property view
+[2020-10-06 11:12:51:810] DEBUG - Evaluating unwrapped getter for member getView
+[2020-10-06 11:12:51:811] DEBUG - Name 'view' renamed to 'view'
+[2020-10-06 11:12:51:811] DEBUG - Adding property view to model
+[2020-10-06 11:12:51:812] DEBUG - Evaluating unwrapped getter for member getView
+[2020-10-06 11:12:51:812] DEBUG - Evaluating unwrapped getter for member getView
+[2020-10-06 11:12:51:812] DEBUG - Evaluating unwrapped getter for member getView
+[2020-10-06 11:12:51:813] DEBUG - Evaluating unwrapped getter for member getView
+[2020-10-06 11:12:51:813] DEBUG - Reading property model
+[2020-10-06 11:12:51:813] DEBUG - Evaluating unwrapped getter for member getModel
+[2020-10-06 11:12:51:814] DEBUG - Name 'model' renamed to 'model'
+[2020-10-06 11:12:51:814] DEBUG - Adding property model to model
+[2020-10-06 11:12:51:814] DEBUG - Evaluating unwrapped getter for member getModel
+[2020-10-06 11:12:51:814] DEBUG - Evaluating unwrapped getter for member getModel
+[2020-10-06 11:12:51:815] DEBUG - Evaluating unwrapped getter for member getModel
+[2020-10-06 11:12:51:815] DEBUG - Evaluating unwrapped getter for member getModel
+[2020-10-06 11:12:51:815] DEBUG - Reading property status
+[2020-10-06 11:12:51:816] DEBUG - Evaluating unwrapped getter for member getStatus
+[2020-10-06 11:12:51:816] DEBUG - Name 'status' renamed to 'status'
+[2020-10-06 11:12:51:816] DEBUG - Adding property status to model
+[2020-10-06 11:12:51:817] DEBUG - Evaluating unwrapped getter for member getStatus
+[2020-10-06 11:12:51:827] DEBUG - Evaluating unwrapped getter for member getStatus
+[2020-10-06 11:12:51:828] DEBUG - Evaluating unwrapped getter for member getStatus
+[2020-10-06 11:12:51:828] DEBUG - Evaluating unwrapped getter for member getStatus
+[2020-10-06 11:12:51:829] DEBUG - Reading property empty
+[2020-10-06 11:12:51:830] DEBUG - Evaluating unwrapped getter for member isEmpty
+[2020-10-06 11:12:51:830] DEBUG - Name 'empty' renamed to 'empty'
+[2020-10-06 11:12:51:830] DEBUG - Adding property empty to model
+[2020-10-06 11:12:51:831] DEBUG - Evaluating unwrapped getter for member isEmpty
+[2020-10-06 11:12:51:831] DEBUG - Evaluating unwrapped getter for member isEmpty
+[2020-10-06 11:12:51:831] DEBUG - Evaluating unwrapped getter for member isEmpty
+[2020-10-06 11:12:51:831] DEBUG - Evaluating unwrapped getter for member isEmpty
