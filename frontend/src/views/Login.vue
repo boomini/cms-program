@@ -22,29 +22,45 @@
               type="password"
               label="패스워드를 입력하세요"
             ></v-text-field>
-            <v-btn
-              @click="
-                signin({
-                  uid,
-                  password
-                })
-              "
-              depressed
-              block
-              large
-              color="primary"
-              >로그인</v-btn
-            >
-            <v-btn
-              depressed
-              block
-              large
-              color="yellow"
-              router
-              @click="kakaoLogin"
-              >카카오톡 로그인</v-btn
-            >
-            <v-btn router-link :to="{ name: 'signup' }">회원가입</v-btn>
+            <div class="my-2">
+              <v-btn
+                @click="
+                  signin({
+                    uid,
+                    password
+                  })
+                "
+                depressed
+                block
+                large
+                color="primary"
+                >로그인</v-btn
+              >
+            </div>
+
+            <div class="my-2">
+              <v-btn
+                depressed
+                block
+                large
+                color="primary"
+                router-link
+                :to="{ name: 'signup' }"
+                >회원가입</v-btn
+              >
+            </div>
+
+            <div class="my-2">
+              <v-btn
+                depressed
+                block
+                large
+                color="yellow"
+                router-link
+                @click="kakaoLogin"
+                >카카오로그인</v-btn
+              >
+            </div>
           </div>
         </v-card>
       </v-flex>

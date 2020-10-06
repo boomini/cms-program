@@ -97,11 +97,7 @@ export default new Vuex.Store({
 
             return NetworkUtils.KAKAOSIGNUP(param).then((res) => {
                 console.log(res)
-                let userInfo = {
-                    uid: null,
-                    password: param.password,
-                }
-                dispatch("signin", userInfo)
+                dispatch("kakaosignin", param.token)
                 alert("회원가입이 되었습니다.")
             }).catch(res => {
                 alert(res),
