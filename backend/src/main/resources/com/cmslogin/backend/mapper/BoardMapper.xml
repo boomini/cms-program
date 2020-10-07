@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cmslogin.backend.mapper.BoardMapper">
+  <select id="selectPostByBoardName" resultType="post">
+    SELECT *
+        FROM POST
+      WHERE MSRL = #{msrl}
+  </select>
+
+  <select id="selectUserByUid" resultType="user">
+    SELECT UID
+          ,PASSWORD
+          ,NAME
+          ,AUTHORITY
+          ,ENABLED
+        FROM USER
+      WHERE UID = #{uid}
+  </select>
+
+  <select id="selectUserByUidAndProvider" resultType="user" parameterType="map">
+    SELECT UID
+          ,PASSWORD
+          ,NAME
+          ,AUTHORITY
+          ,ENABLED
+          ,PROVIDER
+        FROM USER
+      WHERE UID = #{uid} AND PROVIDER = #{provider}
+  </select>
+  <select id="selectAllUser" resultType="user">
+    SELECT UID
+          ,PASSWORD
+          ,NAME
+          ,AUTHORITY
+          ,ENABLED
+        FROM USER
+  </select>
+  
+  <insert id = "insertUser" useGeneratedKeys="true" keyProperty="msrl">
+    INSERT INTO USER (UID, PASSWORD, NAME)
+    VALUES (#{uid}, #{password}, #{name})
+  </insert>
+
+  <insert id = "inserKakaoUser" useGeneratedKeys="true" keyProperty="msrl">
+    INSERT INTO USER (UID, PASSWORD, NAME, PROVIDER)
+    VALUES (#{uid}, #{password}, #{name}, #{provider})
+  </insert>
+
+  <delete id = "deleteUser">
+    DELETE FROM USER
+      WHERE UID = #{uid}
+  </delete>
+
+  <update id="updateUserById">
+    UPDATE USER
+      SET NAME = #{name},
+          PASSWORD = #{password}
+      WHERE UID = #{uid}
+  </update>
+
+</mapper>

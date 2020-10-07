@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @Data
 @Alias("user")
-public class User implements UserDetails {
+public class User extends CommonDateEntity implements UserDetails {
   private long msrl;
   private String uid;
 
