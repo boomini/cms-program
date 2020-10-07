@@ -5,3 +5,10 @@
 [2020-10-06 10:19:41:151] ==> {requestTime=1601947181150, method=OPTIONS, queryString=null, url=http://localhost:3500/v1/user}
 [2020-10-06 10:19:41:366] ==> {requestTime=1601947181366, method=GET, queryString=null, url=http://localhost:3500/v1/user}
 [2020-10-06 10:19:41:465] <== {requestTime=1601947181366, statuscode=200, body={"success":true,"code":0,"msg":"성공하였습니다.","data":{"msrl":0,"uid":"1489445126","name":"123456","provider":null,"enabled":true,"username":"1489445126","accountNonExpired":true,"credentialsNonExpired":true,"authorities":[{"authority":"ROLE_USER"}],"authority":"ROLE_USER","accountNonLocked":true}}, url=http://localhost:3500/v1/user}
+[2020-10-06 11:51:02:340] ==> {requestTime=1601952662289, method=OPTIONS, queryString=null, url=http://localhost:3500/v1/signin/kakao}
+[2020-10-06 11:51:02:452] ==> {requestTime=1601952662451, method=POST, queryString=null, url=http://localhost:3500/v1/signin/kakao}
+[2020-10-06 11:51:02:494] ==> {requestTime=1601952662451, body="Fm2gWM46NJiXnwsjl5nXSkkVQozEAcJGygO5fgo9dJkAAAF0-9HCHw="}
+[2020-10-06 11:51:03:227] <== {requestTime=1601952662451, statuscode=200, body={"success":true,"code":0,"msg":"성공하였습니다.","data":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNDg5NDQ1MTI2Iiwicm9sZXMiOiJST0xFX1VTRVIiLCJpYXQiOjE2MDE5NTI2NjMsImV4cCI6MTYwMTk1NjI2M30.gQG9QE1Doqbo0E_RZDQ1zRNgJGB7Uo_WyXYGDRkmf0s"}, url=http://localhost:3500/v1/signin/kakao}
+[2020-10-06 11:51:06:570] ==> {requestTime=1601952666570, method=OPTIONS, queryString=null, url=http://localhost:3500/v1/user}
+[2020-10-06 11:51:06:787] ==> {requestTime=1601952666787, method=GET, queryString=null, url=http://localhost:3500/v1/user}
+[2020-10-06 11:51:06:869] <== {requestTime=1601952666787, statuscode=200, body={"success":true,"code":0,"msg":"성공하였습니다.","data":{"msrl":0,"uid":"1489445126","name":"123456","provider":null,"enabled":true,"accountNonLocked":true,"authority":"ROLE_USER","authorities":[{"authority":"ROLE_USER"}],"username":"1489445126","accountNonExpired":true,"credentialsNonExpired":true}}, url=http://localhost:3500/v1/user}
