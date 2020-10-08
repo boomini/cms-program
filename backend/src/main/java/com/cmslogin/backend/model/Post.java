@@ -1,12 +1,14 @@
 package com.cmslogin.backend.model;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+@Data
 @Getter
 @NoArgsConstructor
 public class Post extends CommonDateEntity {
-  private Long postId;
+  private int post_id;
   private String author;
   private String title;
   private String content;
@@ -21,14 +23,6 @@ public class Post extends CommonDateEntity {
     this.author = author;
     this.title = title;
     this.content = content;
-  }
-
-  // 수정시 데이터 처리
-  public Post setUpdate(String author, String title, String content) {
-    this.author = author;
-    this.title = title;
-    this.content = content;
-    return this;
   }
 
 }

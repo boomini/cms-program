@@ -6,7 +6,7 @@ import lombok.Getter;
 
 @Getter
 public abstract class CommonDateEntity {
-  private LocalDateTime createdAt;
-  private LocalDateTime modifiedAt;
+  private LocalDateTime create_at;
+  private LocalDateTime modified_at;
 
 }

@@ -5,6 +5,8 @@ import javax.servlet.http.HttpServletRequest;
 import com.cmslogin.backend.advice.exception.CAuthenticationEntryPointException;
 import com.cmslogin.backend.advice.exception.CCommunicationException;
 import com.cmslogin.backend.advice.exception.CEmailSigninFailedException;
+import com.cmslogin.backend.advice.exception.CNotOwnerException;
+import com.cmslogin.backend.advice.exception.CResourceNotExistException;
 import com.cmslogin.backend.advice.exception.CUserExistException;
 import com.cmslogin.backend.advice.exception.CUserNotFoundException;
 import com.cmslogin.backend.advice.exception.CUserSignupFailedException;
@@ -109,6 +111,19 @@ public class ExceptionAdvice {
   private String getMessage(String code, Object[] args) {
     return messageSource.getMessage(code, args, LocaleContextHolder.getLocale());
 
+  }
+
+  @ExceptionHandler(CNotOwnerException.class)
+  @ResponseStatus(HttpStatus.NON_AUTHORITATIVE_INFORMATION)
+  public CommonResult notOwnerException(HttpServletRequest request, CNotOwnerException e) {
+    return responseService.getFailResult(Integer.valueOf(getMessage("notOwner.code")), getMessage("notOwner.msg"));
+  }
+
+  @ExceptionHandler(CResourceNotExistException.class)
+  @ResponseStatus(HttpStatus.NOT_FOUND)
+  public CommonResult resourceNotExistException(HttpServletRequest request, CResourceNotExistException e) {
+    return responseService.getFailResult(Integer.valueOf(getMessage("resourceNotExist.code")),
+        getMessage("resourceNotExist.msg"));
   }
 
 }
