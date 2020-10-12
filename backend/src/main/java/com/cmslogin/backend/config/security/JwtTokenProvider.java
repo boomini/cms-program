@@ -3,6 +3,7 @@ package com.cmslogin.backend.config.security;
 import java.util.Base64;
 import java.util.List;
 import java.util.Date;
+import java.util.*;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
@@ -19,6 +20,7 @@ import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.GrantedAuthority;
 
 @RequiredArgsConstructor
 @Component
@@ -36,7 +38,7 @@ public class JwtTokenProvider {
   }
 
   // JWT토큰 생성
-  public String createToken(String userPk, String roles) {
+  public String createToken(String userPk, Collection<? extends GrantedAuthority> roles) {
     Claims claims = Jwts.claims().setSubject(userPk);
     // claims 정보에 회원을 구분할 수 있는 값을 세팅하였다가
     // 토큰이 들어오면 해당 값으로 회원을 구분하여 리소스 제공

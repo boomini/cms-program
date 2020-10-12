@@ -20,4 +20,6 @@ public interface BoardMapper {
   void save(Post post);
 
   void delete(int post_id);
+
+  void updatePost(Post post);
 }

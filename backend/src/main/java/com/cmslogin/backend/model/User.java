@@ -3,9 +3,10 @@ package com.cmslogin.backend.model;
 import java.util.Collection;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
+import com.fasterxml.jackson.annotation.JsonIgnoreType;
 import org.apache.ibatis.type.Alias;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,9 +15,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import java.util.stream.Collectors;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
-@JsonIgnoreProperties
+//@JsonIgnoreProperties({ "getAuthorities()" })
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -30,7 +31,9 @@ public class User extends CommonDateEntity implements UserDetails {
 
   private String name;
   // private List<String> AUTHORITY = new ArrayList<>();
-  private String AUTHORITY;
+
+  private String authority;
+
   private String provider;
 
   public User(String uid, String name) {
@@ -53,9 +56,10 @@ public class User extends CommonDateEntity implements UserDetails {
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {
     ArrayList<GrantedAuthority> auth = new ArrayList<GrantedAuthority>();
-    auth.add(new SimpleGrantedAuthority(this.AUTHORITY));
+    auth.add(new SimpleGrantedAuthority(this.authority));
     // return
     // this.AUTHORITY.stream().map(SimpleGrantedAuthority::new).collect(Collectors.toList());
+
     return auth;
   }
 

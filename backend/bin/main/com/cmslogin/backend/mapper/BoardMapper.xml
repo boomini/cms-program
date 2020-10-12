@@ -7,6 +7,7 @@
     <result column="UID" property="uid"/>
     <result column="NAME" property="name"/>
     <result column="PROVIDER" property="provider"/>
+    <result column="AUTHORITY" property="authority"/>
 </resultMap>
  <resultMap type="BOARD" id="BOARD">
     <result column="board_id" property="board_id"/>
@@ -17,7 +18,7 @@
 <resultMap type="POST" id="POST">
     <result column="create_at" property="create_at"/>
     <result column="modified_at" property="modified_at"/>
-    <result column="postId" property="postId"/>
+    <result column="post_id" property="post_id"/>
     <result column="author" property="author"/>
     <result column="title" property="title"/>
     <result column="content" property="content"/>
@@ -33,8 +34,8 @@
 
   <select id="selectPostByBoard" resultMap="POST">
     SELECT *
-        FROM post AS p LEFT OUTER JOIN board AS b ON p.board_id = b.board_id
-        WHERE b.board_id = #{board_id}
+        FROM post AS p LEFT OUTER JOIN USER AS u ON p.uid = u.uid
+        WHERE p.board_id = #{board_id}
   </select>
 
   <select id="findById" resultMap="POST">
@@ -52,4 +53,12 @@
     DELETE FROM post
       WHERE post_id = #{post_id}
   </delete>
+
+  <update id="updatePost">
+    UPDATE POST
+      SET author = #{author},
+          content = #{content},
+          title = #{title}
+      WHERE post_id = #{post_id}
+  </update>
 </mapper>

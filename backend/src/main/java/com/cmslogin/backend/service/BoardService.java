@@ -63,17 +63,20 @@ public class BoardService {
   }
 
   // 게시물을 수정. 게시물 등록자와 로그인 회원정보가 틀리면 CNotOwnerException처리
-  public Post updatePost(int post_id, String uid, ParamsPost paramsPost) {
+  public boolean updatePost(int post_id, String uid, ParamsPost paramsPost) {
     Post post = getPost(post_id);
-    System.out.println("post정보" + "postpostpostpostpost" + post.getAuthor() + post.getPost_id() + post.getUser());
     User user = post.getUser();
-    System.out.println(uid);
-    System.out.println("user정보" + "postpostpostpostpost" + user.getUid() + " " + uid);
+    System.out.println(post);
+    System.out.println(
+        "포스트정보" + post.getPost_id() + " " + post.getAuthor() + "  " + post.getContent() + "  " + post.getTitle());
     if (!uid.equals(user.getUid()))
       throw new CNotOwnerException();
-    // post.setUpdate(paramsPost.getAuthor(), paramsPost.getTitle(),
-    // paramsPost.getContent());
-    return post;
+    post.setUpdate(paramsPost.getAuthor(), paramsPost.getTitle(), paramsPost.getContent());
+    System.out
+        .println("포스트정보" + post.getPost_id() + post.getAuthor() + "  " + post.getContent() + "  " + post.getTitle());
+    boardmapper.updatePost(post);
+
+    return true;
   }
 
   // 게시물 삭제. 게시물 등록자와 로그인 회원정보가 틀리면 CNotOwnerException처리

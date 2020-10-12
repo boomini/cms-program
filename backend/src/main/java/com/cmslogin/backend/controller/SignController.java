@@ -68,7 +68,7 @@ public class SignController {
 
   // return responseService
   // .getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getMsrl()),
-  // user.getAUTHORITY()));
+  // user.()));
   // }
 
   @ApiOperation(value = "로그인", notes = "이메일 회원 로그인을 한다.")
@@ -81,7 +81,7 @@ public class SignController {
     if (!passwordEncoder.matches(adminModel.getPassword(), user.getPassword()))
       throw new CEmailSigninFailedException();
     return responseService
-        .getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getUid()), user.getAUTHORITY()));
+        .getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getUid()), user.getAuthorities()));
   }
 
   @ApiOperation(value = "가입", notes = "회원가입을 한다")
@@ -119,7 +119,7 @@ public class SignController {
 
     // .orElseThrow(CUserNotFoundException::new);
     return responseService
-        .getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getUid()), user.getAUTHORITY()));
+        .getSingleResult(JwtTokenProvider.createToken(String.valueOf(user.getUid()), user.getAuthorities()));
   }
 
   @ApiOperation(value = "소셜 계정 가입", notes = "소셜 계정 회원가입을 한다.")

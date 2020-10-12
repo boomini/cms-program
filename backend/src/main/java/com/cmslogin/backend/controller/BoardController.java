@@ -69,10 +69,11 @@ public class BoardController {
       @ApiImplicitParam(name = "X-AUTH-TOKEN", value = "로그인 성공 후 access_token", required = true, dataType = "String", paramType = "header") })
   @ApiOperation(value = "게시판 글 수정", notes = "게시판의 글을 수정한다.")
   @PutMapping(value = "/post/{post_id}")
-  public SingleResult<Post> post(@PathVariable int post_id, @Valid @ModelAttribute ParamsPost post) {
+  public CommonResult post(@PathVariable int post_id, @Valid @ModelAttribute ParamsPost post) {
     Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
     String uid = authentication.getName();
-    return responseService.getSingleResult(boardService.updatePost(post_id, uid, post));
+    boardService.updatePost(post_id, uid, post);
+    return responseService.getSuccessResult();
   }
 
   @ApiImplicitParams({
