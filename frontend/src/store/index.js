@@ -13,7 +13,8 @@ export default new Vuex.Store({
         isLoginError: false,
         adminCheck: false,
         userAccessoken: null,
-        userList: []
+        userList: [],
+        postList: []
     },
     mutations: {
         // 로그인이 성공했을 때,
@@ -38,6 +39,9 @@ export default new Vuex.Store({
         },
         setUserList(state, payload) {
             state.userList = payload
+        },
+        setPostList(state, payload) {
+            state.postList = payload
         }
 
     },
@@ -214,7 +218,21 @@ export default new Vuex.Store({
                 .catch(err => {
                     console.log(err)
                 })
-        }
+        },
+        //리스트불러오기
+        getPostList({ commit }, boardName) {
+            console.log(boardName.boardName)
+            axios
+                .get("http://localhost:3500/v1/board/" + boardName.boardName + "/posts")
+                .then(res => {
+                    commit('setPostList', res.data.list)
+                    console.log(res)
+
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        },
     },
     modules: {},
 });

@@ -43,7 +43,11 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item router :to="{ name: 'board' }">
+        <v-list-item
+          @click="getPostList({ boardName })"
+          router
+          :to="{ name: 'boardlist' }"
+        >
           <v-list-item-action>
             <v-icon>mdi-format-list-bulleted-square</v-icon>
           </v-list-item-action>
@@ -94,13 +98,19 @@ export default {
     source: String
   },
   data: () => ({
-    drawer: null
+    drawer: null,
+    boardName: "free"
   }),
   methods: {
-    ...mapActions(["logout", "getUserList"])
+    ...mapActions(["logout", "getUserList", "getPostList"])
   },
   computed: {
-    ...mapState(["isLogin", "adminCheck"])
+    ...mapState(["isLogin", "adminCheck", "postList"])
   }
 };
 </script>
+<style scoped>
+#app {
+  text-align: center;
+}
+</style>

@@ -33,7 +33,7 @@ const routes = [{
         name: "signin",
         beforeEnter: rejectAuthUser,
         component: () =>
-            import ( /* webpackChunkName: "about" */ "../views/Login.vue")
+            import ( /* webpackChunkName: "signin" */ "../views/Login.vue")
     },
     {
         path: "/mypage",
@@ -47,26 +47,45 @@ const routes = [{
         name: "userlist",
         beforeEnter: onlyAuthUser,
         component: () =>
-            import ( /* webpackChunkName: "mypage" */ "../views/UserList.vue")
+            import ( /* webpackChunkName: "userlist" */ "../views/UserList.vue")
     },
     {
         path: "/signup",
         name: "signup",
         component: () =>
-            import ( /* webpackChunkName: "mypage" */ "../views/SignUp.vue")
+            import ( /* webpackChunkName: "signup" */ "../views/SignUp.vue")
     },
     {
         path: "/updateuserinfo",
         name: "updateuserinfo",
         beforeEnter: onlyAuthUser,
         component: () =>
-            import ( /* webpackChunkName: "mypage" */ "../views/UpdateUserInfo.vue")
+            import ( /* webpackChunkName: "updateuserinfo" */ "../views/UpdateUserInfo.vue")
     },
     {
         path: "/sociallogin",
         name: "sociallogin",
         component: () =>
-            import ( /* webpackChunkName: "mypage" */ "../views/SocialLogin.vue")
+            import ( /* webpackChunkName: "sociallogin" */ "../views/SocialLogin.vue")
+    },
+    {
+        path: "/boardlist",
+        name: "boardlist",
+        component: () =>
+            import ( /* webpackChunkName: "board" */ "../views/BoardList.vue")
+    },
+    {
+        path: "/boardwrite",
+        name: "boardwrite",
+        beforeEnter: onlyAuthUser,
+        component: () =>
+            import ( /* webpackChunkName: "updateuserinfo" */ "../views/BoardWrite.vue")
+    },
+    {
+        path: "/boarddetail",
+        name: "boarddetail",
+        component: () =>
+            import ( /* webpackChunkName: "board" */ "../views/BoardDetail.vue")
     },
 
 ];
