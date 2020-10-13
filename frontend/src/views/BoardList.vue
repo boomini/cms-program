@@ -15,7 +15,11 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="item in postList" :key="item.post_id" @click="write()">
+              <tr
+                v-for="item in postList"
+                :key="item.post_id"
+                @click="detail(item)"
+              >
                 <td>{{ item.author }}</td>
                 <td>{{ item.title }}</td>
               </tr>
@@ -42,15 +46,29 @@
 import { mapState, mapActions } from "vuex";
 export default {
   data() {
-    return {};
+    return {
+      author: null,
+      title: null,
+      content: null
+    };
   },
   computed: {
     ...mapState(["postList"])
   },
   methods: {
-    ...mapActions(["getPostList"]),
+    ...mapActions(["getPostList", "postWrite"]),
     write() {
-      this.$router.push({ name: "boarddetail" });
+      this.$router.push({ name: "boardwrite" });
+    },
+    detail(item) {
+      this.$router.push({
+        name: "boarddetail",
+        params: {
+          author: item.author,
+          title: item.title,
+          content: item.content
+        }
+      });
     }
   }
 };

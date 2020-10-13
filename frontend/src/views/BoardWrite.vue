@@ -7,13 +7,14 @@
         </v-toolbar>
         <div class="pa-3">
           <v-text-field v-model="title" label="제목"></v-text-field>
+          <v-text-field v-model="author" label="작성자"></v-text-field>
           <v-textarea
             solo
+            v-model="content"
             rows="10"
             row-height="500"
             name="input-20-4"
             label="내용"
-            v-model="content"
           ></v-textarea>
           <v-row align="center" justify="space-around">
             <v-btn
@@ -25,9 +26,11 @@
             >
             <v-btn
               @click="
-                signin({
-                  uid,
-                  password
+                postWrite({
+                  boardName,
+                  title,
+                  author,
+                  content
                 })
               "
               depressed
@@ -44,19 +47,22 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapActions, mapState } from "vuex";
 export default {
   data() {
     return {
-      uid: null,
-      password: null,
-      accessToken: null
+      title: null,
+      author: null,
+      content: null,
+      boardName: "free"
     };
   },
   computed: {
     ...mapState(["isLogin", "isLoginError"])
   },
   mounted() {},
-  methods: {}
+  methods: {
+    ...mapActions(["postWrite"])
+  }
 };
 </script>

@@ -233,6 +233,30 @@ export default new Vuex.Store({
                     console.log(err)
                 })
         },
+        //글작성시
+        postWrite({ dispatch }, params) {
+            console.log(params)
+            let token = localStorage.getItem("x-auth-token")
+            let url = "http://localhost:3500/v1/board/free"
+            console.log(token)
+            axios
+                .post(url, params, {
+                    headers: {
+                        "x-auth-token": token,
+                        'x-accept-type': 'operator',
+                    }
+                })
+                //post방식에는 두번째 인자로 파라미터가 오고
+                .then(res => {
+                    console.log(res)
+                    dispatch("getPostList")
+
+                })
+                .catch(err => {
+                    //alert('이메일과 비밀번호를 확인하세요')
+                    console.log(err)
+                });
+        }
     },
     modules: {},
 });

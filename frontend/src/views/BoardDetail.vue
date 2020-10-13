@@ -1,50 +1,55 @@
 <template>
-  <v-container fill-height style="max-width:900px">
-    <v-layout align-center row wrap>
-      <v-flex xs12>
-        <v-toolbar flat dense>
-          <v-toolbar-title>글상세</v-toolbar-title>
-        </v-toolbar>
-        <div class="pa-3">
-          <v-text label="제목"></v-text>
-          <v-text
-            solo
-            rows="10"
-            row-height="500"
-            name="input-20-4"
-            label="내용"
-            v-model="content"
-          ></v-text>
-          <v-row align="center" justify="space-around">
-            <v-btn
-              router-link
-              :to="{ name: 'boardlist' }"
-              depressed
-              color="primary"
-              >목록</v-btn
-            >
-          </v-row>
-          <div class="my-2"></div>
+  <section id="container">
+    <div id="content" class="service_notice detail">
+      <section class="cont_header">
+        <h2 class="page_title">공지사항 상세</h2>
+        <span class="page_path">HOME &gt; 서비스 관리 &gt; 공지사항 상세</span>
+      </section>
+      <section class="cont_inner">
+        <table style="margin-top: 30px">
+          <colgroup>
+            <col style="width: 8%" />
+            <col />
+            <col style="width: 8%" />
+            <col />
+            <col style="width: 8%" />
+            <col />
+            <col style="width: 8%" />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>제목</th>
+              <td colspan="5">>{{ $route.params.title }}</td>
+            </tr>
+            <tr>
+              <th>작성자</th>
+              <td>{{ $route.params.author }}</td>
+            </tr>
+            <tr>
+              <th>내용</th>
+              <td colspan="7" class="form_inp">
+                <p class="qna_textare" v-html="$route.params.content"></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="btn_area">
+          <v-btn
+            depressed
+            color="primary"
+            router-link
+            :to="{ name: 'boardlist' }"
+          >
+            목록
+          </v-btn>
         </div>
-      </v-flex>
-    </v-layout>
-  </v-container>
+      </section>
+    </div>
+  </section>
 </template>
 
+
 <script>
-import { mapState } from "vuex";
-export default {
-  data() {
-    return {
-      uid: null,
-      password: null,
-      accessToken: null
-    };
-  },
-  computed: {
-    ...mapState(["isLogin", "isLoginError"])
-  },
-  mounted() {},
-  methods: {}
-};
+export default {};
 </script>
