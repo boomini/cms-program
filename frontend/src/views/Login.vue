@@ -22,7 +22,7 @@
               type="password"
               label="패스워드를 입력하세요"
             ></v-text-field>
-            <div class="my-2">
+            <v-row align="center" justify="space-around">
               <v-btn
                 @click="
                   signin({
@@ -31,36 +31,20 @@
                   })
                 "
                 depressed
-                block
-                large
                 color="primary"
                 >로그인</v-btn
               >
-            </div>
-
-            <div class="my-2">
               <v-btn
                 depressed
-                block
-                large
                 color="primary"
                 router-link
                 :to="{ name: 'signup' }"
                 >회원가입</v-btn
               >
-            </div>
-
-            <div class="my-2">
-              <v-btn
-                depressed
-                block
-                large
-                color="yellow"
-                router-link
-                @click="kakaoLogin"
+              <v-btn depressed color="yellow" router-link @click="kakaoLogin"
                 >카카오로그인</v-btn
               >
-            </div>
+            </v-row>
           </div>
         </v-card>
       </v-flex>
