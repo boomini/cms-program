@@ -1,6 +1,6 @@
-# cms-login
-  관리자 로그인 프로그램
-  : rest-api /  
+# cms
+  관리자 프로그램
+  : 관리자 로그인, 공지사항 게시판, Qna 게시판  
   
 ## Backend / springboot
 DB (MyBatis, MariaDB),  

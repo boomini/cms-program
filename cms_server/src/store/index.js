@@ -55,7 +55,6 @@ export default new Vuex.Store({
                 localStorage.setItem("x-auth-token", token)
                 dispatch("getMemberInfo")
                 alert("로그인이 되었습니다.")
-
             }).catch(res => {
                 alert(res),
                     console.log(res)
@@ -250,11 +249,13 @@ export default new Vuex.Store({
                 .then(res => {
                     console.log(res)
                     dispatch("getPostList")
+                    router.push({ name: "boardlist" });
 
                 })
                 .catch(err => {
                     //alert('이메일과 비밀번호를 확인하세요')
                     console.log(err)
+                    router.push({ name: "boardlist" });
                 });
         }
     },

@@ -6,7 +6,7 @@
           <template v-slot:default>
             <thead>
               <tr>
-                <th class="text-left">
+                <th width="10" class="text-left">
                   글쓴이
                 </th>
                 <th class="text-left">
