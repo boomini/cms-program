@@ -1,8 +1,12 @@
 package com.cmslogin.backend.controller;
 
+import java.util.List;
+import java.util.Map;
+
 import javax.validation.Valid;
 
 import com.cmslogin.backend.model.Board;
+import com.cmslogin.backend.model.PageModel;
 import com.cmslogin.backend.model.ParamsPost;
 import com.cmslogin.backend.model.Post;
 import com.cmslogin.backend.model.response.CommonResult;
@@ -10,6 +14,7 @@ import com.cmslogin.backend.model.response.ListResult;
 import com.cmslogin.backend.model.response.SingleResult;
 import com.cmslogin.backend.service.BoardService;
 import com.cmslogin.backend.service.ResponseService;
+import com.cmslogin.backend.util.PagingUtils;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -21,6 +26,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.annotations.Api;
@@ -45,8 +51,16 @@ public class BoardController {
 
   @ApiOperation(value = "게시판 글 리스트", notes = "게시판 게시글 리스트를 조회한다.")
   @GetMapping(value = "/{boardName}/posts")
-  public ListResult<Post> posts(@PathVariable String boardName) {
-    return responseService.getListResult(boardService.findPosts(boardName));
+  public ListResult<Post> posts(@PathVariable String boardName,
+      @RequestParam(value = "page", required = false, defaultValue = "1") int page,
+      @RequestParam(value = "count", required = false, defaultValue = "20") int count) {
+    PageModel pageModel = PagingUtils.page(page, count);
+    int total = boardService.boardListCnt();
+    pageModel.setTotal(total);
+    List<Post> posts = boardService.findPosts(boardName, pageModel);
+
+    PagingUtils.setTotalPage(pageModel);
+    return responseService.getListResult(pageModel, posts);
   }
 
   @ApiImplicitParams({
@@ -56,7 +70,6 @@ public class BoardController {
   public CommonResult post(@PathVariable String boardName, @RequestBody ParamsPost post) {
     Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
     String uid = authentication.getName();
-    System.out.println("uid정보" + uid);
     boardService.writePost(uid, boardName, post);
     return responseService.getSuccessResult();
   }

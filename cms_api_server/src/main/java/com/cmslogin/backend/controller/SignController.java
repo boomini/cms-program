@@ -109,7 +109,6 @@ public class SignController {
   @PostMapping(value = "/signin/kakao")
   public SingleResult<String> signinByProvider(
       @ApiParam(value = "소셜 access_token", required = true) @RequestBody String accessToken) {
-    System.out.println("token check : " + accessToken);
     KakaoProfile profile = kakaoService.getKakaoProfile(accessToken);
     kakaoService.getKakaoProfile(accessToken);
     User user = new User();
@@ -136,8 +135,6 @@ public class SignController {
     user.setName(authuser.getName());
     user.setPassword(authuser.getPassword());
     user.setProvider("kakao");
-    ;
-    System.out.println("user정보" + user);
     userService.addSocialUser(user);
 
     return responseService.getSuccessResult();

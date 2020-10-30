@@ -1,6 +1,7 @@
 package com.cmslogin.backend.mapper;
 
 import java.util.List;
+import java.util.Map;
 
 import com.cmslogin.backend.model.Board;
 import com.cmslogin.backend.model.Post;
@@ -12,7 +13,7 @@ import org.apache.ibatis.annotations.Options;
 public interface BoardMapper {
   Board selectBoardByName(String name);
 
-  List<Post> selectPostByBoard(Board board);
+  List<Post> selectPostByBoard(Map<String, Object> param);
 
   Post findById(int post_id);
 
@@ -22,4 +23,6 @@ public interface BoardMapper {
   void delete(int post_id);
 
   void updatePost(Post post);
+
+  int boardListCnt();
 }

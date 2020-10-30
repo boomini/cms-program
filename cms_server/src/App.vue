@@ -44,7 +44,6 @@
         </v-list-item>
 
         <v-list-item
-          @click="getPostList({ boardName })"
           router
           :to="{ name: 'boardlist' }"
         >
@@ -98,8 +97,7 @@ export default {
     source: String
   },
   data: () => ({
-    drawer: null,
-    boardName: "free"
+    drawer: null
   }),
   methods: {
     ...mapActions(["logout", "getUserList", "getPostList"])

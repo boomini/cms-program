@@ -1,6 +1,7 @@
 package com.cmslogin.backend.service;
 
 import java.util.List;
+import java.util.Map;
 
 import com.cmslogin.backend.advice.exception.CNotOwnerException;
 import com.cmslogin.backend.advice.exception.CResourceNotExistException;
@@ -8,9 +9,11 @@ import com.cmslogin.backend.advice.exception.CUserNotFoundException;
 import com.cmslogin.backend.mapper.BoardMapper;
 import com.cmslogin.backend.mapper.UserMapper;
 import com.cmslogin.backend.model.Board;
+import com.cmslogin.backend.model.PageModel;
 import com.cmslogin.backend.model.ParamsPost;
 import com.cmslogin.backend.model.Post;
 import com.cmslogin.backend.model.User;
+import com.google.common.collect.Maps;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,8 +42,11 @@ public class BoardService {
   }
 
   // 게시판 이름으로 게시물 리스트 조회
-  public List<Post> findPosts(String boardName) {
-    return boardmapper.selectPostByBoard(findBoard(boardName));
+  public List<Post> findPosts(String boardName, PageModel page) {
+    Map<String, Object> param = Maps.newHashMap();
+    param.put("limit", page.getLimit());
+    param.put("count", page.getCount());
+    return boardmapper.selectPostByBoard(param);
   }
 
   // 게시물ID로 게시물 단건 조회. 없을 경우 CResourceNotExistException처리
@@ -50,6 +56,10 @@ public class BoardService {
       throw new CResourceNotExistException();
     } else
       return post;
+  }
+
+  public int boardListCnt() {
+    return boardmapper.boardListCnt();
   }
 
   // 게시물을 등록 . 게시물의 회원 UID가 조회되지 않으면 CUserNotFoundException처리
@@ -66,14 +76,9 @@ public class BoardService {
   public boolean updatePost(int post_id, String uid, ParamsPost paramsPost) {
     Post post = getPost(post_id);
     User user = post.getUser();
-    System.out.println(post);
-    System.out.println(
-        "포스트정보" + post.getPost_id() + " " + post.getAuthor() + "  " + post.getContent() + "  " + post.getTitle());
     if (!uid.equals(user.getUid()))
       throw new CNotOwnerException();
     post.setUpdate(paramsPost.getAuthor(), paramsPost.getTitle(), paramsPost.getContent());
-    System.out
-        .println("포스트정보" + post.getPost_id() + post.getAuthor() + "  " + post.getContent() + "  " + post.getTitle());
     boardmapper.updatePost(post);
 
     return true;

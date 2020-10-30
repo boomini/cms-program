@@ -51,5 +51,9 @@
 
 
 <script>
-export default {};
+export default {
+  created(){
+    this.post_id = this.$route.params.notice_id;
+  }
+};
 </script>

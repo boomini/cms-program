@@ -33,30 +33,47 @@
                   </div>
                 </td>
               </tr>
+            
+              
             </tbody>
           </template>
+          
         </v-simple-table>
+         
       </v-flex>
+       <page-component :pageData="page" @onPage="pageClick"></page-component>
     </v-layout>
+    
   </v-container>
+  
 </template>
 
 
 <script>
-import { mapState, mapActions } from "vuex";
+import pageComponent from "@/components/board/page"
+import { mapActions } from "vuex";
+import axios from "axios";
 export default {
+    components: {
+        pageComponent
+    },
   data() {
     return {
-      author: null,
-      title: null,
-      content: null
+      page:{
+        page:1,
+        total:1,
+        count:3
+      },
+      boardName: "free",
+      postList:[]
     };
   },
-  computed: {
-    ...mapState(["postList"])
+  created(){
+    this.pageLoadHandler()
   },
+
   methods: {
-    ...mapActions(["getPostList", "postWrite"]),
+    ...mapActions(["postWrite"]),
     write() {
       this.$router.push({ name: "boardwrite" });
     },
@@ -64,12 +81,38 @@ export default {
       this.$router.push({
         name: "boarddetail",
         params: {
+          post_id : item.post_id,
           author: item.author,
           title: item.title,
           content: item.content
         }
       });
+    },
+    pageClick(pageNum){
+      this.page.page=pageNum;
+      console.log(pageNum)
+      this.pageLoadHandler();
+    },
+    pageLoadHandler(){
+      var url = "http://localhost:3500/v1/board/" + this.boardName + "/posts";
+            axios
+                .get(url, { params: { page: this.page.page, count: this.page.count } }, {
+                    headers: { 'x-accept-type': 'operator' }
+                })
+                .then(res => {
+  
+                    console.log(res)
+                    console.log(res.data.list)
+                    console.log(res.data.page)
+                    this.postList = res.data.list;
+                    this.page=res.data.page;
+
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        },
     }
-  }
+  
 };
 </script>

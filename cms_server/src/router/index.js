@@ -82,7 +82,7 @@ const routes = [{
             import ( /* webpackChunkName: "updateuserinfo" */ "../views/BoardWrite.vue")
     },
     {
-        path: "/boarddetail",
+        path: "/boarddetail/:post_id",
         name: "boarddetail",
         component: () =>
             import ( /* webpackChunkName: "board" */ "../views/BoardDetail.vue")

@@ -94,7 +94,6 @@ public class UserController {
     // SecurityContext에서 인증받은 회원의 정보를 얻어온다.
     Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
     String uid = authentication.getName();
-    System.out.println(bodyUser);
     User user = new User(uid, passwordEncoding.encode(bodyUser.getPassword()), bodyUser.getName());
     userService.modifyUserById(user);
     return responseService.getSuccessResult();

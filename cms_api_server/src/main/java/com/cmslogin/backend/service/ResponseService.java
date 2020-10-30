@@ -1,10 +1,13 @@
 package com.cmslogin.backend.service;
 
+import java.util.HashMap;
 import java.util.List;
 
+import com.cmslogin.backend.model.PageModel;
 import com.cmslogin.backend.model.response.CommonResult;
 import com.cmslogin.backend.model.response.ListResult;
 import com.cmslogin.backend.model.response.SingleResult;
+import com.google.common.collect.Maps;
 
 import org.springframework.stereotype.Service;
 
@@ -42,6 +45,20 @@ public class ResponseService {
   public <T> ListResult<T> getListResult(List<T> list) {
     ListResult<T> result = new ListResult<>();
     result.setList(list);
+    setSuccessResult(result);
+    return result;
+  }
+
+  public <T> ListResult<T> getListResult(PageModel page, List<T> list) {
+    HashMap<String, Object> map = Maps.newHashMap();
+    map.put("page", page.getPage());
+    map.put("total", page.getTotal());
+    map.put("count", page.getCount());
+    map.put("pageidx", page.getPageIdx());
+
+    ListResult<T> result = new ListResult<>();
+    result.setList(list);
+    result.setPage(map);
     setSuccessResult(result);
     return result;
   }

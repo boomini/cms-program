@@ -31,11 +31,16 @@
         FROM Board
       WHERE name = #{name}
   </select>
-
-  <select id="selectPostByBoard" resultMap="POST">
+  <select id="boardListCnt" resultType="Integer">
+    SELECT COUNT(*)
+      FROM post
+  </select>
+  <select id="selectPostByBoard" parameterType="map" resultMap="POST">
     SELECT *
         FROM post AS p LEFT OUTER JOIN USER AS u ON p.uid = u.uid
-        WHERE p.board_id = #{board_id}
+        WHERE p.board_id = 3
+        ORDER BY p.post_id DESC
+        LIMIT #{limit}, #{count};
   </select>
 
   <select id="findById" resultMap="POST">
@@ -61,4 +66,6 @@
           title = #{title}
       WHERE post_id = #{post_id}
   </update>
+
+
 </mapper>

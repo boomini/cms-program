@@ -13,4 +13,5 @@ public class ListResult<T> extends CommonResult {
   // 구현하였습니다.
   // 또한 CommonResult를 상속받으므로 api요청 결과도 같이 출력됩니다.
   private List<T> list;
+  private Object page;
 }
