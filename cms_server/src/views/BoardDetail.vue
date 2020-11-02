@@ -20,7 +20,7 @@
           <tbody>
             <tr>
               <th>제목</th>
-              <td colspan="5">>{{ $route.params.title }}</td>
+              <td colspan="5">{{ $route.params.title }}</td>
             </tr>
             <tr>
               <th>작성자</th>

@@ -111,7 +111,6 @@ export default {
     },
     pageClick(pageNum){
       this.page.page=pageNum;
-      console.log(pageNum)
       this.pageLoadHandler();
     },
     searchClick(){
@@ -128,10 +127,6 @@ export default {
                     headers: { 'x-accept-type': 'operator' }
                 })
                 .then(res => {
-  
-                    console.log(res)
-                    console.log(res.data.list)
-                    console.log(res.data.page)
                     this.postList = res.data.list;
                     this.page=res.data.page;
 
