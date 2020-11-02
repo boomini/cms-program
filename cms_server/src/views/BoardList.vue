@@ -2,8 +2,23 @@
   <v-container fill-height style="max-width:900px">
     <v-layout align-center row wrap>
       <v-flex xs12>
+        <section class="srch_box" v-on:keyup.enter="searchClick">
+                    <v-col
+          cols="12"
+          sm="8"
+        >
+          <v-text-field
+            label="제목 or 내용"
+            solo
+            v-model="search.title"
+          ></v-text-field>
+          
+        </v-col>
+            <button class="btn srch_btn" @click="searchClick"><i></i>검색</button>
+        </section>
         <v-simple-table>
           <template v-slot:default>
+            
             <thead>
               <tr>
                 <th width="10" class="text-left">
@@ -33,7 +48,9 @@
                   </div>
                 </td>
               </tr>
-            
+              <tr>
+                <td v-if="postList.length==0" colspan="7"> 검색 결과가 없습니다. </td>
+              </tr>
               
             </tbody>
           </template>
@@ -64,6 +81,10 @@ export default {
         total:1,
         count:3
       },
+      search:{
+        content:"",
+        title:""
+      },
       boardName: "free",
       postList:[]
     };
@@ -93,10 +114,17 @@ export default {
       console.log(pageNum)
       this.pageLoadHandler();
     },
+    searchClick(){
+      this.search.content=this.search.title;
+      this.pageLoadHandler();
+    },
     pageLoadHandler(){
       var url = "http://localhost:3500/v1/board/" + this.boardName + "/posts";
             axios
-                .get(url, { params: { page: this.page.page, count: this.page.count } }, {
+                .get(url, { params: { content : this.search.content,
+                                      title : this.search.title,
+                                      page: this.page.page, 
+                                      count: this.page.count } }, {
                     headers: { 'x-accept-type': 'operator' }
                 })
                 .then(res => {

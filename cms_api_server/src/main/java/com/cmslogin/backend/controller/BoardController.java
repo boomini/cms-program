@@ -1,5 +1,6 @@
 package com.cmslogin.backend.controller;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -52,12 +53,21 @@ public class BoardController {
   @ApiOperation(value = "게시판 글 리스트", notes = "게시판 게시글 리스트를 조회한다.")
   @GetMapping(value = "/{boardName}/posts")
   public ListResult<Post> posts(@PathVariable String boardName,
+      @RequestParam(value = "title", required = false) String title,
+      @RequestParam(value = "content", required = false) String content,
       @RequestParam(value = "page", required = false, defaultValue = "1") int page,
       @RequestParam(value = "count", required = false, defaultValue = "20") int count) {
     PageModel pageModel = PagingUtils.page(page, count);
-    int total = boardService.boardListCnt();
+
+    Map<String, Object> param = new HashMap();
+    param.put("boardName", boardName);
+    param.put("title", "%" + title + "%");
+    param.put("content", "%" + content + "%");
+    System.out.println("param 정보" + param);
+    int total = boardService.boardListCnt(param);
+    System.out.println("total 정보" + total);
     pageModel.setTotal(total);
-    List<Post> posts = boardService.findPosts(boardName, pageModel);
+    List<Post> posts = boardService.findPosts(param, pageModel);
 
     PagingUtils.setTotalPage(pageModel);
     return responseService.getListResult(pageModel, posts);

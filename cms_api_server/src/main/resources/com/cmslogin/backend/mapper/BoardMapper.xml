@@ -38,7 +38,12 @@
   <select id="selectPostByBoard" parameterType="map" resultMap="POST">
     SELECT *
         FROM post AS p LEFT OUTER JOIN USER AS u ON p.uid = u.uid
-        WHERE p.board_id = 3
+        <where>
+          p.board_id = 3
+            <if test='title != null and title != "" and content != "" and content != null'>
+              AND (title LIKE concat('%', #{title}, '%') OR content LIKE concat('%',#{content},'%'))
+            </if>
+        </where>
         ORDER BY p.post_id DESC
         LIMIT #{limit}, #{count};
   </select>

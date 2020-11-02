@@ -24,5 +24,5 @@ public interface BoardMapper {
 
   void updatePost(Post post);
 
-  int boardListCnt();
+  int boardListCnt(Map<String, Object> param);
 }

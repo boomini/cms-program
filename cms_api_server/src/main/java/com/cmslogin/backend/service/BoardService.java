@@ -42,8 +42,7 @@ public class BoardService {
   }
 
   // 게시판 이름으로 게시물 리스트 조회
-  public List<Post> findPosts(String boardName, PageModel page) {
-    Map<String, Object> param = Maps.newHashMap();
+  public List<Post> findPosts(Map<String, Object> param, PageModel page) {
     param.put("limit", page.getLimit());
     param.put("count", page.getCount());
     return boardmapper.selectPostByBoard(param);
@@ -58,8 +57,8 @@ public class BoardService {
       return post;
   }
 
-  public int boardListCnt() {
-    return boardmapper.boardListCnt();
+  public int boardListCnt(Map<String, Object> param) {
+    return boardmapper.boardListCnt(param);
   }
 
   // 게시물을 등록 . 게시물의 회원 UID가 조회되지 않으면 CUserNotFoundException처리
