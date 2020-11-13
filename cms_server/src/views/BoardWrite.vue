@@ -16,6 +16,10 @@
             name="input-20-4"
             label="내용"
           ></v-textarea>
+          <input type="file" multiple name="" id="" @change="fileUpload($event)"><span class="refer"> *첨부 파일은 최대 5개 등록 가능합니다. 첨부파일의 용량은 10MB를 초과할 수 없습니다.</span>
+            <div class="file_list" v-for="(list,index) in fileList" :key="index">
+              <p>{{list.name}} <button @click="fileDelete(index)">삭제</button></p>
+              </div>
           <v-row align="center" justify="space-around">
             <v-btn
               router-link
@@ -38,8 +42,6 @@
               >글작성</v-btn
             >
           </v-row>
-
-          <div class="my-2"></div>
         </div>
       </v-flex>
     </v-layout>
@@ -54,7 +56,8 @@ export default {
       title: null,
       author: null,
       content: null,
-      boardName: "free"
+      boardName: "free",
+      fileList: []
     };
   },
   computed: {
@@ -62,7 +65,17 @@ export default {
   },
   mounted() {},
   methods: {
-    ...mapActions(["postWrite"])
+    ...mapActions(["postWrite"]),
+    fileUpload(event){
+      for(let i=0; i<event.target.files.length; i++){
+        if(this.fileList.length<5 && event.target.files[i].size<=10485760){
+          this.fileList.push(event.target.files[i])
+        }
+      }
+    },
+    fileDelete(index){
+      this.fileList.splice(index,1);
+    }
   }
 };
 </script>

@@ -226,6 +226,7 @@ export default new Vuex.Store({
                     headers: {
                         "x-auth-token": token,
                         'x-accept-type': 'operator',
+                        'Content-Type': 'multipart/form-data'
                     }
                 })
                 //post방식에는 두번째 인자로 파라미터가 오고
