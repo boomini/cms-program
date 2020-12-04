@@ -61,8 +61,6 @@ public class SignController {
   // Optional<User> userException = Optional.ofNullable(user);
   // responseService.getSingleResult(userException.orElseThrow(CEmailSigninFailedException::new));
 
-  // System.out.println(user);
-  // System.out.println("패스워드확인" + password + user.getPassword());
   // if (!passwordEncoder.matches(password, user.getPassword()))
   // throw new CEmailSigninFailedException();
 
