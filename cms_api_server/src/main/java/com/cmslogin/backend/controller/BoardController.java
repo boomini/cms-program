@@ -63,9 +63,7 @@ public class BoardController {
     param.put("boardName", boardName);
     param.put("title", "%" + title + "%");
     param.put("content", "%" + content + "%");
-    System.out.println("param 정보" + param);
     int total = boardService.boardListCnt(param);
-    System.out.println("total 정보" + total);
     pageModel.setTotal(total);
     List<Post> posts = boardService.findPosts(param, pageModel);
 
