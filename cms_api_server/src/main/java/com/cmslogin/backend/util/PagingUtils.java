@@ -22,7 +22,6 @@ public class PagingUtils {
     if (pageModel == null) {
       return;
     }
-    System.out.print("pageModel.getTotal()" + pageModel.getTotal());
     int totalPage = (int) (Math.ceil(pageModel.getTotal() / (double) pageModel.getCount()));
     pageModel.setTotalPage(totalPage);
   }
